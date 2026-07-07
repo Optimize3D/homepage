@@ -14,6 +14,13 @@
     "role": "Professor at Mokpo National Maritime University and lead of the Optimized Ship Production Technology Laboratory",
     "summary": "His research connects smart shipyard planning, digital shipyard systems, production simulation, machine learning models, 3D scanning, quality control, reverse engineering, additive manufacturing, and collaborative robot simulation."
   },
+  "representativeCases": [
+    {
+      "date": "2025",
+      "title": "Deep-learning spatial recognition automation module for container ship cargo holds",
+      "focus": "container cargo hold / spatial recognition / automation module"
+    }
+  ],
   "selectedPapers": [
     {
       "date": "2026.06",
