@@ -5,5 +5,5 @@
   <path d="M14 28a8 8 0 1 1 16 0 8 8 0 0 1-16 0Z" stroke="#FFFFFF" stroke-width="4"/>
   <path d="M27 21h8l-6 7h2a5 5 0 1 1-4.7 6.7" stroke="#8FE4DC" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
   <text x="50" y="30" fill="#111820" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="850" letter-spacing="0">Optimize3D</text>
-  <text x="51" y="44" fill="#64727B" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="760" letter-spacing="1.2">FIELD SPATIAL AI</text>
+  <text x="51" y="44" fill="#64727B" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="760" letter-spacing="1.2">POINT CLOUD INTELLIGENCE</text>
 </svg>
