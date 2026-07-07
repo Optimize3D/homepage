@@ -1,0 +1,122 @@
+{
+  "source": [
+    "OPTLab_Research_rev_20251230.pptx",
+    "Public academic search links by paper title"
+  ],
+  "summary": {
+    "since": "2016+",
+    "awards": 7,
+    "papers": "50+",
+    "presentations": "300+"
+  },
+  "tracks": [
+    {
+      "title": "3D Scan & Quality Control",
+      "items": [
+        "소형선박·FRP 몰드 형상 편차분석",
+        "LNGC 화물창 편평도 계측",
+        "선박블록 가상 조립 및 GD&T 검증",
+        "배관 용접 전후 변형량 분석"
+      ]
+    },
+    {
+      "title": "Point Cloud AI",
+      "items": [
+        "LNGC 화물창 스캐폴딩 시스템 객체 탐지",
+        "조선소 3D 딥러닝 데이터셋 의미론적 분할",
+        "FPFH/TDA 기반 특징 강화",
+        "대용량 포인트클라우드 경량화 및 품질 분석"
+      ]
+    },
+    {
+      "title": "Reverse Engineering & DfM",
+      "items": [
+        "스캔 기반 CAD 재구성",
+        "소형선박 친환경 설계를 위한 역설계 기반 DfM",
+        "위상최적화 기반 의장품 경량화",
+        "적층가공 기반 지그·시제품 제작"
+      ]
+    },
+    {
+      "title": "Robot & Digital Twin",
+      "items": [
+        "선박블록 포인트클라우드 환경 협동로봇 시뮬레이션",
+        "로봇 경로 및 충돌 검토",
+        "용접 케이블 모델링 및 물체 거동 테스트",
+        "스마트야드 디지털트윈 입력 데이터"
+      ]
+    }
+  ],
+  "professor": {
+    "name": "이동건 교수",
+    "role": "국립목포해양대학교 조선해양공학과 및 첨단해양모빌리티학과 교수, 최적선박생산기술연구실 책임자",
+    "summary": "스마트 조선소, 디지털 조선소, 생산시스템 시뮬레이션, 기계학습 모델, 3D 스캐닝 기반 품질관리 연구를 수행합니다.",
+    "highlights": [
+      "서울대학교 학사 및 박사, 시뮬레이션 및 생산시스템 연구",
+      "국립목포해양대학교 RISE사업단 센터장, GPS교육혁신본부 본부장",
+      "대한조선학회 편집이사, 한국형 스마트야드 기획 사업 기획위원·분과간사 역임",
+      "3D 스캐닝, 역설계, 품질관리, 설계검증, 적층가공, 협동로봇·디지털트윈 연구 주도"
+    ]
+  },
+  "selectedPublications": [
+    {
+      "date": "2026.06",
+      "type": "논문",
+      "title": "3차원 포인트 클라우드 기반 객체 탐지와 공간 데이터 후처리 알고리즘을 활용한 선박 블록 지지대 설치 정확도 검사",
+      "url": "https://scholar.google.com/scholar?q=3차원+포인트+클라우드+기반+객체+탐지와+공간+데이터+후처리+알고리즘을+활용한+선박+블록+지지대+설치+정확도+검사",
+      "focus": "3D 객체 탐지 / 공간 후처리"
+    },
+    {
+      "date": "2025.12",
+      "type": "논문",
+      "title": "위상 데이터 분석 기반 선박 블록의 대용량 3차원 포인트 클라우드 경량화 및 품질 분석",
+      "url": "https://scholar.google.com/scholar?q=위상+데이터+분석+기반+선박+블록의+대용량+3차원+포인트+클라우드+경량화+및+품질+분석",
+      "focus": "대용량 점군 경량화 / 품질 분석"
+    },
+    {
+      "date": "2025.12",
+      "type": "논문",
+      "title": "3차원 포인트 클라우드 기반 V-개선 용접선 검출 기법 및 비전 센서 성능 분석",
+      "url": "https://scholar.google.com/scholar?q=3차원+포인트+클라우드+기반+V-개선+용접선+검출+기법+및+비전+센서+성능+분석",
+      "focus": "용접선 검출 / 비전 센서"
+    },
+    {
+      "date": "2025.10",
+      "type": "논문",
+      "title": "FPFH 기반 기하학적 특징 증강을 이용한 조선소 3D 딥러닝 데이터셋 경량화 및 객체 탐지 성능 분석",
+      "url": "https://scholar.google.com/scholar?q=FPFH+기반+기하학적+특징+증강을+이용한+조선소+3D+딥러닝+데이터셋+경량화+및+객체+탐지+성능+분석",
+      "focus": "특징 증강 / 객체 탐지"
+    },
+    {
+      "date": "2025",
+      "type": "논문",
+      "title": "A case study on the introduction of an advanced ship inspection method: Gross tonnage measurement 3D point clouds",
+      "url": "https://scholar.google.com/scholar?q=A+case+study+on+the+introduction+of+an+advanced+ship+inspection+method+Gross+tonnage+measurement+3D+point+clouds",
+      "focus": "3D 계측 / 선박 검사"
+    },
+    {
+      "date": "2025.02",
+      "type": "논문",
+      "title": "선박블록 3차원 스캐닝 데이터 처리를 위한 포인트 클라우드 후처리 방법 및 적용",
+      "url": "https://scholar.google.com/scholar?q=선박블록+3차원+스캐닝+데이터+처리를+위한+포인트+클라우드+후처리+방법+및+적용",
+      "focus": "점군 후처리 / 선박블록"
+    },
+    {
+      "date": "2021.10",
+      "type": "논문",
+      "title": "딥러닝 기반 LNGC 화물창 3D 포인트 클라우드의 스캐폴딩 시스템 객체 탐지 및 후처리",
+      "url": "https://scholar.google.com/scholar?q=딥러닝+기반+LNGC+화물창+3D+포인트+클라우드의+스캐폴딩+시스템+객체+탐지+및+후처리",
+      "focus": "딥러닝 객체 탐지 / 후처리"
+    }
+  ],
+  "infrastructure": [
+    "Artec Leo 고정밀 핸디 3D 스캐너",
+    "Leica RTC360 광대역 3D 스캐너",
+    "Geomagic Control X / Design X",
+    "RealityCapture 및 설계·해석 SW",
+    "Stratasys F120 3D 프린터",
+    "Markforged Metal X 금속/카본 3D 프린터",
+    "Universal Robots UR5e 협동로봇",
+    "Kongsberg K-SIM 시뮬레이터"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "source": [
+    "OPTLab_Research_rev_20251230.pptx",
+    "Public academic search links by paper title"
+  ],
+  "summary": {
+    "since": "2016+",
+    "awards": 7,
+    "papers": "50+",
+    "presentations": "300+"
+  },
+  "professor": {
+    "name": "Prof. Dong Kun Lee",
+    "role": "Professor at Mokpo National Maritime University and lead of the Optimized Ship Production Technology Laboratory",
+    "summary": "His research connects smart shipyard planning, digital shipyard systems, production simulation, machine learning models, 3D scanning, quality control, reverse engineering, additive manufacturing, and collaborative robot simulation."
+  },
+  "selectedPapers": [
+    {
+      "date": "2026.06",
+      "title": "Inspection of ship block support installation accuracy using 3D point-cloud object detection and spatial data post-processing",
+      "searchTerm": "3차원 포인트 클라우드 기반 객체 탐지와 공간 데이터 후처리 알고리즘을 활용한 선박 블록 지지대 설치 정확도 검사"
+    },
+    {
+      "date": "2025.12",
+      "title": "Large-scale 3D point-cloud simplification and quality analysis of ship blocks based on topological data analysis",
+      "searchTerm": "위상 데이터 분석 기반 선박 블록의 대용량 3차원 포인트 클라우드 경량화 및 품질 분석"
+    },
+    {
+      "date": "2025.12",
+      "title": "V-groove weld line detection using 3D point clouds and vision sensor performance analysis",
+      "searchTerm": "3차원 포인트 클라우드 기반 V-개선 용접선 검출 기법 및 비전 센서 성능 분석"
+    },
+    {
+      "date": "2025.10",
+      "title": "Shipyard 3D deep-learning dataset simplification and object detection performance analysis using FPFH-based geometric feature augmentation",
+      "searchTerm": "FPFH 기반 기하학적 특징 증강을 이용한 조선소 3D 딥러닝 데이터셋 경량화 및 객체 탐지 성능 분석"
+    },
+    {
+      "date": "2025",
+      "title": "A case study on the introduction of an advanced ship inspection method: Gross tonnage measurement 3D point clouds",
+      "searchTerm": "A case study on the introduction of an advanced ship inspection method Gross tonnage measurement 3D point clouds"
+    },
+    {
+      "date": "2025.02",
+      "title": "Point-cloud post-processing method and application for ship block 3D scanning data",
+      "searchTerm": "선박블록 3차원 스캐닝 데이터 처리를 위한 포인트 클라우드 후처리 방법 및 적용"
+    },
+    {
+      "date": "2021.10",
+      "title": "Deep-learning-based scaffolding system object detection and post-processing for LNGC cargo hold 3D point clouds",
+      "searchTerm": "딥러닝 기반 LNGC 화물창 3D 포인트 클라우드의 스캐폴딩 시스템 객체 탐지 및 후처리"
+    }
+  ]
+}

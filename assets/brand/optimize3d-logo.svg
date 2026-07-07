@@ -1,0 +1,9 @@
+<svg width="268" height="52" viewBox="0 0 268 52" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Optimize3D logo</title>
+  <desc id="desc">Simple Optimize3D wordmark with O3 symbol.</desc>
+  <rect x="0" y="7" width="38" height="38" rx="8" fill="#111820"/>
+  <text x="8" y="31" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="850" letter-spacing="0">O3</text>
+  <circle cx="33" cy="35" r="3.5" fill="#1B8C84"/>
+  <text x="50" y="28" fill="#111820" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="850" letter-spacing="0">Optimize3D</text>
+  <text x="51" y="42" fill="#65737B" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="760" letter-spacing="1">INDUSTRIAL SPATIAL AI</text>
+</svg>

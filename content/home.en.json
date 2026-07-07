@@ -1,0 +1,43 @@
+{
+  "brand": {
+    "name": "Optimize3D",
+    "tagline": "Industrial Spatial AI",
+    "positioning": "Industrial 3D point-cloud data company for field decisions, quality inspection, reverse engineering, and robotics"
+  },
+  "hero": {
+    "eyebrow": "Connecting 3D scan data to field decisions and execution data",
+    "title": "Optimize3D",
+    "body": "Optimize3D is a field-focused 3D point-cloud data company that connects spaces in shipbuilding, offshore, manufacturing, and construction sites to AI analysis, quality decisions, reverse engineering, and robotics.",
+    "primaryAction": "Discuss a Pilot",
+    "secondaryAction": "View Services",
+    "visual": "assets/images/shipyard-pointcloud-hero.png",
+    "tags": [
+      "Point-cloud AI",
+      "3D object recognition",
+      "Spatial reasoning",
+      "Quality decision"
+    ]
+  },
+  "dataStack": [
+    {
+      "title": "Field Data Capture",
+      "body": "Point clouds, CAD, photos, inspection criteria, and workspace constraints are organized by project."
+    },
+    {
+      "title": "AI Analysis & Spatial Reasoning",
+      "body": "Segmentation, feature extraction, deviation candidates, collision risks, and accessibility are computed as usable data."
+    },
+    {
+      "title": "Inspection, Fabrication & Robot Execution",
+      "body": "The results are delivered as inspection reports, CAD reconstruction, jig concepts, and robot simulation inputs."
+    }
+  ],
+  "businessAreas": [
+    "3D Scan & Inspection Pilot",
+    "Reverse Engineering",
+    "AI Point Cloud Analysis",
+    "Digital Quality Report",
+    "3D Printed Jigs",
+    "Robot Simulation Data"
+  ]
+}

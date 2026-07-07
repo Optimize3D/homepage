@@ -1,0 +1,110 @@
+{
+  "brand": {
+    "name": "Optimize3D",
+    "tagline": "Industrial Spatial AI",
+    "positioning": "Industrial 3D data and spatial AI company for shipbuilding and manufacturing"
+  },
+  "hero": {
+    "eyebrow": "3D 스캔 데이터를 현장 판단과 실행 데이터로 연결한다",
+    "title": "Optimize3D",
+    "body": "조선·해양·제조·건설 현장의 공간을 AI 분석, 품질판정, 역설계, 로봇으로 연결하는 현장형 3D 포인트클라우드 데이터 회사입니다.",
+    "primaryAction": "파일럿 문의",
+    "secondaryAction": "사업영역 보기",
+    "visual": "assets/images/shipyard-pointcloud-hero.png",
+    "tags": [
+      "포인트클라우드 AI",
+      "3D 객체인식",
+      "공간추론",
+      "품질판단"
+    ]
+  },
+  "dataStack": [
+    {
+      "title": "현장 데이터 수집",
+      "body": "점군, CAD, 사진, 검사 기준, 작업공간 제약을 한 프로젝트 단위로 정리합니다."
+    },
+    {
+      "title": "AI 분석·공간추론",
+      "body": "객체 분할, 특징 추출, 편차 후보, 충돌 위험, 접근 가능성을 데이터로 계산합니다."
+    },
+    {
+      "title": "검사·제작·로봇 실행",
+      "body": "검사 리포트, CAD 재구성, 지그 설계, 로봇 시뮬레이션 입력 데이터로 납품합니다."
+    }
+  ],
+  "businessAreas": [
+    {
+      "title": "3D Scan & Inspection Pilot",
+      "body": "대상물 스캔, 정합, 기준 좌표 설정, CAD 대비 편차분석, 검사 항목 정의."
+    },
+    {
+      "title": "Reverse Engineering",
+      "body": "도면이 부족한 부품·몰드·구조물을 스캔 기반 CAD 재구성 데이터로 전환."
+    },
+    {
+      "title": "AI Point Cloud Analysis",
+      "body": "점군 분할, 3차원 객체인식, 결함 후보 탐지, 공간 관계 추론 모델을 파일럿에 적용."
+    },
+    {
+      "title": "Digital Quality Report",
+      "body": "편차, GD&T, 용접 전후 변형량, 검사 판정 근거를 리포트와 의사결정 자료로 정리."
+    },
+    {
+      "title": "3D Printed Jigs",
+      "body": "검사·조립·임시 고정에 필요한 3D 프린팅 지그, 픽스처, 시제품 적용 검토."
+    },
+    {
+      "title": "Robot Simulation Data",
+      "body": "점군 기반 작업공간을 로봇 경로, 충돌 검토, 디지털트윈 입력 데이터로 정리."
+    }
+  ],
+  "aiResearch": {
+    "title": "점군에서 객체와 공간 관계를 읽습니다.",
+    "body": "선체 구조, 배관, 지그, 작업공간을 점군에서 구분하고 객체 간 위치 관계, 접근 가능성, 충돌 위험, 검사 우선순위를 계산합니다.",
+    "image": "assets/images/ai-pointcloud-recognition.png",
+    "items": [
+      "의미론적 분할",
+      "3D 객체 탐지",
+      "공간 관계 추론",
+      "AI 품질판단"
+    ]
+  },
+  "workflow": [
+    "Field Capture",
+    "Reference Model",
+    "AI & Metrology",
+    "Execution Package"
+  ],
+  "applications": [
+    {
+      "title": "현장 스캔 파일럿",
+      "image": "assets/images/shipyard-pointcloud-hero.png"
+    },
+    {
+      "title": "AI 객체인식·검사",
+      "image": "assets/images/ai-pointcloud-recognition.png"
+    },
+    {
+      "title": "로봇·디지털트윈 데이터",
+      "image": "assets/images/spatial-reasoning-robot.png"
+    }
+  ],
+  "proof": {
+    "title": "현장 연구 기반",
+    "summary": {
+      "awards": 7,
+      "papers": "50+",
+      "presentations": "300+",
+      "detailPage": "research.html",
+      "data": "content/research.json"
+    },
+    "items": [
+      "소형선박·FRP 몰드 형상 편차분석",
+      "LNGC 화물창 점군 객체 탐지",
+      "포인트클라우드 3차원 객체인식",
+      "공간추론 기반 로봇 작업성 검토",
+      "선박블록 가상 조립과 GD&T 검증",
+      "조선소 포인트클라우드 데이터셋"
+    ]
+  }
+}
