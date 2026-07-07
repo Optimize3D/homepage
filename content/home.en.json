@@ -12,10 +12,12 @@
     "secondaryAction": "View Services",
     "visual": "assets/images/shipyard-pointcloud-hero.png",
     "tags": [
-      "Point-cloud AI",
-      "3D object recognition",
-      "Spatial reasoning",
-      "Quality decision"
+      "Point cloud",
+      "AI object recognition",
+      "AI spatial reasoning",
+      "Quality inspection",
+      "3D scanning & printing",
+      "Reverse engineering"
     ]
   },
   "dataStack": [

@@ -12,10 +12,12 @@
     "secondaryAction": "사업영역 보기",
     "visual": "assets/images/shipyard-pointcloud-hero.png",
     "tags": [
-      "포인트클라우드 AI",
-      "3D 객체인식",
-      "공간추론",
-      "품질판단"
+      "포인트클라우드",
+      "AI 객체인식",
+      "AI 공간추론",
+      "품질검사",
+      "3D 스캐닝 & 프린팅",
+      "역설계"
     ]
   },
   "dataStack": [

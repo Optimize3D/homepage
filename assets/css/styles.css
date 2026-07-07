@@ -319,31 +319,6 @@ h1 {
   color: var(--teal);
 }
 
-.quick-line {
-  background: var(--surface);
-  border-bottom: 1px solid var(--line);
-  box-shadow: 0 10px 26px rgba(17, 24, 32, .04);
-}
-
-.quick-line div {
-  width: min(1180px, 100%);
-  margin: 0 auto;
-  padding: 16px 28px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.quick-line span {
-  padding: 7px 11px;
-  border-radius: 999px;
-  background: var(--soft);
-  color: var(--ink-2);
-  font-size: 13px;
-  font-weight: 850;
-  border: 1px solid rgba(17, 24, 32, .05);
-}
-
 .solution-stack {
   background:
     linear-gradient(rgba(27, 140, 132, .045) 1px, transparent 1px),
@@ -1164,7 +1139,6 @@ h3 {
     margin-right: 0;
   }
 
-  .quick-line div,
   .stack-inner,
   .section,
   .research-hero,
