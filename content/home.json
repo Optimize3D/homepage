@@ -31,7 +31,7 @@
     },
     {
       "title": "검사·제작·로봇 실행",
-      "body": "검사 리포트, CAD 재구성, 지그 설계, 로봇 시뮬레이션 입력 데이터로 납품합니다."
+      "body": "검사 리포트, CAD 재구성, 지그 설계, 피지컬AI 실행 데이터로 납품합니다."
     }
   ],
   "businessAreas": [
@@ -56,8 +56,8 @@
       "body": "검사·조립·임시 고정에 필요한 3D 프린팅 지그, 픽스처, 시제품 적용 검토."
     },
     {
-      "title": "Robot Simulation Data",
-      "body": "점군 기반 작업공간을 로봇 경로, 충돌 검토, 디지털트윈 입력 데이터로 정리."
+      "title": "Physical AI Data Package",
+      "body": "점군 기반 작업공간을 로봇 경로, 충돌 검토, 3D 비전 센서 조건, 현장 실행 데이터로 정리."
     }
   ],
   "aiResearch": {
@@ -87,8 +87,8 @@
       "image": "assets/images/research/ai-shipyard-segmentation.jpg"
     },
     {
-      "title": "로봇·디지털트윈 데이터",
-      "image": "assets/images/research/block-assembly-digital-twin.jpg"
+      "title": "로봇·피지컬AI 데이터",
+      "image": "assets/images/research/physical-ai-execution-montage.jpg"
     }
   ],
   "proof": {
@@ -104,7 +104,7 @@
       "소형선박·FRP 몰드 형상 편차분석",
       "LNGC 화물창 점군 객체 탐지",
       "포인트클라우드 3차원 객체인식",
-      "공간추론 기반 로봇 작업성 검토",
+      "피지컬AI 기반 협동로봇 작업성 검토",
       "선박블록 가상 조립과 GD&T 검증",
       "조선소 포인트클라우드 데이터셋"
     ]

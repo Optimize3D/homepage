@@ -488,7 +488,8 @@ h1 {
 .pipeline-film:hover .film-frame img,
 .compare-stage:hover img,
 .application-grid article:hover img,
-.ai-visual:hover img {
+.ai-visual:hover img,
+.physical-ai-media:hover img {
   transform: scale(1.055);
 }
 
@@ -896,6 +897,87 @@ h3 {
   font-size: 13px;
   font-weight: 500;
   box-shadow: none;
+}
+
+.physical-ai-section {
+  display: grid;
+  grid-template-columns: minmax(320px, .92fr) minmax(0, 1.08fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.physical-ai-copy p:not(.kicker) {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.physical-ai-points {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.physical-ai-points article {
+  min-height: 148px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.physical-ai-points span {
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.physical-ai-points h3 {
+  margin-top: 18px;
+  font-size: 19px;
+}
+
+.physical-ai-points p {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.physical-ai-media {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(38, 187, 255, .34);
+  border-radius: 12px;
+  background: var(--ink);
+}
+
+.physical-ai-media img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.01);
+  transition: transform .72s ease;
+}
+
+.physical-ai-media figcaption {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: 8px;
+  background: rgba(16, 16, 20, .72);
+  color: var(--ink-2);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  backdrop-filter: blur(12px);
 }
 
 .platform-section {
@@ -1407,6 +1489,7 @@ h3 {
 
 @media (max-width: 1040px) {
   .ai-section,
+  .physical-ai-section,
   .platform-section,
   .stack-inner,
   .pipeline-shell,
@@ -1428,7 +1511,8 @@ h3 {
   .business-grid,
   .application-grid,
   .stack-grid,
-  .research-track-grid {
+  .research-track-grid,
+  .physical-ai-points {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1524,6 +1608,7 @@ h3 {
   .research-hero p:not(.eyebrow),
   .lead,
   .ai-copy p:not(.kicker),
+  .physical-ai-copy p:not(.kicker),
   .platform-copy p:not(.kicker),
   .product-panel p,
   .proof-copy p:not(.kicker),
@@ -1611,6 +1696,7 @@ h3 {
   .proof-list,
   .proof-stats,
   .ai-list,
+  .physical-ai-points,
   .research-summary,
   .research-track-grid {
     grid-template-columns: 1fr;
@@ -1698,6 +1784,7 @@ h3 {
   }
 
   .business-grid article,
+  .physical-ai-points article,
   .workflow-board article,
   .stack-grid article,
   .research-track-grid article,

@@ -31,7 +31,7 @@
     },
     {
       "title": "Inspection, Fabrication & Robot Execution",
-      "body": "The results are delivered as inspection reports, CAD reconstruction, jig concepts, and robot simulation inputs."
+      "body": "The results are delivered as inspection reports, CAD reconstruction, jig concepts, and Physical AI execution data."
     }
   ],
   "businessAreas": [
@@ -40,6 +40,6 @@
     "AI Point Cloud Analysis",
     "Digital Quality Report",
     "3D Printed Jigs",
-    "Robot Simulation Data"
+    "Physical AI Data Package"
   ]
 }

@@ -124,7 +124,7 @@ if (emailButtons.length > 0) {
         "4. Target site or object: ship block / cargo hold / mold / piping / jig / robot cell / other",
         "5. Available data: point cloud / CAD / photos / drawings / inspection criteria",
         "6. Problem to solve:",
-        "7. Desired deliverables: inspection report / deviation map / scan-to-CAD / AI analysis / jig concept / robot simulation data",
+        "7. Desired deliverables: inspection report / deviation map / scan-to-CAD / AI analysis / jig concept / Physical AI execution data",
         "8. Schedule or notes:",
         "",
         "If available, I will attach sample data or reference images."
@@ -141,7 +141,7 @@ if (emailButtons.length > 0) {
       "4. 적용 현장 또는 대상: 선박블록 / 카고홀드 / 몰드 / 배관 / 지그 / 로봇셀 / 기타",
       "5. 보유 데이터: 포인트클라우드 / CAD / 사진 / 도면 / 검사 기준",
       "6. 해결하고 싶은 문제:",
-      "7. 희망 결과물: 검사 리포트 / 편차맵 / 역설계 CAD / AI 분석 / 지그 설계 / 로봇 시뮬레이션 데이터",
+      "7. 희망 결과물: 검사 리포트 / 편차맵 / 역설계 CAD / AI 분석 / 지그 설계 / 피지컬AI 실행 데이터",
       "8. 희망 일정 또는 기타:",
       "",
       "가능하다면 샘플 데이터나 참고 이미지를 함께 첨부하겠습니다."
