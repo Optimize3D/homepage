@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540" role="img" aria-labelledby="title desc">
+  <title id="title">Point cloud AI workflow animation</title>
+  <desc id="desc">A looping industrial point cloud workflow showing scan capture, object recognition, quality mapping, and execution data.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1a21"/>
+      <stop offset=".56" stop-color="#142329"/>
+      <stop offset="1" stop-color="#0b1217"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8fe4dc" stop-opacity="0"/>
+      <stop offset=".48" stop-color="#8fe4dc" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#8fe4dc" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="heat" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5b24a" stop-opacity=".2"/>
+      <stop offset=".55" stop-color="#e98245" stop-opacity=".62"/>
+      <stop offset="1" stop-color="#e8503f" stop-opacity=".78"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="microgrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#8fe4dc" stroke-opacity=".08" stroke-width="1"/>
+    </pattern>
+    <style>
+      .sweep { animation: sweep 5.4s ease-in-out infinite; }
+      .pulse { animation: pulse 2.8s ease-in-out infinite; }
+      .segment { animation: segment 5.4s ease-in-out infinite; }
+      .heat { animation: heatmap 5.4s ease-in-out infinite; }
+      .stream { stroke-dasharray: 7 12; animation: stream 2.4s linear infinite; }
+      .stage-1 { animation: stageOne 5.4s ease-in-out infinite; }
+      .stage-2 { animation: stageTwo 5.4s ease-in-out infinite; }
+      .stage-3 { animation: stageThree 5.4s ease-in-out infinite; }
+      @keyframes sweep {
+        0%, 8% { transform: translateX(-360px); opacity: 0; }
+        18%, 70% { opacity: 1; }
+        82%, 100% { transform: translateX(360px); opacity: 0; }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: .42; }
+        50% { opacity: 1; }
+      }
+      @keyframes segment {
+        0%, 26% { opacity: 0; }
+        38%, 58% { opacity: .82; }
+        72%, 100% { opacity: .2; }
+      }
+      @keyframes heatmap {
+        0%, 54% { opacity: 0; }
+        66%, 86% { opacity: .82; }
+        100% { opacity: .1; }
+      }
+      @keyframes stream {
+        to { stroke-dashoffset: -38; }
+      }
+      @keyframes stageOne {
+        0%, 30% { opacity: 1; }
+        40%, 100% { opacity: .28; }
+      }
+      @keyframes stageTwo {
+        0%, 25% { opacity: .28; }
+        38%, 62% { opacity: 1; }
+        72%, 100% { opacity: .34; }
+      }
+      @keyframes stageThree {
+        0%, 56% { opacity: .28; }
+        68%, 100% { opacity: 1; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .sweep, .pulse, .segment, .heat, .stream, .stage-1, .stage-2, .stage-3 { animation: none; }
+        .segment, .heat { opacity: .72; }
+      }
+    </style>
+  </defs>
+
+  <rect width="900" height="540" rx="22" fill="url(#bg)"/>
+  <rect x="20" y="20" width="860" height="500" rx="18" fill="url(#microgrid)" opacity=".9"/>
+  <path d="M58 96H842M58 444H842" stroke="#8fe4dc" stroke-opacity=".12"/>
+  <path d="M600 78V464" stroke="#8fe4dc" stroke-opacity=".13"/>
+
+  <g transform="translate(55 58)">
+    <text x="0" y="0" fill="#8fe4dc" font-family="Arial, sans-serif" font-size="15" font-weight="800" letter-spacing="1.2">FIELD POINT CLOUD PIPELINE</text>
+    <text x="0" y="28" fill="#ffffff" fill-opacity=".72" font-family="Arial, sans-serif" font-size="13">Scan capture  |  AI recognition  |  Quality decision  |  Execution data</text>
+  </g>
+
+  <g transform="translate(58 130)">
+    <path d="M68 250h96l30 34H38l30-34Z" fill="#182a31" stroke="#8fe4dc" stroke-opacity=".32"/>
+    <path d="M92 198h50l14 52H78l14-52Z" fill="#0d171d" stroke="#8fe4dc" stroke-opacity=".38"/>
+    <circle cx="117" cy="188" r="24" fill="#111d24" stroke="#8fe4dc" stroke-width="2"/>
+    <circle cx="117" cy="188" r="9" fill="#8fe4dc" fill-opacity=".9" filter="url(#glow)"/>
+    <path class="stream" d="M144 189C210 166 272 158 340 164" fill="none" stroke="#8fe4dc" stroke-opacity=".38" stroke-width="2"/>
+    <path class="sweep" d="M242 70h74v290h-74z" fill="url(#beam)" opacity=".7"/>
+  </g>
+
+  <g transform="translate(270 118)">
+    <path d="M36 78 226 40 374 96 184 138Z" fill="#14262d" stroke="#8fe4dc" stroke-opacity=".38"/>
+    <path d="M36 78v178l148 66V138Z" fill="#101d24" stroke="#8fe4dc" stroke-opacity=".28"/>
+    <path d="M184 138v184l190-58V96Z" fill="#172a31" stroke="#8fe4dc" stroke-opacity=".3"/>
+    <path d="M76 92 230 62 330 101 181 132Z" fill="none" stroke="#8fe4dc" stroke-opacity=".45"/>
+    <path d="M76 92v122l105 45V132Z" fill="none" stroke="#8fe4dc" stroke-opacity=".22"/>
+    <path d="M181 132v127l149-44V101Z" fill="none" stroke="#8fe4dc" stroke-opacity=".25"/>
+
+    <g fill="#8fe4dc" filter="url(#glow)">
+      <circle class="pulse" cx="66" cy="84" r="3"/><circle cx="96" cy="78" r="2.4"/><circle cx="126" cy="70" r="2.2"/>
+      <circle cx="162" cy="64" r="2.5"/><circle class="pulse" cx="203" cy="58" r="3.2"/><circle cx="242" cy="65" r="2.4"/>
+      <circle cx="279" cy="77" r="2.6"/><circle cx="317" cy="92" r="2.5"/><circle class="pulse" cx="349" cy="105" r="3.1"/>
+      <circle cx="68" cy="126" r="2.5"/><circle cx="108" cy="130" r="2.8"/><circle class="pulse" cx="148" cy="140" r="3"/>
+      <circle cx="193" cy="151" r="2.5"/><circle cx="238" cy="141" r="2.7"/><circle cx="286" cy="128" r="2.6"/>
+      <circle class="pulse" cx="332" cy="115" r="3"/><circle cx="68" cy="174" r="2.4"/><circle cx="110" cy="188" r="2.8"/>
+      <circle cx="151" cy="207" r="2.4"/><circle class="pulse" cx="194" cy="219" r="3.2"/><circle cx="238" cy="206" r="2.6"/>
+      <circle cx="282" cy="191" r="2.5"/><circle cx="326" cy="178" r="2.8"/><circle cx="80" cy="220" r="2.5"/>
+      <circle class="pulse" cx="130" cy="244" r="3.1"/><circle cx="180" cy="269" r="2.7"/><circle cx="230" cy="252" r="2.8"/>
+      <circle cx="281" cy="236" r="2.6"/><circle class="pulse" cx="330" cy="222" r="3"/>
+    </g>
+
+    <g class="segment" fill="none" stroke-width="3">
+      <path d="M77 96 178 78 246 102 150 124Z" stroke="#8fe4dc"/>
+      <path d="M66 145 156 168v78L66 207Z" stroke="#39c1b7"/>
+      <path d="M211 144 326 113v88l-115 35Z" stroke="#61d9ff"/>
+      <circle cx="179" cy="206" r="24" stroke="#f5b24a"/>
+    </g>
+
+    <g class="heat">
+      <path d="M206 151 319 120v58l-116 32Z" fill="url(#heat)"/>
+      <path d="M88 153 158 173v58L88 201Z" fill="#f5b24a" fill-opacity=".42"/>
+      <circle cx="179" cy="207" r="34" fill="#e8503f" fill-opacity=".34"/>
+    </g>
+  </g>
+
+  <g transform="translate(636 116)">
+    <rect x="0" y="0" width="210" height="78" rx="12" fill="#101a20" stroke="#8fe4dc" stroke-opacity=".26"/>
+    <text x="18" y="25" fill="#8fe4dc" font-family="Arial, sans-serif" font-size="12" font-weight="800">01 POINT CLOUD</text>
+    <text x="18" y="51" fill="#fff" fill-opacity=".82" font-family="Arial, sans-serif" font-size="20" font-weight="800">2.8M points</text>
+    <circle class="stage-1" cx="180" cy="39" r="15" fill="#8fe4dc" fill-opacity=".18" stroke="#8fe4dc"/>
+
+    <rect x="0" y="104" width="210" height="78" rx="12" fill="#101a20" stroke="#8fe4dc" stroke-opacity=".26"/>
+    <text x="18" y="129" fill="#8fe4dc" font-family="Arial, sans-serif" font-size="12" font-weight="800">02 AI RECOGNITION</text>
+    <text x="18" y="155" fill="#fff" fill-opacity=".82" font-family="Arial, sans-serif" font-size="20" font-weight="800">14 objects</text>
+    <rect class="stage-2" x="166" y="128" width="28" height="28" rx="6" fill="#8fe4dc" fill-opacity=".16" stroke="#8fe4dc"/>
+
+    <rect x="0" y="208" width="210" height="78" rx="12" fill="#101a20" stroke="#8fe4dc" stroke-opacity=".26"/>
+    <text x="18" y="233" fill="#8fe4dc" font-family="Arial, sans-serif" font-size="12" font-weight="800">03 QUALITY MAP</text>
+    <text x="18" y="259" fill="#fff" fill-opacity=".82" font-family="Arial, sans-serif" font-size="20" font-weight="800">CAD +/- 4.2mm</text>
+    <path class="stage-3" d="M166 246h34" stroke="#f5b24a" stroke-width="8" stroke-linecap="round"/>
+
+    <rect x="0" y="312" width="210" height="78" rx="12" fill="#101a20" stroke="#8fe4dc" stroke-opacity=".26"/>
+    <text x="18" y="337" fill="#8fe4dc" font-family="Arial, sans-serif" font-size="12" font-weight="800">04 EXECUTION DATA</text>
+    <text x="18" y="363" fill="#fff" fill-opacity=".82" font-family="Arial, sans-serif" font-size="20" font-weight="800">CAD / Robot</text>
+    <path class="stream" d="M160 352h42" stroke="#8fe4dc" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <g fill="none" stroke="#8fe4dc" stroke-opacity=".32">
+    <path class="stream" d="M584 214C612 176 620 156 636 154"/>
+    <path class="stream" d="M584 252C618 252 618 260 636 259"/>
+    <path class="stream" d="M584 294C614 334 620 358 636 362"/>
+  </g>
+</svg>
