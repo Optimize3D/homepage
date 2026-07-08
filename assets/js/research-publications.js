@@ -51,7 +51,7 @@ const optimize3dPapers = [
   },
   {
     year: "2022.10",
-    journal: "총설논문",
+    journal: "대한조선학회 논문집",
     title: "3차원 포인트 클라우드 데이터를 활용한 객체 탐지 기법인 PointNet과 RandLA-Net"
   },
   {

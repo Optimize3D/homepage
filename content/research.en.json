@@ -1,18 +1,18 @@
 {
   "source": [
     "OPTLab_Research_rev_20251230.pptx",
+    "https://app.rndcircle.io/lab/dbe899f1-49fb-45c7-9ae5-256ecad4c0a0",
     "Public academic search links by paper title"
   ],
   "summary": {
-    "since": "2016+",
     "awards": 7,
     "papers": "50+",
     "presentations": "300+"
   },
-  "professor": {
-    "name": "Prof. Dong Kun Lee",
-    "role": "Lead of the Optimized Ship Production Technology Laboratory",
-    "summary": "His research connects smart shipyard planning, production simulation, machine learning models, 3D scanning, quality control, reverse engineering, additive manufacturing, Physical AI, and collaborative robotics."
+  "lab": {
+    "name": "Mokpo National Maritime University OPTLab",
+    "role": "Optimized Ship Production Technology Laboratory",
+    "summary": "OPTLab combines naval architecture, ocean engineering, and production management to pursue practical research in 3D scanning, point-cloud-based digital quality control, deep-learning smart-yard production automation, eco-friendly small vessels, and electric propulsion platform design."
   },
   "representativeCases": [
     {

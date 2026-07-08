@@ -1363,7 +1363,7 @@ h3 {
   margin: 0 auto;
   padding: 0 64px 32px;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
 }
 
