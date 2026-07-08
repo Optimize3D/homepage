@@ -6,12 +6,12 @@
   <title>Optimize3D Logo Options</title>
   <style>
     :root {
-      --ink: #111820;
-      --muted: #64727b;
-      --line: #d8e0de;
-      --paper: #f5f7f8;
+      --ink: #0b0d0e;
+      --muted: #60666a;
+      --line: #d9ddd5;
+      --paper: #f4f5f0;
       --surface: #ffffff;
-      --teal: #1b8c84;
+      --accent: #d7ff38;
     }
     * { box-sizing: border-box; }
     body {
@@ -48,10 +48,10 @@
       border: 1px solid var(--line);
       border-radius: 8px;
       padding: 24px;
-      box-shadow: 0 14px 34px rgba(17, 24, 32, .07);
+      box-shadow: 0 14px 34px rgba(11, 13, 14, .07);
     }
     .option.recommended {
-      border-color: rgba(27, 140, 132, .45);
+      border-color: rgba(215, 255, 56, .9);
     }
     .label {
       display: flex;
@@ -66,7 +66,7 @@
       text-transform: uppercase;
     }
     .badge {
-      color: var(--teal);
+      color: #536f00;
       letter-spacing: 0;
       text-transform: none;
     }
@@ -107,42 +107,31 @@
 <body>
   <main>
     <h1>Optimize3D logo options</h1>
-    <p class="lead">상단 네비게이션에 바로 들어갈 수 있는 단순한 SVG 시안입니다. 기술 회사 느낌을 유지하되, 연구실 홈페이지처럼 보이지 않도록 워드마크 중심으로 정리했습니다.</p>
+    <p class="lead">RealityScan처럼 미니멀한 심벌과 이름이 함께 보이는 방향입니다. 포인트클라우드, AI 객체인식, 공간추론을 직접적인 회로·로봇 아이콘 대신 점군과 인식 프레임으로 추상화했습니다.</p>
 
     <section class="grid" aria-label="Logo options">
       <article class="option recommended">
-        <div class="label"><span>Option A</span><span class="badge">추천</span></div>
-        <div class="logo-row"><img src="assets/brand/logo-option-a.svg" alt="Logo option A"></div>
-        <div class="logo-row dark"><img src="assets/brand/logo-option-a.svg" alt=""></div>
-        <p class="note">현재 페이지 톤과 가장 잘 맞습니다. O3는 남기되 점군/큐브 느낌을 줄여서 단단한 B2B 기술기업처럼 보입니다.</p>
+        <div class="label"><span>Option A · Point Cloud O</span><span class="badge">추천</span></div>
+        <div class="logo-row"><img src="assets/brand/logo-rs-a.svg" alt="Logo option A"></div>
+        <p class="note">가장 미니멀합니다. Optimize3D의 O를 점군이 객체로 정리되는 순간처럼 보이게 했습니다.</p>
       </article>
 
       <article class="option">
-        <div class="label"><span>Option B</span></div>
-        <div class="logo-row"><img src="assets/brand/logo-option-b.svg" alt="Logo option B"></div>
-        <div class="logo-row dark"><img src="assets/brand/logo-option-b.svg" alt=""></div>
-        <p class="note">포인트클라우드와 3D 스캔을 가장 직접적으로 보여줍니다. 다만 작은 크기에서는 심볼 디테일이 A보다 조금 많습니다.</p>
+        <div class="label"><span>Option B · Bounding Box</span></div>
+        <div class="logo-row"><img src="assets/brand/logo-rs-b.svg" alt="Logo option B"></div>
+        <p class="note">AI 객체인식과 3D 계측의 의미가 분명합니다. B2B 제조기술 회사 느낌이 가장 강합니다.</p>
       </article>
 
       <article class="option">
-        <div class="label"><span>Option C</span></div>
-        <div class="logo-row"><img src="assets/brand/logo-option-c.svg" alt="Logo option C"></div>
-        <div class="logo-row dark"><img src="assets/brand/logo-option-c.svg" alt=""></div>
-        <p class="note">공간좌표, 로봇, 3D 인식의 느낌이 좋습니다. 연구실보다 기술 플랫폼 성격을 강조할 때 적합합니다.</p>
+        <div class="label"><span>Option C · Scan Focus</span></div>
+        <div class="logo-row"><img src="assets/brand/logo-rs-c.svg" alt="Logo option C"></div>
+        <p class="note">스캐닝, 검사, 타깃팅 이미지가 명확합니다. 품질검사·편차분석 포지션에 적합합니다.</p>
       </article>
 
       <article class="option">
-        <div class="label"><span>Option D</span></div>
-        <div class="logo-row"><img src="assets/brand/logo-option-d.svg" alt="Logo option D"></div>
-        <div class="logo-row dark"><img src="assets/brand/logo-option-d.svg" alt=""></div>
-        <p class="note">계측, 검사, 정밀 타깃 이미지가 명확합니다. 품질검사·편차분석 회사로 보이게 할 때 좋습니다.</p>
-      </article>
-
-      <article class="option">
-        <div class="label"><span>Option E</span></div>
-        <div class="logo-row"><img src="assets/brand/logo-option-e.svg" alt="Logo option E"></div>
-        <div class="logo-row dark"><img src="assets/brand/logo-option-e.svg" alt=""></div>
-        <p class="note">가장 심플한 워드마크입니다. 심볼 없이 브랜드명 자체를 기억시키는 방향이지만, 상단에서 개성은 가장 약합니다.</p>
+        <div class="label"><span>Option D · Semantic Points</span></div>
+        <div class="logo-row"><img src="assets/brand/logo-rs-d.svg" alt="Logo option D"></div>
+        <p class="note">점군 분할과 AI 의미 인식의 느낌이 가장 강합니다. 연구 기반 AI 이미지를 살릴 때 좋습니다.</p>
       </article>
     </section>
   </main>

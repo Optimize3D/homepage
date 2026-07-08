@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Research-derived ship block point-cloud capture visual</title>
+  <desc id="desc">A web visual inspired by ship-block point cloud post-processing and support installation accuracy research.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0C1012"/><stop offset="1" stop-color="#202524"/></linearGradient>
+    <pattern id="grid" width="46" height="46" patternUnits="userSpaceOnUse"><path d="M46 0H0V46" fill="none" stroke="#D7FF38" stroke-opacity=".08"/></pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="760" fill="url(#bg)"/>
+  <rect width="1200" height="760" fill="url(#grid)"/>
+  <path d="M250 235 610 132l360 118v258L610 640 250 508V235Z" fill="#171C1D" stroke="#F4F5F0" stroke-opacity=".24" stroke-width="2"/>
+  <path d="M250 235 610 354l360-104M610 354v286" stroke="#F4F5F0" stroke-opacity=".26" stroke-width="2"/>
+  <path d="M322 282 609 205l285 92v150l-285 98-287-101V282Z" fill="none" stroke="#D7FF38" stroke-opacity=".5" stroke-width="3"/>
+  <g fill="#D7FF38" filter="url(#glow)" opacity=".95">
+    <circle cx="340" cy="287" r="4"/><circle cx="400" cy="266" r="3"/><circle cx="458" cy="250" r="3"/><circle cx="525" cy="231" r="3"/>
+    <circle cx="606" cy="210" r="4"/><circle cx="684" cy="232" r="3"/><circle cx="764" cy="257" r="3"/><circle cx="850" cy="286" r="4"/>
+    <circle cx="348" cy="356" r="3"/><circle cx="420" cy="378" r="3"/><circle cx="498" cy="405" r="4"/><circle cx="582" cy="432" r="3"/>
+    <circle cx="667" cy="412" r="3"/><circle cx="750" cy="387" r="4"/><circle cx="834" cy="363" r="3"/><circle cx="904" cy="340" r="3"/>
+    <circle cx="350" cy="442" r="3"/><circle cx="430" cy="470" r="4"/><circle cx="522" cy="506" r="3"/><circle cx="610" cy="538" r="4"/>
+    <circle cx="704" cy="506" r="3"/><circle cx="792" cy="476" r="4"/><circle cx="876" cy="448" r="3"/>
+  </g>
+  <g stroke="#F4F5F0" stroke-opacity=".52" stroke-width="4" fill="none">
+    <path d="M386 557v-95h58v117"/><path d="M764 528v-92h58v112"/>
+  </g>
+  <g fill="#D7FF38">
+    <rect x="365" y="585" width="100" height="18" rx="9"/><rect x="743" y="554" width="100" height="18" rx="9"/>
+  </g>
+  <g transform="translate(792 78)">
+    <rect width="298" height="112" rx="16" fill="#F4F5F0" fill-opacity=".08" stroke="#F4F5F0" stroke-opacity=".16"/>
+    <text x="22" y="38" fill="#D7FF38" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="900">RESEARCH SIGNAL</text>
+    <text x="22" y="72" fill="#F4F5F0" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="850">3D object detection</text>
+  </g>
+</svg>
