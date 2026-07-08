@@ -1,9 +1,9 @@
 <svg width="280" height="56" viewBox="0 0 280 56" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Optimize3D logo</title>
   <desc id="desc">Clean Optimize3D wordmark with compact O3 mark.</desc>
-  <rect x="2" y="10" width="36" height="36" rx="7" fill="#111820"/>
+  <rect x="2" y="10" width="36" height="36" rx="7" fill="#18181C"/>
   <path d="M14 28a8 8 0 1 1 16 0 8 8 0 0 1-16 0Z" stroke="#FFFFFF" stroke-width="4"/>
-  <path d="M27 21h8l-6 7h2a5 5 0 1 1-4.7 6.7" stroke="#8FE4DC" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="50" y="30" fill="#111820" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="850" letter-spacing="0">Optimize3D</text>
-  <text x="51" y="44" fill="#64727B" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="760" letter-spacing="1.2">POINT CLOUD INTELLIGENCE</text>
+  <path d="M27 21h8l-6 7h2a5 5 0 1 1-4.7 6.7" stroke="#26BBFF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="50" y="30" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="750" letter-spacing="0">Optimize3D</text>
+  <text x="51" y="44" fill="#A8A8B3" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="600" letter-spacing="1.2">POINT CLOUD INTELLIGENCE</text>
 </svg>
