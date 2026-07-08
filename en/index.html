@@ -15,7 +15,7 @@
   <meta property="og:url" content="https://optimize3d.github.io/Hompage/en/">
   <meta property="og:image" content="https://optimize3d.github.io/Hompage/assets/images/shipyard-pointcloud-hero.png">
   <link rel="icon" href="../assets/brand/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../assets/css/styles.css?v=20260708b">
+  <link rel="stylesheet" href="../assets/css/styles.css?v=20260708d">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -69,65 +69,48 @@
       <div class="stack-inner">
         <div class="stack-head">
           <p class="kicker">Manufacturing Data Stack</p>
-          <h2 id="stack-title">We turn scan files into manufacturing data.</h2>
-          <p>Follow how a field scan becomes inspection, reverse engineering, fabrication, and robot execution data.</p>
+          <h2 id="stack-title">Capture the site, understand it, and turn it into execution data.</h2>
+          <p>Shipyard and manufacturing spaces become 3D data, then AI analysis connects them to inspection, reverse engineering, and robot execution.</p>
         </div>
         <div class="pipeline-shell" data-pipeline>
           <div class="pipeline-steps">
-          <article data-pipeline-step data-pipeline-title="Field scan data" data-pipeline-body="Objects, coordinate systems, photos, CAD files, and inspection criteria are grouped into one project dataset." data-pipeline-output="Point cloud / CAD / Photo">
+          <article data-pipeline-step data-pipeline-title="Field capture" data-pipeline-body="Shipyard and manufacturing sites are grouped with 3D scans, photos, and CAD references as analysis-ready source data." data-pipeline-output="Point cloud / Photo / CAD reference">
             <span>01</span>
-            <h3>Field Scan</h3>
-            <p>Point clouds, CAD, photos, inspection criteria, and workspace constraints are organized by project.</p>
+            <h3>Capture</h3>
+            <p>Point clouds, photos, CAD references, and workspace constraints are captured as one project dataset.</p>
           </article>
-          <article data-pipeline-step data-pipeline-title="Point-cloud registration" data-pipeline-body="Large point clouds are aligned to reference coordinates and prepared at usable density and structure." data-pipeline-output="Registered point cloud">
+          <article data-pipeline-step data-pipeline-title="AI understanding" data-pipeline-body="Point clouds are interpreted through object recognition, spatial reasoning, accessibility checks, collision risk, and quality deviations." data-pipeline-output="Object labels / Spatial reasoning / Quality map">
             <span>02</span>
-            <h3>Point-cloud Processing</h3>
-            <p>Noise, coordinate systems, density, and regions of interest are organized into analysis-ready data.</p>
+            <h3>Understand</h3>
+            <p>AI object recognition, spatial reasoning, and deviation analysis extract field decision data.</p>
           </article>
-          <article data-pipeline-step data-pipeline-title="AI object recognition" data-pipeline-body="Blocks, stiffeners, pipes, workspaces, and jig candidates are segmented and recognized as objects." data-pipeline-output="Object labels / Segments">
+          <article data-pipeline-step data-pipeline-title="Execution data" data-pipeline-body="Inspection reports, reverse-engineered CAD, jig and 3D-printing support, and robot simulation inputs become deliverables." data-pipeline-output="Report / CAD / Jig / Robot data">
             <span>03</span>
-            <h3>AI Object Recognition</h3>
-            <p>Structures and parts are segmented to identify defect candidates and inspection priorities.</p>
-          </article>
-          <article data-pipeline-step data-pipeline-title="AI spatial reasoning" data-pipeline-body="Distances, accessibility, collision possibilities, and workable areas are computed from object relationships." data-pipeline-output="Spatial reasoning result">
-            <span>04</span>
-            <h3>AI Spatial Reasoning</h3>
-            <p>Object relationships, accessibility, collision risk, and robot workability are calculated.</p>
-          </article>
-          <article data-pipeline-step data-pipeline-title="Quality inspection report" data-pipeline-body="CAD deviations, GD&amp;T, tolerances, and release or hold evidence are organized into reports." data-pipeline-output="Deviation map / Report">
-            <span>05</span>
-            <h3>Quality Inspection</h3>
-            <p>Deviation maps, tolerances, and decision evidence become field-ready reports.</p>
-          </article>
-          <article data-pipeline-step data-pipeline-title="Execution data package" data-pipeline-body="Scan-to-CAD, 3D printed jig concepts, and robot simulation input data are connected into deliverables." data-pipeline-output="CAD / Jig / Robot data">
-            <span>06</span>
-            <h3>Reverse Engineering &amp; Execution</h3>
-            <p>CAD reconstruction, jig design, 3D printing, and robot simulation data are delivered.</p>
+            <h3>Execute</h3>
+            <p>Quality decisions are connected to CAD, jigs, fabrication support, and robot review data.</p>
           </article>
           </div>
-          <aside class="pipeline-visual" aria-label="Pipeline status">
-            <div class="pipeline-screen">
-              <div class="screen-toolbar">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <p class="screen-kicker">ACTIVE STEP</p>
-              <h3 data-pipeline-visual-title>Field scan data</h3>
-              <p data-pipeline-visual-body>Objects, coordinate systems, photos, CAD files, and inspection criteria are grouped into one project dataset.</p>
-              <div class="pipeline-media">
-                <img src="../assets/visuals/pipeline-ai-workflow.svg?v=20260708b" alt="Animated point cloud AI workflow">
-              </div>
-              <dl>
-                <div>
-                  <dt>Input</dt>
-                  <dd>Point cloud / CAD / Photo</dd>
-                </div>
-                <div>
-                  <dt>Output</dt>
-                  <dd data-pipeline-visual-output>Point cloud / CAD / Photo</dd>
-                </div>
-              </dl>
+          <aside class="pipeline-visual" aria-label="3D data transformation visual">
+            <div class="pipeline-film">
+              <figure class="film-frame film-frame-1">
+                <img src="../assets/images/shipyard-pointcloud-hero.png" alt="Capturing a shipyard structure as point-cloud data">
+                <figcaption><span>Capture</span><strong>Capture the site as 3D data</strong></figcaption>
+              </figure>
+              <figure class="film-frame film-frame-2">
+                <img src="../assets/images/ai-pointcloud-recognition.png" alt="AI object recognition and spatial reasoning over a point cloud">
+                <figcaption><span>Understand</span><strong>Object recognition and reasoning</strong></figcaption>
+              </figure>
+              <figure class="film-frame film-frame-3">
+                <img src="../assets/images/hull-deviation-real.png" alt="CAD deviation map and quality inspection screen">
+                <figcaption><span>Execute</span><strong>Quality decision and execution data</strong></figcaption>
+              </figure>
+              <div class="film-progress" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+            <div class="pipeline-deliverable">
+              <p class="screen-kicker">ACTIVE DATA FLOW</p>
+              <h3 data-pipeline-visual-title>Field capture</h3>
+              <p data-pipeline-visual-body>Shipyard and manufacturing sites are grouped with 3D scans, photos, and CAD references as analysis-ready source data.</p>
+              <strong data-pipeline-visual-output>Point cloud / Photo / CAD reference</strong>
             </div>
           </aside>
         </div>
@@ -445,6 +428,6 @@
     </div>
   </footer>
 
-  <script src="../assets/js/main.js?v=20260708a"></script>
+  <script src="../assets/js/main.js?v=20260708d"></script>
 </body>
 </html>

@@ -28,8 +28,10 @@ pipelines.forEach((pipeline) => {
   const title = pipeline.querySelector("[data-pipeline-visual-title]");
   const body = pipeline.querySelector("[data-pipeline-visual-body]");
   const output = pipeline.querySelector("[data-pipeline-visual-output]");
+  let manualLockUntil = 0;
 
-  const activateStep = (step) => {
+  const activateStep = (step, manual = false) => {
+    if (manual) manualLockUntil = Date.now() + 1800;
     steps.forEach((item) => item.classList.toggle("is-active", item === step));
     if (title) title.textContent = step.dataset.pipelineTitle || "";
     if (body) body.textContent = step.dataset.pipelineBody || "";
@@ -38,11 +40,11 @@ pipelines.forEach((pipeline) => {
 
   steps.forEach((step) => {
     step.setAttribute("tabindex", "0");
-    step.addEventListener("click", () => activateStep(step));
+    step.addEventListener("click", () => activateStep(step, true));
     step.addEventListener("keydown", (event) => {
       if (event.key === "Enter" || event.key === " ") {
         event.preventDefault();
-        activateStep(step);
+        activateStep(step, true);
       }
     });
   });
@@ -51,6 +53,7 @@ pipelines.forEach((pipeline) => {
 
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver((entries) => {
+      if (Date.now() < manualLockUntil) return;
       const visible = entries
         .filter((entry) => entry.isIntersecting)
         .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
