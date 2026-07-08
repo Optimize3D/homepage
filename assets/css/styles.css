@@ -899,6 +899,39 @@ h3 {
   box-shadow: none;
 }
 
+.ai-module-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.ai-module-grid article {
+  min-height: 170px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.ai-module-grid strong {
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.ai-module-grid h3 {
+  margin-top: 16px;
+  font-size: 18px;
+}
+
+.ai-module-grid p {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.58;
+}
+
 .physical-ai-section {
   display: grid;
   grid-template-columns: minmax(320px, .92fr) minmax(0, 1.08fr);
@@ -1512,6 +1545,7 @@ h3 {
   .application-grid,
   .stack-grid,
   .research-track-grid,
+  .ai-module-grid,
   .physical-ai-points {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1696,6 +1730,7 @@ h3 {
   .proof-list,
   .proof-stats,
   .ai-list,
+  .ai-module-grid,
   .physical-ai-points,
   .research-summary,
   .research-track-grid {
@@ -1784,6 +1819,7 @@ h3 {
   }
 
   .business-grid article,
+  .ai-module-grid article,
   .physical-ai-points article,
   .workflow-board article,
   .stack-grid article,

@@ -11,14 +11,14 @@
   },
   "professor": {
     "name": "Prof. Dong Kun Lee",
-    "role": "Professor at Mokpo National Maritime University and lead of the Optimized Ship Production Technology Laboratory",
+    "role": "Lead of the Optimized Ship Production Technology Laboratory",
     "summary": "His research connects smart shipyard planning, production simulation, machine learning models, 3D scanning, quality control, reverse engineering, additive manufacturing, Physical AI, and collaborative robotics."
   },
   "representativeCases": [
     {
       "date": "2025",
       "title": "Deep-learning spatial recognition automation module for container ship cargo holds",
-      "focus": "container cargo hold / spatial recognition / automation module"
+      "focus": "HD Hyundai Samho container cargo hold / spatial recognition / automation module"
     }
   ],
   "selectedPapers": [
