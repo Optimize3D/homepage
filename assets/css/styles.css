@@ -1212,8 +1212,7 @@ h3 {
 
 .research-section,
 .achievement-section,
-.publication-section,
-.infrastructure-section {
+.publication-section {
   padding-top: 64px;
   padding-bottom: 64px;
 }
@@ -1342,26 +1341,6 @@ h3 {
   text-decoration-color: var(--teal-2);
 }
 
-.infra-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 10px;
-}
-
-.infra-grid span {
-  min-height: 62px;
-  display: flex;
-  align-items: center;
-  padding: 13px 15px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  color: var(--ink-2);
-  font-size: 14px;
-  font-weight: 900;
-  box-shadow: 0 8px 20px rgba(17, 24, 32, .045);
-}
-
 @media (max-width: 1040px) {
   .ai-section,
   .platform-section,
@@ -1385,8 +1364,7 @@ h3 {
   .business-grid,
   .application-grid,
   .stack-grid,
-  .research-track-grid,
-  .infra-grid {
+  .research-track-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1534,8 +1512,7 @@ h3 {
   .proof-stats,
   .ai-list,
   .research-summary,
-  .research-track-grid,
-  .infra-grid {
+  .research-track-grid {
     grid-template-columns: 1fr;
   }
 

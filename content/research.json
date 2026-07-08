@@ -116,15 +116,5 @@
       "url": "https://scholar.google.com/scholar?q=딥러닝+기반+LNGC+화물창+3D+포인트+클라우드의+스캐폴딩+시스템+객체+탐지+및+후처리",
       "focus": "딥러닝 객체 탐지 / 후처리"
     }
-  ],
-  "infrastructure": [
-    "Artec Leo 고정밀 핸디 3D 스캐너",
-    "Leica RTC360 광대역 3D 스캐너",
-    "Geomagic Control X / Design X",
-    "RealityCapture 및 설계·해석 SW",
-    "Stratasys F120 3D 프린터",
-    "Markforged Metal X 금속/카본 3D 프린터",
-    "Universal Robots UR5e 협동로봇",
-    "Kongsberg K-SIM 시뮬레이터"
   ]
 }
