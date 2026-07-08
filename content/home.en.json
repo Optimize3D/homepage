@@ -41,5 +41,31 @@
     "Digital Quality Report",
     "3D Printed Jigs",
     "Physical AI Data Package"
+  ],
+  "applications": [
+    {
+      "title": "3D scanning across different scales",
+      "image": "assets/images/applied/marine-scan-model.jpg"
+    },
+    {
+      "title": "AI Recognition & Inspection",
+      "image": "assets/images/applied/indoor-spatial-ai.jpg"
+    },
+    {
+      "title": "Welding and Pipe Deformation Inspection",
+      "image": "assets/images/applied/pipe-welding-deformation.jpg"
+    },
+    {
+      "title": "Reverse Engineering and Virtual Assembly",
+      "image": "assets/images/applied/virtual-assembly-metrology.jpg"
+    },
+    {
+      "title": "High-Precision Modeling and Alignment",
+      "image": "assets/images/applied/pointcloud-modeling-workflow.jpg"
+    },
+    {
+      "title": "Robot and Physical AI Data",
+      "image": "assets/images/applied/robot-weld-line-detection.jpg"
+    }
   ]
 }
