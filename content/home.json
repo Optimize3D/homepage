@@ -63,7 +63,7 @@
   "aiResearch": {
     "title": "포인트클라우드에서 객체와 공간 관계를 읽습니다.",
     "body": "선체 구조, 배관, 지그, 작업공간을 포인트클라우드에서 구분하고 객체 간 위치 관계, 접근 가능성, 충돌 위험, 검사 우선순위를 계산합니다.",
-    "image": "assets/images/research/pointcloud-density-ai.jpg",
+    "image": "assets/images/applied/indoor-spatial-ai.jpg",
     "items": [
       "의미론적 분할",
       "3D 객체 탐지",
@@ -80,15 +80,15 @@
   "applications": [
     {
       "title": "다양한 규모에 대한 3D 스캐닝",
-      "image": "assets/images/research/field-capture-workflow.jpg"
+      "image": "assets/images/applied/marine-scan-model.jpg"
     },
     {
       "title": "AI 객체인식·검사",
-      "image": "assets/images/research/physical-ai-pointcloud-collision.jpg"
+      "image": "assets/images/applied/indoor-spatial-ai.jpg"
     },
     {
       "title": "용접·배관 변형 검사",
-      "image": "assets/images/research/pipe-weld-inspection.jpg"
+      "image": "assets/images/applied/pipe-welding-deformation.jpg"
     },
     {
       "title": "역설계·가상조립",
@@ -100,7 +100,7 @@
     },
     {
       "title": "로봇·피지컬AI 데이터",
-      "image": "assets/images/research/physical-ai-robot-setup.jpg"
+      "image": "assets/images/applied/robot-weld-line-detection.jpg"
     }
   ],
   "proof": {
