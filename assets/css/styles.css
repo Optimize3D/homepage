@@ -174,8 +174,8 @@ h3,
   position: relative;
   min-height: 560px;
   background:
-    linear-gradient(90deg, rgba(248, 250, 251, .98) 0%, rgba(248, 250, 251, .9) 43%, rgba(248, 250, 251, .36) 76%, rgba(248, 250, 251, .18) 100%),
-    url("../images/shipyard-pointcloud-hero.png") center right / cover no-repeat;
+    linear-gradient(90deg, rgba(251, 252, 248, .98) 0%, rgba(251, 252, 248, .9) 43%, rgba(251, 252, 248, .36) 76%, rgba(251, 252, 248, .18) 100%),
+    url("../images/research/hero-field-scan.jpg") center right / cover no-repeat;
   color: var(--ink);
   overflow: hidden;
 }
@@ -446,7 +446,8 @@ h1 {
 
 .pipeline-film {
   position: relative;
-  min-height: 520px;
+  aspect-ratio: 16 / 10;
+  min-height: 0;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -473,7 +474,7 @@ h1 {
 .film-frame img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   background: var(--ink);
   transform: scale(1.02);
   transition: transform .72s ease;
@@ -1461,8 +1462,8 @@ h3 {
   .hero {
     min-height: 452px;
     background:
-      linear-gradient(90deg, rgba(248, 250, 251, .97), rgba(248, 250, 251, .86)),
-      url("../images/shipyard-pointcloud-hero.png") center right 35% / cover no-repeat;
+      linear-gradient(90deg, rgba(251, 252, 248, .97), rgba(251, 252, 248, .86)),
+      url("../images/research/hero-field-scan.jpg") center right 35% / cover no-repeat;
   }
 
   .hero-inner {
@@ -1513,7 +1514,7 @@ h3 {
   }
 
   .pipeline-film {
-    min-height: 300px;
+    min-height: 0;
   }
 
   .film-frame figcaption {
