@@ -9,13 +9,36 @@
   <link rel="canonical" href="https://optimize3d.github.io/Hompage/en/">
   <link rel="alternate" hreflang="ko" href="https://optimize3d.github.io/Hompage/">
   <link rel="alternate" hreflang="en" href="https://optimize3d.github.io/Hompage/en/">
+  <link rel="alternate" hreflang="x-default" href="https://optimize3d.github.io/Hompage/">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Optimize3D | Industrial 3D Point Cloud AI">
   <meta property="og:description" content="Industrial 3D point-cloud AI, metrology, inspection, reverse engineering, and robotics data packages for field execution.">
   <meta property="og:url" content="https://optimize3d.github.io/Hompage/en/">
   <meta property="og:image" content="https://optimize3d.github.io/Hompage/assets/images/generated/hero-shipyard-pointcloud-v2.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="../assets/brand/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../assets/css/styles.css?v=20260708m">
+  <link rel="stylesheet" href="../assets/css/styles.css?v=20260710a">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Optimize3D",
+      "url": "https://optimize3d.github.io/Hompage/en/",
+      "description": "Industrial 3D point-cloud AI, metrology, reverse engineering, and Physical AI execution data for shipbuilding and manufacturing",
+      "foundingOrganization": {
+        "@type": "ResearchOrganization",
+        "name": "OPTLab, Mokpo National Maritime University"
+      },
+      "knowsAbout": [
+        "3D scanning",
+        "Point cloud artificial intelligence",
+        "3D metrology",
+        "Reverse engineering",
+        "Physical AI"
+      ]
+    }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -23,18 +46,22 @@
   <header class="site-header" id="top">
     <nav class="nav" aria-label="Primary navigation">
       <a class="brand" href="#top" aria-label="Optimize3D home">
-        <img src="../assets/brand/optlab-optimize3d-logo-white.png?v=20260708a" alt="OPTLab | Optimize3D">
+        <span class="brand-mark-window" aria-hidden="true">
+          <img src="../assets/brand/optlab-optimize3d-logo-white.png?v=20260708a" alt="">
+        </span>
+        <span class="brand-type">
+          <strong>Optimize3D</strong>
+          <small>POINT CLOUD INTELLIGENCE</small>
+        </span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
-        <span></span>
-        <span></span>
-        <span></span>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span><span></span>
       </button>
       <div class="nav-links" id="nav-links">
-        <a href="#business">Services</a>
-        <a href="#ai">Spatial AI</a>
-        <a href="#platform">Model</a>
-        <a href="#applications">Applications</a>
+        <a href="#data-flow">Data Flow</a>
+        <a href="#business">Solutions</a>
+        <a href="#cases">Cases</a>
+        <a href="#platform">Operating Model</a>
         <a href="research.html">Research</a>
         <a href="#contact">Contact</a>
         <a class="language-link" href="../index.html" lang="ko">KO</a>
@@ -46,481 +73,212 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">Connecting 3D scan data to field decisions and execution data</p>
+          <p class="eyebrow">Connect 3D scan data to field decisions and execution</p>
           <h1 id="hero-title">Optimize3D</h1>
-          <p class="hero-lead">Optimize3D is a field-focused 3D point-cloud data company that connects spaces in shipbuilding, offshore, manufacturing, and construction sites to AI analysis, quality decisions, reverse engineering, and robotics.</p>
+          <p class="hero-lead">We are an industrial 3D point-cloud data company connecting shipbuilding, offshore, manufacturing, and construction spaces to AI analysis, quality decisions, reverse engineering, and robotics.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#contact">Discuss a Pilot</a>
-            <a class="button secondary" href="#business">View Services</a>
+            <a class="button primary" href="#contact">Discuss a pilot</a>
+            <a class="button secondary" href="#data-flow">View data flow</a>
           </div>
           <div class="hero-tags" aria-label="Core capabilities">
-            <span>Point cloud</span>
-            <span>AI object recognition</span>
-            <span>AI spatial reasoning</span>
-            <span>Quality inspection</span>
-            <span>3D scanning &amp; printing</span>
-            <span>Reverse engineering</span>
+            <span>Point cloud</span><span>AI object recognition</span><span>AI spatial reasoning</span><span>Quality inspection</span><span>3D scanning &amp; printing</span><span>Reverse engineering</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="solution-stack" aria-labelledby="stack-title">
-      <div class="stack-inner">
-        <div class="stack-head">
-          <p class="kicker">Manufacturing Data Stack</p>
-          <h2 id="stack-title">Capture the site, understand it, and turn it into execution data.</h2>
-          <p>Shipyard and manufacturing spaces become 3D data, then AI analysis connects them to inspection, reverse engineering, and robot execution.</p>
+    <section class="section data-system-section" id="data-flow" aria-labelledby="data-flow-title" data-pipeline>
+      <div class="section-head compact data-system-head">
+        <p class="kicker">Scan to Execution</p>
+        <h2 id="data-flow-title">One field dataset, connected from capture to execution.</h2>
+        <p class="lead">Explore field capture, spatial AI, quality inspection, and Physical AI as one connected data flow.</p>
+      </div>
+      <div class="data-system-layout">
+        <div class="data-stage-list" role="tablist" aria-label="3D data transformation stages">
+          <button class="data-stage-step is-active" id="flow-step-1" type="button" role="tab" aria-selected="true" aria-controls="data-stage-panel" data-pipeline-step
+            data-pipeline-title="Field capture and reference alignment"
+            data-pipeline-body="Ship blocks, cargo holds, molds, piping, and workspaces are organized with point clouds, photos, and CAD references."
+            data-pipeline-output="Point cloud / Photo / CAD reference"
+            data-pipeline-image="../assets/images/generated/field-scan-workflow-v2.png"
+            data-pipeline-alt="Shipyard field capture and point-cloud to CAD workflow"
+            data-pipeline-caption="Capture / registration / reference coordinates">
+            <span>01</span><span><strong>Capture</strong><small>3D scan, registration, reference coordinates</small></span>
+          </button>
+          <button class="data-stage-step" id="flow-step-2" type="button" role="tab" aria-selected="false" aria-controls="data-stage-panel" data-pipeline-step
+            data-pipeline-title="AI object recognition and spatial reasoning"
+            data-pipeline-body="Semantic segmentation and 3D object detection distinguish structures, parts, and workspaces while calculating accessibility and spatial relationships."
+            data-pipeline-output="Semantic labels / Objects / Spatial relations"
+            data-pipeline-image="../assets/images/generated/spatial-ai-shipyard-segmentation-v2.png"
+            data-pipeline-alt="Semantic segmentation and object recognition for shipyard point clouds"
+            data-pipeline-caption="Semantic segmentation / object recognition / spatial reasoning">
+            <span>02</span><span><strong>Understand</strong><small>Segmentation, recognition, spatial reasoning</small></span>
+          </button>
+          <button class="data-stage-step" id="flow-step-3" type="button" role="tab" aria-selected="false" aria-controls="data-stage-panel" data-pipeline-step
+            data-pipeline-title="Deviation analysis and quality decisions"
+            data-pipeline-body="CAD deviation, tolerance, installation accuracy, and before-and-after welding deformation become inspection evidence and digital reports."
+            data-pipeline-output="Deviation map / Tolerance / Quality report"
+            data-pipeline-image="../assets/images/generated/quality-deviation-scan-v2.png"
+            data-pipeline-alt="Quality deviation analysis comparing a 3D scan model against CAD reference"
+            data-pipeline-caption="CAD comparison / deviation map / quality decision">
+            <span>03</span><span><strong>Decide</strong><small>Deviation, tolerance, quality report</small></span>
+          </button>
+          <button class="data-stage-step" id="flow-step-4" type="button" role="tab" aria-selected="false" aria-controls="data-stage-panel" data-pipeline-step
+            data-pipeline-title="Physical AI execution data"
+            data-pipeline-body="Object locations and spatial constraints become robot paths, collision checks, 3D vision conditions, and welding automation inputs."
+            data-pipeline-output="Robot path / Collision check / Vision setup"
+            data-pipeline-image="../assets/images/generated/physical-ai-robot-execution-v2.png"
+            data-pipeline-alt="Physical AI visualization connecting a point-cloud workspace to robot paths and collision checks"
+            data-pipeline-caption="Robot workspace / collision / vision condition">
+            <span>04</span><span><strong>Execute</strong><small>Robot workspace, collision, vision setup</small></span>
+          </button>
         </div>
-        <div class="pipeline-shell" data-pipeline>
-          <div class="pipeline-steps">
-          <article data-pipeline-step data-pipeline-title="Field capture" data-pipeline-body="Shipyard and manufacturing sites are grouped with 3D scans, photos, and CAD references as analysis-ready source data." data-pipeline-output="Point cloud / Photo / CAD reference">
-            <span>01</span>
-            <h3>Capture</h3>
-            <p>Point clouds, photos, CAD references, and workspace constraints are captured as one project dataset.</p>
-          </article>
-          <article data-pipeline-step data-pipeline-title="AI understanding" data-pipeline-body="Point clouds are interpreted through object recognition, spatial reasoning, accessibility checks, collision risk, and quality deviations." data-pipeline-output="Object labels / Spatial reasoning / Quality map">
-            <span>02</span>
-            <h3>Understand</h3>
-            <p>AI object recognition, spatial reasoning, and deviation analysis extract field decision data.</p>
-          </article>
-          <article data-pipeline-step data-pipeline-title="Physical AI execution data" data-pipeline-body="Inspection results and workspace constraints become robot paths, collision checks, 3D vision conditions, and welding automation input data." data-pipeline-output="Robot path / Collision check / Vision setup">
-            <span>03</span>
-            <h3>Execute</h3>
-            <p>Quality decisions are connected to CAD, jigs, 3D-printed test pieces, and robot execution data.</p>
-          </article>
+        <div class="data-stage-view" id="data-stage-panel" role="tabpanel" aria-labelledby="flow-step-1">
+          <figure class="data-stage-media">
+            <img data-pipeline-image src="../assets/images/generated/field-scan-workflow-v2.png" alt="Shipyard field capture and point-cloud to CAD workflow" decoding="async">
+            <figcaption data-pipeline-visual-caption>Capture / registration / reference coordinates</figcaption>
+          </figure>
+          <div class="pipeline-deliverable">
+            <p class="screen-kicker">ACTIVE DATA FLOW</p>
+            <h3 data-pipeline-visual-title>Field capture and reference alignment</h3>
+            <p data-pipeline-visual-body>Ship blocks, cargo holds, molds, piping, and workspaces are organized with point clouds, photos, and CAD references.</p>
+            <strong data-pipeline-visual-output>Point cloud / Photo / CAD reference</strong>
           </div>
-          <aside class="pipeline-visual" aria-label="3D data transformation visual">
-            <div class="pipeline-film">
-              <figure class="film-frame film-frame-1">
-                <img src="../assets/images/generated/field-scan-workflow-v2.png" alt="Shipyard field scanning workflow turning site geometry into point clouds and CAD data">
-                <figcaption><span>Capture</span><strong>Multi-source scan acquisition</strong></figcaption>
-              </figure>
-              <figure class="film-frame film-frame-2">
-                <img src="../assets/images/generated/spatial-ai-shipyard-segmentation-v2.png" alt="Shipyard point-cloud semantic segmentation and object recognition visualization">
-                <figcaption><span>Understand</span><strong>Shipyard object recognition</strong></figcaption>
-              </figure>
-              <figure class="film-frame film-frame-3">
-                <img src="../assets/images/generated/physical-ai-robot-execution-v2.png" alt="Physical AI visualization connecting point-cloud workspace, robot path, and collision review">
-                <figcaption><span>Execute</span><strong>Physical AI execution data</strong></figcaption>
-              </figure>
-              <div class="film-progress" aria-hidden="true"><span></span><span></span><span></span></div>
-            </div>
-            <div class="pipeline-deliverable">
-              <p class="screen-kicker">ACTIVE DATA FLOW</p>
-              <h3 data-pipeline-visual-title>Field capture</h3>
-              <p data-pipeline-visual-body>Shipyard and manufacturing sites are grouped with 3D scans, photos, and CAD references as analysis-ready source data.</p>
-              <strong data-pipeline-visual-output>Point cloud / Photo / CAD reference</strong>
-            </div>
-          </aside>
         </div>
       </div>
     </section>
 
-    <section class="section compare-section" aria-labelledby="compare-title" data-tab-group>
+    <section class="section business-section" id="business" aria-labelledby="business-title">
       <div class="section-head compact">
-        <p class="kicker">Data Transformation</p>
-        <h2 id="compare-title">One scan becomes multiple execution datasets.</h2>
-        <p class="lead">Switch between field capture, AI analysis, quality inspection, and execution deliverables.</p>
+        <p class="kicker">Three Solution Pillars</p>
+        <h2 id="business-title">Field challenges become three focused data packages.</h2>
+        <p class="lead">Instead of selling equipment, we scope each project around available inputs, decision criteria, and required deliverables.</p>
       </div>
-      <div class="tab-controls" role="tablist" aria-label="Data transformation steps">
-        <button type="button" role="tab" aria-selected="true" data-tab-target="compare-scan">Field scan</button>
-        <button type="button" role="tab" aria-selected="false" data-tab-target="compare-ai">AI analysis</button>
-        <button type="button" role="tab" aria-selected="false" data-tab-target="compare-report">Quality report</button>
-        <button type="button" role="tab" aria-selected="false" data-tab-target="compare-output">Execution data</button>
+      <div class="business-grid business-pillars">
+        <article class="solution-pillar">
+          <span>01 / CAPTURE</span>
+          <h3>3D Capture &amp; Reconstruction</h3>
+          <p>We connect field-optimized scanning to registration, reference coordinates, reverse engineering, and fabrication support data.</p>
+          <ul><li>Multi-scale 3D scanning</li><li>Scan-to-CAD and reverse engineering</li><li>3D printed jigs and prototypes</li></ul>
+          <a class="pillar-link" href="#contact" data-contact-category="3D Scanning &amp; Reverse Engineering">Discuss this solution</a>
+        </article>
+        <article class="solution-pillar">
+          <span>02 / INTELLIGENCE</span>
+          <h3>Spatial AI &amp; Quality Intelligence</h3>
+          <p>We read objects and spatial relationships from point clouds, then organize deviation, tolerance, and inspection priorities for decisions.</p>
+          <ul><li>Semantic segmentation and 3D detection</li><li>AI spatial reasoning and accessibility</li><li>Deviation maps and digital quality reports</li></ul>
+          <a class="pillar-link" href="#contact" data-contact-category="Spatial AI &amp; Quality Inspection">Discuss this solution</a>
+        </article>
+        <article class="solution-pillar">
+          <span>03 / EXECUTION</span>
+          <h3>Physical AI &amp; Execution Data</h3>
+          <p>Real workspaces and sensor conditions are converted into robot-path, collision, weld-line, and execution-coordinate data.</p>
+          <ul><li>Point-cloud robot workspaces</li><li>Path, collision, and accessibility checks</li><li>3D vision and weld-line execution data</li></ul>
+          <a class="pillar-link" href="#contact" data-contact-category="Physical AI &amp; Robot Data">Discuss this solution</a>
+        </article>
       </div>
-      <div class="compare-stage">
-        <article class="tab-panel is-active" id="compare-scan" role="tabpanel">
-          <img src="../assets/images/applied/marine-scan-model.jpg" alt="Small-vessel 3D scanning and scan-model-based shape analysis screen">
-          <div>
-            <p class="kicker">Capture</p>
-            <h3>Capture the site as reference data</h3>
-            <p>Ship blocks, cargo holds, molds, piping, and workspaces are grouped with point clouds, photos, and CAD references.</p>
-          </div>
-        </article>
-        <article class="tab-panel" id="compare-ai" role="tabpanel" hidden>
-          <img src="../assets/images/applied/indoor-spatial-ai.jpg" alt="AI-powered 3D point-cloud semantic segmentation and object classification visualization">
-          <div>
-            <p class="kicker">Analyze</p>
-            <h3>AI object recognition and spatial reasoning</h3>
-            <p>Structures and parts are segmented, then object relationships, accessibility, and collision risks are calculated.</p>
-          </div>
-        </article>
-        <article class="tab-panel" id="compare-report" role="tabpanel" hidden>
-          <img src="../assets/images/applied/pipe-welding-deformation.jpg" alt="3D scanning-based pipe welding deformation verification and dimensional comparison">
-          <div>
-            <p class="kicker">Decide</p>
-            <h3>Deviation maps and quality decisions</h3>
-            <p>CAD deviations, tolerances, inspection priority, and release or hold evidence are organized into reports.</p>
-          </div>
-        </article>
-        <article class="tab-panel" id="compare-output" role="tabpanel" hidden>
-          <img src="../assets/images/applied/robot-weld-line-detection.jpg" alt="Collaborative robot and 3D vision sensor workflow for weld-line detection">
-          <div>
-            <p class="kicker">Physical AI</p>
-            <h3>Connect scans to robot-usable field data</h3>
-            <p>Workspace point clouds, object positions, accessibility, collision candidates, and 3D vision conditions become robot path, welding, and transport validation data.</p>
-          </div>
-        </article>
+      <div class="application-rail" aria-label="Primary targets">
+        <strong>Typical targets</strong><span>Ship blocks</span><span>Cargo holds</span><span>Small craft</span><span>FRP molds</span><span>Piping &amp; outfitting</span><span>Robot workspaces</span>
       </div>
     </section>
 
-    <section class="section case-section" aria-labelledby="case-title" data-tab-group>
+    <section class="section case-section" id="cases" aria-labelledby="case-title" data-tab-group>
       <div class="section-head compact">
         <p class="kicker">Applied Cases</p>
-        <h2 id="case-title">Representative cases</h2>
-        <p class="lead">Examples where shipyard and manufacturing scan data became inspection, recognition, and automation outputs.</p>
+        <h2 id="case-title">Representative applications</h2>
+        <p class="lead">Examples of shipbuilding and manufacturing scan data connected to inspection, recognition, and automation data.</p>
       </div>
-      <div class="case-tabs" role="tablist" aria-label="Representative cases">
-        <button type="button" role="tab" aria-selected="true" data-tab-target="case-cargo">Cargo-hold spatial recognition</button>
+      <div class="case-tabs" role="tablist" aria-label="Representative applications">
+        <button type="button" role="tab" aria-selected="true" data-tab-target="case-cargo">Cargo-hold spatial AI</button>
         <button type="button" role="tab" aria-selected="false" data-tab-target="case-lngc">LNGC object detection</button>
         <button type="button" role="tab" aria-selected="false" data-tab-target="case-mold">FRP mold inspection</button>
         <button type="button" role="tab" aria-selected="false" data-tab-target="case-robot">Robot workability</button>
       </div>
       <div class="case-panels">
         <article class="case-panel tab-panel is-active" id="case-cargo" role="tabpanel">
-          <div>
-            <time>2025</time>
-            <h3>Deep-learning spatial recognition automation module for container ship cargo holds</h3>
-            <p>Shipyard container ship cargo-hold point clouds are used to recognize structures and working spaces, then object segmentation, spatial relationships, and inspection criteria are organized into automation-ready data.</p>
-          </div>
-          <ul>
-            <li>Input: cargo-hold 3D point clouds</li>
-            <li>Analysis: AI object recognition, spatial reasoning, accessibility</li>
-            <li>Output: inspection and work criteria data package</li>
-          </ul>
-          <figure class="case-visual">
-            <img src="../assets/images/applied/indoor-spatial-ai.jpg" alt="AI analysis case segmenting point clouds into semantic spaces and object classes">
-            <figcaption>Semantic parsing / object classification / density reasoning</figcaption>
-          </figure>
+          <div><time>2025</time><h3>Deep-learning spatial recognition module for a container-ship cargo hold</h3><p>Structures and workspaces are recognized from a shipyard cargo-hold point cloud, with object segmentation, spatial relationships, and inspection-reference data organized into an automation module.</p></div>
+          <ul><li>Input: cargo-hold 3D point cloud</li><li>Analysis: object recognition, spatial reasoning, accessibility</li><li>Output: inspection and work-reference data package</li></ul>
+          <figure class="case-visual"><img src="../assets/images/applied/indoor-spatial-ai.jpg" alt="AI analysis segmenting point clouds into semantic spaces and object classes" loading="lazy" decoding="async"><figcaption>Semantic parsing / object classification / density reasoning</figcaption></figure>
         </article>
         <article class="case-panel tab-panel" id="case-lngc" role="tabpanel" hidden>
-          <div>
-            <time>2020-2021</time>
-            <h3>3D point-cloud object detection for LNGC cargo holds</h3>
-            <p>For shipyard LNGC cargo-hold flatness measurement, deep-learning point-cloud processing and post-processing were applied to detect and separate scaffolding systems.</p>
-          </div>
-          <ul>
-            <li>Input: LNGC cargo-hold scan data</li>
-            <li>Analysis: object detection, semantic segmentation, post-processing</li>
-            <li>Output: cleaned measurement target data</li>
-          </ul>
-          <figure class="case-visual">
-            <img src="../assets/images/generated/spatial-ai-shipyard-segmentation-v2.png" alt="Shipyard point-cloud object detection and semantic segmentation visualization">
-            <figcaption>3D object detection / semantic segmentation / post-processing</figcaption>
-          </figure>
+          <div><time>2020-2021</time><h3>3D point-cloud object detection in an LNGC cargo hold</h3><p>Deep-learning point-cloud processing and post-processing were studied to detect and segment scaffolding systems during cargo-hold flatness measurement.</p></div>
+          <ul><li>Input: LNGC cargo-hold scan data</li><li>Analysis: object detection, semantic segmentation, post-processing</li><li>Output: measurement-target organization and inspection support</li></ul>
+          <figure class="case-visual"><img src="../assets/images/generated/spatial-ai-shipyard-segmentation-v2.png" alt="Shipyard point-cloud object detection and semantic segmentation" loading="lazy" decoding="async"><figcaption>3D object detection / semantic segmentation / post-processing</figcaption></figure>
         </article>
         <article class="case-panel tab-panel" id="case-mold" role="tabpanel" hidden>
-          <div>
-            <time>2016-2021</time>
-            <h3>3D scanning and deviation analysis for small vessels and FRP molds</h3>
-            <p>Scan data from small vessels and production molds was compared against reference geometry to validate dimensional control and process improvement opportunities.</p>
-          </div>
-          <ul>
-            <li>Input: small vessel and FRP mold scan data</li>
-            <li>Analysis: registration, deviation map, quality criteria</li>
-            <li>Output: mold quality and improvement evidence</li>
-          </ul>
-          <figure class="case-visual">
-            <img src="../assets/images/applied/marine-scan-model.jpg" alt="Small-vessel scan model and shape deviation analysis case">
-            <figcaption>Scan model / CAD alignment / deviation map</figcaption>
-          </figure>
+          <div><time>2016-2021</time><h3>3D scanning and shape-deviation analysis for small craft and FRP molds</h3><p>Scan data from small craft and production molds were compared against reference shapes to verify dimensional control and process-improvement potential.</p></div>
+          <ul><li>Input: small-craft and FRP mold scan data</li><li>Analysis: registration, deviation map, quality criteria</li><li>Output: mold quality-control and improvement evidence</li></ul>
+          <figure class="case-visual"><img src="../assets/images/applied/marine-scan-model.jpg" alt="Small-craft scan model and geometric deviation analysis" loading="lazy" decoding="async"><figcaption>Scan model / CAD alignment / deviation map</figcaption></figure>
         </article>
         <article class="case-panel tab-panel" id="case-robot" role="tabpanel" hidden>
-          <div>
-            <time>2025-2026</time>
-            <h3>Point-cloud-based Physical AI and collaborative robot workability review</h3>
-            <p>Ship-block point clouds, 3D vision sensors, and 3D-printed test pieces are connected to validate robot paths, collision risk, accessibility, and weld-line extraction feasibility.</p>
-          </div>
-          <ul>
-            <li>Input: ship-block point clouds, robot cell, 3D vision conditions</li>
-            <li>Analysis: spatial reasoning, collision detection, weld-line and surface extraction</li>
-            <li>Output: Physical AI test setup and robot execution data</li>
-          </ul>
-          <figure class="case-visual">
-            <img src="../assets/images/applied/robot-weld-line-detection.jpg" alt="Robot cell and 3D vision sensor validation for weld-line detection and Physical AI">
-            <figcaption>Robot cell / 3D vision / weld-line extraction</figcaption>
-          </figure>
+          <div><time>2025-2026</time><h3>Point-cloud Physical AI and collaborative-robot workability study</h3><p>Ship-block point-cloud environments, 3D vision sensors, and 3D-printed specimens are connected to assess robot paths, collision, accessibility, and weld-line extraction.</p></div>
+          <ul><li>Input: ship-block point cloud, robot cell, 3D vision conditions</li><li>Analysis: spatial reasoning, collision, weld-line and surface extraction</li><li>Output: Physical AI setup and robot execution data</li></ul>
+          <figure class="case-visual"><img src="../assets/images/applied/robot-weld-line-detection.jpg" alt="Robot cell and 3D vision validation for weld-line detection and Physical AI" loading="lazy" decoding="async"><figcaption>Robot cell / 3D vision / weld-line extraction</figcaption></figure>
         </article>
       </div>
-    </section>
-
-    <section class="section business-section" id="business" aria-labelledby="business-title">
-      <div class="section-head compact">
-        <p class="kicker">Business Area</p>
-        <h2 id="business-title">Field problems become data packages.</h2>
-        <p class="lead">Before adopting a large commercial package, teams can validate inspection feasibility, automation potential, and fabrication support through a focused pilot.</p>
-      </div>
-      <div class="business-grid">
-        <article>
-          <span>01</span>
-          <h3>3D Scan &amp; Inspection Pilot</h3>
-          <p>Target scanning, registration, reference coordinates, CAD comparison, deviation maps, and inspection item definition.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Reverse Engineering</h3>
-          <p>Scan-based CAD reconstruction for parts, molds, and structures with insufficient drawings.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>AI Point Cloud Analysis</h3>
-          <p>Point-cloud segmentation, 3D object recognition, defect candidate detection, and spatial relationship reasoning.</p>
-        </article>
-        <article>
-          <span>04</span>
-          <h3>Digital Quality Report</h3>
-          <p>Deviation, GD&amp;T, before-and-after welding deformation, and decision evidence organized into reports.</p>
-        </article>
-        <article>
-          <span>05</span>
-          <h3>3D Printed Jigs</h3>
-          <p>3D printed jigs, fixtures, and prototype parts for inspection, assembly, and temporary positioning.</p>
-        </article>
-        <article>
-          <span>06</span>
-          <h3>Physical AI Data Package</h3>
-          <p>Point-cloud workspaces converted into robot paths, collision checks, vision-sensor conditions, and field execution data.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section ai-section" id="ai" aria-labelledby="ai-title">
-      <div class="ai-visual">
-        <img src="../assets/images/applied/indoor-spatial-ai.jpg" alt="Spatial AI screen comparing point-cloud density and semantic segmentation results">
-      </div>
-      <div class="ai-copy">
-        <p class="kicker">Spatial AI Engine</p>
-        <h2 id="ai-title">We read objects and spatial relationships from point clouds.</h2>
-        <p>Based on OPTLab research in LNGC cargo-hold object detection, shipyard 3D deep-learning datasets, and ship-block support installation accuracy inspection, point-cloud data is converted into meaningful field-decision data.</p>
-        <div class="ai-list">
-          <span>Semantic segmentation</span>
-          <span>3D object detection</span>
-          <span>Spatial relationship reasoning</span>
-          <span>AI quality decision</span>
-        </div>
-        <div class="ai-module-grid" aria-label="Spatial AI analysis modules">
-          <article>
-            <strong>01</strong>
-            <h3>Semantic segmentation</h3>
-            <p>Shipyard point clouds are separated into field object groups such as ship blocks, shops, racks, supports, and scaffolds.</p>
-          </article>
-          <article>
-            <strong>02</strong>
-            <h3>3D object detection</h3>
-            <p>LNGC cargo-hold scaffolding, block supports, and workspace structures are detected to separate measurement targets from exclusions.</p>
-          </article>
-          <article>
-            <strong>03</strong>
-            <h3>Spatial post-processing</h3>
-            <p>FPFH, TDA, and density analysis reduce large-scale point clouds and strengthen reliable geometric features.</p>
-          </article>
-          <article>
-            <strong>04</strong>
-            <h3>Quality and execution decisions</h3>
-            <p>Deviation maps, installation accuracy, weld-line candidates, and robot accessibility are connected to reports and Physical AI data.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section physical-ai-section" aria-labelledby="physical-ai-title">
-      <div class="physical-ai-copy">
-        <p class="kicker">Physical AI Execution</p>
-        <h2 id="physical-ai-title">We convert point clouds into robot-usable execution environments.</h2>
-        <p>Optimize3D does not stop at visualizing a 3D scene. We convert field spaces into accessibility, collision risk, robot posture, 3D vision, and weld-line candidate data that robots and sensors can use.</p>
-        <div class="physical-ai-points">
-          <article>
-            <span>01</span>
-            <h3>Workspace point clouds</h3>
-            <p>Complex spaces such as ship-block interiors are structured as point-cloud environments with robot access constraints.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Robot workability</h3>
-            <p>Collaborative robot paths, cable interference, worker access, and collision candidates are checked as simulation data.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>3D vision conditions</h3>
-            <p>RealSense-class 3D vision sensors, lighting, and distance conditions are validated against the target task.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Execution package</h3>
-            <p>Weld-line and surface extraction, robot input coordinates, test pieces, and validation reports are packaged for field review.</p>
-          </article>
-        </div>
-      </div>
-      <figure class="physical-ai-media">
-        <img src="../assets/images/applied/robot-weld-line-detection.jpg" alt="Collaborative robot, 3D vision sensor, and RANSAC-DBSCAN weld-line extraction flow">
-        <figcaption>Robot cell / 3D vision / RANSAC-DBSCAN / weld-line extraction</figcaption>
-      </figure>
     </section>
 
     <section class="section platform-section" id="platform" aria-labelledby="platform-title">
       <div class="platform-copy">
         <p class="kicker">Operating Model</p>
-        <h2 id="platform-title">We reduce bottlenecks after 3D scanning.</h2>
-        <p>We move beyond simply checking 3D scan outputs by turning scan data into intelligent AI-driven inspection, reverse engineering, quality decision, and Physical AI execution data.</p>
+        <h2 id="platform-title">Reduce the bottleneck after 3D scanning.</h2>
+        <p>We move beyond viewing scan results by adding AI intelligence and extending the data into inspection, reverse engineering, quality decisions, and Physical AI execution.</p>
       </div>
-      <div class="workflow-board" aria-label="Optimize3D pilot process">
-        <article>
-          <strong>01</strong>
-          <h3>Field Capture</h3>
-          <p>Point clouds, CAD, photos, criteria, and site constraints are collected.</p>
-        </article>
-        <article>
-          <strong>02</strong>
-          <h3>Reference Model</h3>
-          <p>Coordinate systems, reference geometry, tolerances, and decision items are defined.</p>
-        </article>
-        <article>
-          <strong>03</strong>
-          <h3>AI &amp; Metrology</h3>
-          <p>Deviation maps, features, object segmentation, spatial reasoning, and report formats are validated.</p>
-        </article>
-        <article>
-          <strong>04</strong>
-          <h3>Execution Package</h3>
-          <p>Inspection reports, CAD reconstruction, jig concepts, and Physical AI execution data are delivered.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section product-section" aria-labelledby="product-title">
-      <div class="product-panel">
-        <div>
-          <p class="kicker">Productized Pilot</p>
-          <h2 id="product-title">From sample data to an execution package</h2>
-          <p>Optimize3D packages equipment operation, point-cloud processing, reference alignment, decision logic, reports, fabrication data, and robot input data into one project scope.</p>
+      <div class="platform-work">
+        <div class="workflow-board" aria-label="Optimize3D project workflow">
+          <article><strong>01</strong><h3>Field Capture</h3><p>Review point clouds, CAD, photos, inspection criteria, and field constraints.</p></article>
+          <article><strong>02</strong><h3>Reference Model</h3><p>Define coordinates, reference geometry, tolerances, and decision criteria.</p></article>
+          <article><strong>03</strong><h3>AI &amp; Metrology</h3><p>Validate deviation maps, feature extraction, segmentation, spatial reasoning, and reports.</p></article>
+          <article><strong>04</strong><h3>Execution Package</h3><p>Deliver inspection reports, CAD reconstruction, jig design, and Physical AI execution data.</p></article>
         </div>
-        <dl>
-          <div>
-            <dt>Deliverable</dt>
-            <dd>Inspection report / Scan-to-CAD / AI finding / Jig concept / Physical AI data</dd>
-          </div>
-          <div>
-            <dt>Target</dt>
-            <dd>Ship blocks, small vessels, FRP molds, pipes, outfitting parts, workspaces</dd>
-          </div>
-          <div>
-            <dt>Engagement</dt>
-            <dd>Sample analysis -> pilot report -> field application scope</dd>
-          </div>
+        <dl class="engagement-summary">
+          <div><dt>Input</dt><dd>Point cloud / CAD / photos / drawings / inspection criteria</dd></div>
+          <div><dt>Deliverable</dt><dd>Inspection report / Scan-to-CAD / AI analysis / jig / robot data</dd></div>
+          <div><dt>Engagement</dt><dd>Sample review → project scope → field-ready data package</dd></div>
         </dl>
-      </div>
-    </section>
-
-    <section class="section applications-section" id="applications" aria-labelledby="applications-title">
-      <div class="section-head compact">
-        <p class="kicker">Applications</p>
-        <h2 id="applications-title">Shipbuilding and manufacturing applications</h2>
-      </div>
-      <div class="application-grid">
-        <article>
-          <img src="../assets/images/applied/marine-scan-model.jpg" alt="Small-vessel field scanning and scan-model development case">
-          <div>
-            <h3>3D scanning across different scales</h3>
-            <p>Targets, equipment, registration methods, and quality criteria are optimized for each site and scanning scale.</p>
-          </div>
-        </article>
-        <article>
-          <img src="../assets/images/applied/indoor-spatial-ai.jpg" alt="AI-powered 3D spatial analysis and semantic object classification case">
-          <div>
-            <h3>AI Recognition &amp; Inspection</h3>
-            <p>Structures and parts are segmented from point clouds to organize defect candidates, deviation, and inspection priority.</p>
-          </div>
-        </article>
-        <article>
-          <img src="../assets/images/applied/pipe-welding-deformation.jpg" alt="3D scanning-based before-and-after pipe welding deformation inspection case">
-          <div>
-            <h3>Welding and Pipe Deformation Inspection</h3>
-            <p>Before-and-after welding dimensions, flange alignment, angular deviation, and length changes are compared from scan data.</p>
-          </div>
-        </article>
-        <article>
-          <img src="../assets/images/applied/virtual-assembly-metrology.jpg" alt="Ship-block virtual assembly, 3D shape analysis, and simulation verification case">
-          <div>
-            <h3>Reverse Engineering and Virtual Assembly</h3>
-            <p>Scan-based shape analysis and CAD reconstruction support interference, gap, and connection checks.</p>
-          </div>
-        </article>
-        <article>
-          <img src="../assets/images/applied/pointcloud-modeling-workflow.jpg" alt="Multi-sensor point-cloud acquisition and high-precision digital modeling workflow">
-          <div>
-            <h3>High-Precision Modeling and Alignment</h3>
-            <p>Laser scanning, photogrammetry, and image mapping are combined to create realistic 3D models and alignment data.</p>
-          </div>
-        </article>
-        <article>
-          <img src="../assets/images/applied/robot-weld-line-detection.jpg" alt="Physical AI application connecting a robot cell, advanced sensors, and weld-line detection algorithms">
-          <div>
-            <h3>Robot and Physical AI Data</h3>
-            <p>Point-cloud workspaces become robot paths, collision checks, 3D vision conditions, and field execution data.</p>
-          </div>
-        </article>
       </div>
     </section>
 
     <section class="section proof-section" id="proof" aria-labelledby="proof-title">
       <div class="proof-copy">
-        <p class="kicker">Technical Backbone</p>
-        <h2 id="proof-title">Industry-academic research base</h2>
-        <p>Optimize3D uses OPTLab's joint shipyard and manufacturing research base in 3D scanning, quality control, reverse engineering, machine learning, additive manufacturing, and collaborative robotics.</p>
-        <div class="proof-actions">
-          <a class="button secondary" href="research.html">More Research Output</a>
-        </div>
+        <p class="kicker">Research Backbone by OPTLab</p>
+        <h2 id="proof-title">Industry-academic research foundation</h2>
+        <p>Optimize3D builds on joint shipyard and manufacturing research by OPTLab at Mokpo National Maritime University, covering 3D scanning, quality control, reverse engineering, machine learning, additive manufacturing, and collaborative robotics.</p>
+        <div class="proof-actions"><a class="button secondary" href="research.html">Explore research output</a></div>
       </div>
       <div class="proof-evidence">
-        <div class="proof-stats" aria-label="OPTLab research evidence summary">
-          <article>
-            <strong>7</strong>
-            <span>Awards</span>
-          </article>
-          <article>
-            <strong>50+</strong>
-            <span>Academic papers</span>
-          </article>
-          <article>
-            <strong>300+</strong>
-            <span>Research presentations</span>
-          </article>
-        </div>
-        <div class="proof-list">
-          <span>Small vessel and FRP mold deviation analysis</span>
-          <span>Shipyard LNGC cargo-hold point-cloud object detection</span>
-          <span>3D point-cloud object recognition</span>
-          <span>Physical AI-based collaborative robot workability</span>
-          <span>Shipyard ship-block virtual assembly and GD&amp;T validation</span>
-          <span>Shipyard point-cloud datasets</span>
-        </div>
+        <div class="proof-stats" aria-label="OPTLab research summary"><article><strong>7</strong><span>Academic awards</span></article><article><strong>50+</strong><span>Peer-reviewed papers</span></article><article><strong>300+</strong><span>Research presentations</span></article></div>
+        <div class="proof-list"><span>Small-craft and FRP mold deviation analysis</span><span>Shipyard LNGC cargo-hold object detection</span><span>3D point-cloud object recognition</span><span>Collaborative-robot Physical AI studies</span><span>Ship-block virtual assembly and GD&amp;T</span><span>Shipyard point-cloud datasets</span></div>
       </div>
     </section>
 
     <section class="cta-section" id="contact" aria-labelledby="contact-title">
       <div class="cta-inner">
         <p class="kicker">Contact</p>
-        <h2 id="contact-title">Start with one scan dataset.</h2>
-        <p>A point cloud, CAD file, photo set, inspection criterion, or field issue is enough to define a pilot scope.</p>
-        <div class="cta-actions">
-          <button class="button primary" type="button" data-email-button data-email-subject="Optimize3D pilot inquiry">Email Inquiry</button>
-          <a class="button secondary" href="#business">Review Services</a>
+        <h2 id="contact-title">Tell us what data you have and what needs to be solved.</h2>
+        <p>A point cloud, CAD file, photo set, inspection criterion, or field problem is enough to start defining an application scope.</p>
+        <div class="contact-field">
+          <label for="inquiry-category">Inquiry area</label>
+          <select id="inquiry-category" data-email-category-select>
+            <option value="General Technical Consultation">General technical consultation</option>
+            <option value="3D Scanning &amp; Reverse Engineering">3D scanning &amp; reverse engineering</option>
+            <option value="Spatial AI &amp; Quality Inspection">Spatial AI &amp; quality inspection</option>
+            <option value="Physical AI &amp; Robot Data">Physical AI &amp; robot data</option>
+            <option value="Industry-Academic Research">Industry-academic research</option>
+          </select>
         </div>
-        <noscript>
-          <p class="contact-fallback">Enable JavaScript to use the email inquiry button.</p>
-        </noscript>
+        <div class="cta-actions">
+          <button class="button primary" type="button" data-email-button data-email-locale="en">Email us</button>
+          <a class="button secondary" href="#data-flow">Review the data flow</a>
+        </div>
+        <noscript><p class="contact-fallback">Enable JavaScript to use the email inquiry button.</p></noscript>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div>
-      <img src="../assets/brand/optlab-optimize3d-logo-white.png?v=20260708a" alt="OPTLab | Optimize3D">
-      <span>Industrial spatial AI venture concept based on OPTLab research.</span>
-    </div>
+    <div><img src="../assets/brand/optlab-optimize3d-logo-white.png?v=20260708a" alt="OPTLab | Optimize3D" loading="lazy" decoding="async"><span>Point cloud intelligence backed by OPTLab research.</span></div>
   </footer>
 
-  <script src="../assets/js/main.js?v=20260708i"></script>
+  <script src="../assets/js/main.js?v=20260710a"></script>
 </body>
 </html>

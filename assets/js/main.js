@@ -4,6 +4,8 @@ const year = document.querySelector("#year");
 const emailButtons = document.querySelectorAll("[data-email-button]");
 const pipelines = document.querySelectorAll("[data-pipeline]");
 const tabGroups = document.querySelectorAll("[data-tab-group]");
+const emailCategorySelect = document.querySelector("[data-email-category-select]");
+const contactCategoryLinks = document.querySelectorAll("[data-contact-category]");
 
 if (year) {
   year.textContent = String(new Date().getFullYear());
@@ -28,44 +30,44 @@ pipelines.forEach((pipeline) => {
   const title = pipeline.querySelector("[data-pipeline-visual-title]");
   const body = pipeline.querySelector("[data-pipeline-visual-body]");
   const output = pipeline.querySelector("[data-pipeline-visual-output]");
-  let manualLockUntil = 0;
+  const image = pipeline.querySelector("img[data-pipeline-image]");
+  const caption = pipeline.querySelector("[data-pipeline-visual-caption]");
+  const stagePanel = pipeline.querySelector("[role='tabpanel']");
 
-  const activateStep = (step, manual = false) => {
-    if (manual) manualLockUntil = Date.now() + 1800;
+  const activateStep = (step) => {
     steps.forEach((item) => item.classList.toggle("is-active", item === step));
+    steps.forEach((item) => item.setAttribute("aria-selected", String(item === step)));
+    steps.forEach((item) => { item.tabIndex = item === step ? 0 : -1; });
+    if (stagePanel && step.id) stagePanel.setAttribute("aria-labelledby", step.id);
     if (title) title.textContent = step.dataset.pipelineTitle || "";
     if (body) body.textContent = step.dataset.pipelineBody || "";
     if (output) output.textContent = step.dataset.pipelineOutput || "";
+    if (caption) caption.textContent = step.dataset.pipelineCaption || "";
+
+    if (image && step.dataset.pipelineImage) {
+      image.src = step.dataset.pipelineImage;
+      image.alt = step.dataset.pipelineAlt || "";
+    }
   };
 
-  steps.forEach((step) => {
-    step.setAttribute("tabindex", "0");
-    step.addEventListener("click", () => activateStep(step, true));
+  steps.forEach((step, index) => {
+    step.addEventListener("click", () => activateStep(step));
     step.addEventListener("keydown", (event) => {
-      if (event.key === "Enter" || event.key === " ") {
-        event.preventDefault();
-        activateStep(step, true);
-      }
+      if (!["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
+      event.preventDefault();
+
+      let nextIndex = index;
+      if (event.key === "ArrowDown" || event.key === "ArrowRight") nextIndex = (index + 1) % steps.length;
+      if (event.key === "ArrowUp" || event.key === "ArrowLeft") nextIndex = (index - 1 + steps.length) % steps.length;
+      if (event.key === "Home") nextIndex = 0;
+      if (event.key === "End") nextIndex = steps.length - 1;
+
+      steps[nextIndex].focus();
+      activateStep(steps[nextIndex]);
     });
   });
 
   if (steps[0]) activateStep(steps[0]);
-
-  if ("IntersectionObserver" in window) {
-    const observer = new IntersectionObserver((entries) => {
-      if (Date.now() < manualLockUntil) return;
-      const visible = entries
-        .filter((entry) => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-
-      if (visible) activateStep(visible.target);
-    }, {
-      rootMargin: "-18% 0px -42% 0px",
-      threshold: [0.25, 0.5, 0.75]
-    });
-
-    steps.forEach((step) => observer.observe(step));
-  }
 });
 
 tabGroups.forEach((group) => {
@@ -121,13 +123,19 @@ if (emailButtons.length > 0) {
 
     return `${part("year")}-${part("month")}-${part("day")}`;
   };
-  const emailSubject = (button, locale, date) => {
+  const selectedCategory = (locale) => {
+    const selected = emailCategorySelect?.selectedOptions?.[0];
+    if (selected?.value) return selected.value;
+
+    return locale.startsWith("en") ? "General Technical Consultation" : "일반 기술상담";
+  };
+  const emailSubject = (button, locale, date, category) => {
     const fallback = locale.startsWith("en") ? "Optimize3D pilot inquiry" : "Optimize3D 파일럿 문의";
     const baseSubject = button.dataset.emailSubject || fallback;
 
-    return `[${date}] ${baseSubject}`;
+    return `[${date}][${category}] ${baseSubject}`;
   };
-  const emailBody = (locale, date) => {
+  const emailBody = (locale, date, category) => {
     if (locale.startsWith("en")) {
       return [
         "Hello Optimize3D,",
@@ -136,6 +144,7 @@ if (emailButtons.length > 0) {
         "Please review the information below.",
         "",
         `Inquiry date: ${date}`,
+        `Inquiry area: ${category}`,
         "",
         "1. Company / organization:",
         "2. Name / role:",
@@ -155,6 +164,7 @@ if (emailButtons.length > 0) {
       "아래 항목 중 가능한 내용만 작성합니다.",
       "",
       `문의일: ${date}`,
+      `문의 분야: ${category}`,
       "",
       "1. 회사/기관:",
       "2. 성함/직책:",
@@ -173,9 +183,19 @@ if (emailButtons.length > 0) {
     button.addEventListener("click", () => {
       const locale = button.dataset.emailLocale || document.documentElement.lang || "ko";
       const date = inquiryDate();
-      const subject = encodeURIComponent(emailSubject(button, locale, date));
-      const body = encodeURIComponent(emailBody(locale, date));
+      const category = selectedCategory(locale);
+      const subject = encodeURIComponent(emailSubject(button, locale, date, category));
+      const body = encodeURIComponent(emailBody(locale, date, category));
       window.location.href = `mailto:${emailAddress()}?subject=${subject}&body=${body}`;
     });
   });
 }
+
+contactCategoryLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    if (!emailCategorySelect) return;
+    const category = link.dataset.contactCategory;
+    const option = [...emailCategorySelect.options].find((item) => item.value === category);
+    if (option) emailCategorySelect.value = category;
+  });
+});

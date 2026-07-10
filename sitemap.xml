@@ -3,23 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://optimize3d.github.io/Hompage/</loc>
-    <lastmod>2026-07-07</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://optimize3d.github.io/Hompage/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://optimize3d.github.io/Hompage/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://optimize3d.github.io/Hompage/"/>
   </url>
   <url>
     <loc>https://optimize3d.github.io/Hompage/en/</loc>
-    <lastmod>2026-07-07</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://optimize3d.github.io/Hompage/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://optimize3d.github.io/Hompage/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://optimize3d.github.io/Hompage/"/>
   </url>
   <url>
     <loc>https://optimize3d.github.io/Hompage/research.html</loc>
-    <lastmod>2026-07-07</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://optimize3d.github.io/Hompage/research.html"/>
@@ -27,7 +29,7 @@
   </url>
   <url>
     <loc>https://optimize3d.github.io/Hompage/en/research.html</loc>
-    <lastmod>2026-07-07</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://optimize3d.github.io/Hompage/research.html"/>

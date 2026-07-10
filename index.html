@@ -9,13 +9,36 @@
   <link rel="canonical" href="https://optimize3d.github.io/Hompage/">
   <link rel="alternate" hreflang="ko" href="https://optimize3d.github.io/Hompage/">
   <link rel="alternate" hreflang="en" href="https://optimize3d.github.io/Hompage/en/">
+  <link rel="alternate" hreflang="x-default" href="https://optimize3d.github.io/Hompage/">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
   <meta property="og:title" content="Optimize3D | 현장을 위한 3D Point Cloud AI">
   <meta property="og:description" content="조선·해양·제조·건설 현장의 공간을 AI 분석, 품질판정, 역설계, 로봇으로 연결하는 현장형 3D 포인트클라우드 데이터 회사입니다.">
   <meta property="og:url" content="https://optimize3d.github.io/Hompage/">
   <meta property="og:image" content="https://optimize3d.github.io/Hompage/assets/images/generated/hero-shipyard-pointcloud-v2.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/styles.css?v=20260708m">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260710a">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Optimize3D",
+      "url": "https://optimize3d.github.io/Hompage/",
+      "description": "조선·해양·제조·건설 현장을 위한 3D 포인트클라우드 AI, 품질검사, 역설계 및 피지컬AI 데이터 회사",
+      "foundingOrganization": {
+        "@type": "ResearchOrganization",
+        "name": "국립목포해양대학교 최적선박생산기술연구실 OPTLab"
+      },
+      "knowsAbout": [
+        "3D scanning",
+        "Point cloud artificial intelligence",
+        "3D metrology",
+        "Reverse engineering",
+        "Physical AI"
+      ]
+    }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">본문으로 이동</a>
@@ -23,18 +46,24 @@
   <header class="site-header" id="top">
     <nav class="nav" aria-label="주요 메뉴">
       <a class="brand" href="#top" aria-label="Optimize3D 홈">
-        <img src="assets/brand/optlab-optimize3d-logo-white.png?v=20260708a" alt="OPTLab | Optimize3D">
+        <span class="brand-mark-window" aria-hidden="true">
+          <img src="assets/brand/optlab-optimize3d-logo-white.png?v=20260708a" alt="">
+        </span>
+        <span class="brand-type">
+          <strong>Optimize3D</strong>
+          <small>POINT CLOUD INTELLIGENCE</small>
+        </span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="메뉴 열기">
         <span></span>
         <span></span>
         <span></span>
       </button>
       <div class="nav-links" id="nav-links">
+        <a href="#data-flow">데이터 흐름</a>
         <a href="#business">사업영역</a>
-        <a href="#ai">AI 기술</a>
+        <a href="#cases">적용사례</a>
         <a href="#platform">운영모델</a>
-        <a href="#applications">적용분야</a>
         <a href="research.html">연구실적</a>
         <a href="#contact">문의</a>
         <a class="language-link" href="en/index.html" lang="en">EN</a>
@@ -51,7 +80,7 @@
           <p class="hero-lead">조선·해양·제조·건설 현장의 공간을 AI 분석, 품질판정, 역설계, 로봇으로 연결하는 현장형 3D 포인트클라우드 데이터 회사입니다.</p>
           <div class="hero-actions">
             <a class="button primary" href="#contact">파일럿 문의</a>
-            <a class="button secondary" href="#business">사업영역 보기</a>
+            <a class="button secondary" href="#data-flow">데이터 흐름 보기</a>
           </div>
           <div class="hero-tags" aria-label="핵심 역량">
             <span>포인트클라우드</span>
@@ -65,107 +94,118 @@
       </div>
     </section>
 
-    <section class="solution-stack" aria-labelledby="stack-title">
-      <div class="stack-inner">
-        <div class="stack-head">
-          <p class="kicker">Manufacturing Data Stack</p>
-          <h2 id="stack-title">현장을 캡처하고, 이해하고, 실행 데이터로 연결합니다.</h2>
-          <p>조선·제조 공간을 3D 데이터로 만들고 AI 분석을 거쳐 검사, 역설계, 로봇 실행 데이터로 전환합니다.</p>
-        </div>
-        <div class="pipeline-shell" data-pipeline>
-          <div class="pipeline-steps">
-          <article data-pipeline-step data-pipeline-title="현장 캡처" data-pipeline-body="조선소·제조 현장을 3D 스캔, 사진, CAD 기준으로 묶어 분석 가능한 원본 데이터로 만듭니다." data-pipeline-output="Point cloud / Photo / CAD reference">
+    <section class="section data-system-section" id="data-flow" aria-labelledby="data-flow-title" data-pipeline>
+      <div class="section-head compact data-system-head">
+        <p class="kicker">Scan to Execution</p>
+        <h2 id="data-flow-title">하나의 현장 데이터를 판단과 실행까지 연결합니다.</h2>
+        <p class="lead">현장 스캔, 공간 AI, 품질검사, 피지컬AI를 하나의 데이터 흐름으로 확인할 수 있습니다.</p>
+      </div>
+      <div class="data-system-layout">
+        <div class="data-stage-list" role="tablist" aria-label="3D 데이터 전환 단계">
+          <button class="data-stage-step is-active" id="flow-step-1" type="button" role="tab" aria-selected="true" aria-controls="data-stage-panel" data-pipeline-step
+            data-pipeline-title="현장 캡처와 기준 정렬"
+            data-pipeline-body="선박블록, 카고홀드, 몰드, 배관과 작업공간을 포인트클라우드·사진·CAD 기준으로 묶습니다."
+            data-pipeline-output="Point cloud / Photo / CAD reference"
+            data-pipeline-image="assets/images/generated/field-scan-workflow-v2.png"
+            data-pipeline-alt="조선소 현장 스캔과 포인트클라우드·CAD 전환 워크플로우"
+            data-pipeline-caption="Capture / registration / reference coordinates">
             <span>01</span>
-            <h3>Capture</h3>
-            <p>포인트클라우드, 사진, CAD 기준, 작업공간 제약을 한 프로젝트 데이터로 수집합니다.</p>
-          </article>
-          <article data-pipeline-step data-pipeline-title="AI 이해" data-pipeline-body="포인트클라우드에서 객체를 인식하고 공간 관계, 접근성, 충돌 가능성, 품질 편차를 판단합니다." data-pipeline-output="Object labels / Spatial reasoning / Quality map">
+            <span><strong>Capture</strong><small>3D 스캔·정합·기준 좌표</small></span>
+          </button>
+          <button class="data-stage-step" id="flow-step-2" type="button" role="tab" aria-selected="false" aria-controls="data-stage-panel" data-pipeline-step
+            data-pipeline-title="AI 객체인식과 공간추론"
+            data-pipeline-body="의미론적 분할과 3D 객체 탐지로 구조물, 부품, 작업공간을 구분하고 접근성과 공간 관계를 계산합니다."
+            data-pipeline-output="Semantic labels / Objects / Spatial relations"
+            data-pipeline-image="assets/images/generated/spatial-ai-shipyard-segmentation-v2.png"
+            data-pipeline-alt="조선소 포인트클라우드 의미론적 분할과 객체인식 시각화"
+            data-pipeline-caption="Semantic segmentation / object recognition / spatial reasoning">
             <span>02</span>
-            <h3>Understand</h3>
-            <p>AI 객체인식, 공간추론, 편차분석으로 현장 판단에 필요한 의미를 추출합니다.</p>
-          </article>
-          <article data-pipeline-step data-pipeline-title="피지컬AI 실행 데이터" data-pipeline-body="검사 결과와 공간 제약을 로봇 경로, 충돌 검토, 3D 비전 센서 조건, 용접 자동화 입력 데이터로 정리합니다." data-pipeline-output="Robot path / Collision check / Vision setup">
+            <span><strong>Understand</strong><small>의미론적 분할·객체인식·공간추론</small></span>
+          </button>
+          <button class="data-stage-step" id="flow-step-3" type="button" role="tab" aria-selected="false" aria-controls="data-stage-panel" data-pipeline-step
+            data-pipeline-title="편차분석과 품질판정"
+            data-pipeline-body="CAD 대비 편차, 허용오차, 설치 정확도와 용접 전후 변형을 검사 근거와 디지털 리포트로 정리합니다."
+            data-pipeline-output="Deviation map / Tolerance / Quality report"
+            data-pipeline-image="assets/images/generated/quality-deviation-scan-v2.png"
+            data-pipeline-alt="3D 스캔 모델과 CAD 기준을 비교한 품질 편차 분석 화면"
+            data-pipeline-caption="CAD comparison / deviation map / quality decision">
             <span>03</span>
-            <h3>Execute</h3>
-            <p>품질판정 결과를 CAD, 지그, 3D 프린팅 시험편, 로봇 실행 데이터로 연결합니다.</p>
-          </article>
+            <span><strong>Decide</strong><small>편차맵·허용오차·품질 리포트</small></span>
+          </button>
+          <button class="data-stage-step" id="flow-step-4" type="button" role="tab" aria-selected="false" aria-controls="data-stage-panel" data-pipeline-step
+            data-pipeline-title="피지컬AI 실행 데이터"
+            data-pipeline-body="객체 위치와 공간 제약을 로봇 경로, 충돌 검토, 3D 비전 센서 조건과 용접 자동화 입력으로 전환합니다."
+            data-pipeline-output="Robot path / Collision check / Vision setup"
+            data-pipeline-image="assets/images/generated/physical-ai-robot-execution-v2.png"
+            data-pipeline-alt="포인트클라우드 환경에서 협동로봇 경로와 충돌 검토를 연결한 피지컬AI 시각화"
+            data-pipeline-caption="Robot workspace / collision / vision condition">
+            <span>04</span>
+            <span><strong>Execute</strong><small>로봇 작업공간·충돌·비전 조건</small></span>
+          </button>
+        </div>
+        <div class="data-stage-view" id="data-stage-panel" role="tabpanel" aria-labelledby="flow-step-1">
+          <figure class="data-stage-media">
+            <img data-pipeline-image src="assets/images/generated/field-scan-workflow-v2.png" alt="조선소 현장 스캔과 포인트클라우드·CAD 전환 워크플로우" decoding="async">
+            <figcaption data-pipeline-visual-caption>Capture / registration / reference coordinates</figcaption>
+          </figure>
+          <div class="pipeline-deliverable">
+            <p class="screen-kicker">ACTIVE DATA FLOW</p>
+            <h3 data-pipeline-visual-title>현장 캡처와 기준 정렬</h3>
+            <p data-pipeline-visual-body>선박블록, 카고홀드, 몰드, 배관과 작업공간을 포인트클라우드·사진·CAD 기준으로 묶습니다.</p>
+            <strong data-pipeline-visual-output>Point cloud / Photo / CAD reference</strong>
           </div>
-          <aside class="pipeline-visual" aria-label="3D 데이터 전환 비주얼">
-            <div class="pipeline-film">
-              <figure class="film-frame film-frame-1">
-                <img src="assets/images/generated/field-scan-workflow-v2.png" alt="조선소 현장 스캔과 포인트클라우드·CAD 전환 워크플로우">
-                <figcaption><span>Capture</span><strong>다중 소스 스캔 데이터 수집</strong></figcaption>
-              </figure>
-              <figure class="film-frame film-frame-2">
-                <img src="assets/images/generated/spatial-ai-shipyard-segmentation-v2.png" alt="조선소 포인트클라우드 의미론적 분할과 객체인식 시각화">
-                <figcaption><span>Understand</span><strong>조선소 객체인식과 공간추론</strong></figcaption>
-              </figure>
-              <figure class="film-frame film-frame-3">
-                <img src="assets/images/generated/physical-ai-robot-execution-v2.png" alt="포인트클라우드 환경에서 협동로봇 경로와 충돌 검토를 연결한 피지컬AI 시각화">
-                <figcaption><span>Execute</span><strong>피지컬AI 실행 데이터</strong></figcaption>
-              </figure>
-              <div class="film-progress" aria-hidden="true"><span></span><span></span><span></span></div>
-            </div>
-            <div class="pipeline-deliverable">
-              <p class="screen-kicker">ACTIVE DATA FLOW</p>
-              <h3 data-pipeline-visual-title>현장 캡처</h3>
-              <p data-pipeline-visual-body>조선소·제조 현장을 3D 스캔, 사진, CAD 기준으로 묶어 분석 가능한 원본 데이터로 만듭니다.</p>
-              <strong data-pipeline-visual-output>Point cloud / Photo / CAD reference</strong>
-            </div>
-          </aside>
         </div>
       </div>
     </section>
 
-    <section class="section compare-section" aria-labelledby="compare-title" data-tab-group>
+    <section class="section business-section" id="business" aria-labelledby="business-title">
       <div class="section-head compact">
-        <p class="kicker">Data Transformation</p>
-        <h2 id="compare-title">한 번의 스캔을 여러 실행 데이터로 바꿉니다.</h2>
-        <p class="lead">현장 캡처, AI 분석, 품질검사, 역설계 결과를 탭으로 전환하며 볼 수 있습니다.</p>
+        <p class="kicker">Three Solution Pillars</p>
+        <h2 id="business-title">현장 과제를 세 가지 데이터 패키지로 해결합니다.</h2>
+        <p class="lead">장비 판매보다 프로젝트의 입력 데이터, 판단 기준, 필요한 결과물에 맞춰 범위를 구성합니다.</p>
       </div>
-      <div class="tab-controls" role="tablist" aria-label="데이터 전환 단계">
-        <button type="button" role="tab" aria-selected="true" data-tab-target="compare-scan">현장 스캔</button>
-        <button type="button" role="tab" aria-selected="false" data-tab-target="compare-ai">AI 분석</button>
-        <button type="button" role="tab" aria-selected="false" data-tab-target="compare-report">품질검사</button>
-        <button type="button" role="tab" aria-selected="false" data-tab-target="compare-output">실행 데이터</button>
+      <div class="business-grid business-pillars">
+        <article class="solution-pillar">
+          <span>01 / CAPTURE</span>
+          <h3>3D Capture &amp; Reconstruction</h3>
+          <p>대상과 현장 조건에 맞는 3D 스캐닝부터 정합, 기준 좌표, 역설계와 제작 보조 데이터까지 연결합니다.</p>
+          <ul>
+            <li>다양한 규모의 3D 스캐닝</li>
+            <li>Scan-to-CAD·역설계</li>
+            <li>3D 프린팅 지그·시제품</li>
+          </ul>
+          <a class="pillar-link" href="#contact" data-contact-category="3D 스캐닝·역설계">이 분야로 문의</a>
+        </article>
+        <article class="solution-pillar">
+          <span>02 / INTELLIGENCE</span>
+          <h3>Spatial AI &amp; Quality Intelligence</h3>
+          <p>포인트클라우드에서 객체와 공간 관계를 읽고 편차, 허용오차, 검사 우선순위를 판단 자료로 정리합니다.</p>
+          <ul>
+            <li>의미론적 분할·3D 객체 탐지</li>
+            <li>AI 공간추론·접근성 분석</li>
+            <li>편차맵·디지털 품질 리포트</li>
+          </ul>
+          <a class="pillar-link" href="#contact" data-contact-category="공간 AI·품질검사">이 분야로 문의</a>
+        </article>
+        <article class="solution-pillar">
+          <span>03 / EXECUTION</span>
+          <h3>Physical AI &amp; Execution Data</h3>
+          <p>실제 작업공간과 센서 조건을 반영해 로봇 경로, 충돌 후보, 용접선과 실행 좌표를 검토합니다.</p>
+          <ul>
+            <li>로봇 작업공간 포인트클라우드</li>
+            <li>경로·충돌·접근성 검토</li>
+            <li>3D 비전·용접선 실행 데이터</li>
+          </ul>
+          <a class="pillar-link" href="#contact" data-contact-category="피지컬AI·로봇 데이터">이 분야로 문의</a>
+        </article>
       </div>
-      <div class="compare-stage">
-        <article class="tab-panel is-active" id="compare-scan" role="tabpanel">
-          <img src="assets/images/applied/marine-scan-model.jpg" alt="소형선박 3D 스캐닝과 스캔 모델 기반 형상 분석 화면">
-          <div>
-            <p class="kicker">Capture</p>
-            <h3>현장 공간을 기준 데이터로 수집</h3>
-            <p>선박블록, 카고홀드, 몰드, 배관, 작업공간을 포인트클라우드와 사진, CAD 기준으로 묶습니다.</p>
-          </div>
-        </article>
-        <article class="tab-panel" id="compare-ai" role="tabpanel" hidden>
-          <img src="assets/images/applied/indoor-spatial-ai.jpg" alt="AI 기반 3D 포인트클라우드 의미론적 분할과 객체분류 시각화">
-          <div>
-            <p class="kicker">Analyze</p>
-            <h3>AI 객체인식과 공간추론</h3>
-            <p>구조물과 부품을 분할하고 객체 관계, 접근 가능성, 충돌 위험을 계산합니다.</p>
-          </div>
-        </article>
-        <article class="tab-panel" id="compare-report" role="tabpanel" hidden>
-          <img src="assets/images/applied/pipe-welding-deformation.jpg" alt="3D 스캐닝 기반 배관 용접 변형 검증과 치수 비교 화면">
-          <div>
-            <p class="kicker">Decide</p>
-            <h3>편차맵과 품질판정 근거</h3>
-            <p>CAD 대비 편차, 허용오차, 검사 우선순위, 합격/보류 근거를 리포트로 정리합니다.</p>
-          </div>
-        </article>
-        <article class="tab-panel" id="compare-output" role="tabpanel" hidden>
-          <img src="assets/images/applied/robot-weld-line-detection.jpg" alt="협동로봇과 3D 비전 센서를 이용한 용접선 검출 시스템">
-          <div>
-            <p class="kicker">Physical AI</p>
-            <h3>로봇이 실행할 수 있는 현장 데이터로 연결</h3>
-            <p>작업공간 포인트클라우드, 객체 위치, 접근 가능성, 충돌 후보, 3D 비전 센서 조건을 로봇 경로와 용접·운반 검증 데이터로 정리합니다.</p>
-          </div>
-        </article>
+      <div class="application-rail" aria-label="주요 적용 대상">
+        <strong>적용 대상</strong>
+        <span>선박블록</span><span>카고홀드</span><span>소형선박</span><span>FRP 몰드</span><span>배관·의장품</span><span>로봇 작업공간</span>
       </div>
     </section>
 
-    <section class="section case-section" aria-labelledby="case-title" data-tab-group>
+    <section class="section case-section" id="cases" aria-labelledby="case-title" data-tab-group>
       <div class="section-head compact">
         <p class="kicker">Applied Cases</p>
         <h2 id="case-title">대표 적용사례</h2>
@@ -190,7 +230,7 @@
             <li>결과: 검사/작업 기준 데이터 패키지</li>
           </ul>
           <figure class="case-visual">
-            <img src="assets/images/applied/indoor-spatial-ai.jpg" alt="포인트클라우드를 의미론적 공간과 객체 단위로 분할하는 AI 분석 사례">
+            <img src="assets/images/applied/indoor-spatial-ai.jpg" alt="포인트클라우드를 의미론적 공간과 객체 단위로 분할하는 AI 분석 사례" loading="lazy" decoding="async">
             <figcaption>Semantic parsing / object classification / density reasoning</figcaption>
           </figure>
         </article>
@@ -206,7 +246,7 @@
             <li>결과: 계측 대상 정리 및 검사 효율화</li>
           </ul>
           <figure class="case-visual">
-            <img src="assets/images/generated/spatial-ai-shipyard-segmentation-v2.png" alt="조선소 포인트클라우드 객체 탐지와 의미론적 분할 시각화">
+            <img src="assets/images/generated/spatial-ai-shipyard-segmentation-v2.png" alt="조선소 포인트클라우드 객체 탐지와 의미론적 분할 시각화" loading="lazy" decoding="async">
             <figcaption>3D object detection / semantic segmentation / post-processing</figcaption>
           </figure>
         </article>
@@ -222,7 +262,7 @@
             <li>결과: 몰드 품질관리 및 개선 근거</li>
           </ul>
           <figure class="case-visual">
-            <img src="assets/images/applied/marine-scan-model.jpg" alt="소형선박 스캔 모델과 형상 편차분석 적용 사례">
+            <img src="assets/images/applied/marine-scan-model.jpg" alt="소형선박 스캔 모델과 형상 편차분석 적용 사례" loading="lazy" decoding="async">
             <figcaption>Scan model / CAD alignment / deviation map</figcaption>
           </figure>
         </article>
@@ -238,124 +278,11 @@
             <li>결과: 피지컬AI 실험 셋업 및 로봇 실행 데이터</li>
           </ul>
           <figure class="case-visual">
-            <img src="assets/images/applied/robot-weld-line-detection.jpg" alt="로봇 셀과 3D 비전 센서를 연결한 용접선 검출 및 피지컬AI 검증 사례">
+            <img src="assets/images/applied/robot-weld-line-detection.jpg" alt="로봇 셀과 3D 비전 센서를 연결한 용접선 검출 및 피지컬AI 검증 사례" loading="lazy" decoding="async">
             <figcaption>Robot cell / 3D vision / weld-line extraction</figcaption>
           </figure>
         </article>
       </div>
-    </section>
-
-    <section class="section business-section" id="business" aria-labelledby="business-title">
-      <div class="section-head compact">
-        <p class="kicker">Business Area</p>
-        <h2 id="business-title">현장 문제를 데이터 패키지로 해결합니다.</h2>
-        <p class="lead">대형 상용 패키지 도입 전에 작은 범위의 파일럿으로 검사 가능성, 자동화 가능성, 제작 보조 효과를 검증합니다.</p>
-      </div>
-      <div class="business-grid">
-        <article>
-          <span>01</span>
-          <h3>3D Scan &amp; Inspection Pilot</h3>
-          <p>대상물 스캔, 정합, 기준 좌표 설정, CAD 대비 편차분석, 검사 항목 정의.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Reverse Engineering</h3>
-          <p>도면이 부족한 부품·몰드·구조물을 스캔 기반 CAD 재구성 데이터로 전환.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>AI Point Cloud Analysis</h3>
-          <p>포인트클라우드 분할, 3차원 객체인식, 결함 후보 탐지, 공간 관계 추론 모델을 파일럿에 적용.</p>
-        </article>
-        <article>
-          <span>04</span>
-          <h3>Digital Quality Report</h3>
-          <p>편차, GD&amp;T, 용접 전후 변형량, 검사 판정 근거를 리포트와 의사결정 자료로 정리.</p>
-        </article>
-        <article>
-          <span>05</span>
-          <h3>3D Printed Jigs</h3>
-          <p>검사·조립·임시 고정에 필요한 3D 프린팅 지그, 픽스처, 시제품 적용 검토.</p>
-        </article>
-        <article>
-          <span>06</span>
-          <h3>Physical AI Data Package</h3>
-          <p>포인트클라우드 기반 작업공간을 로봇 경로, 충돌 검토, 비전 센서 조건, 현장 실행 데이터로 정리.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section ai-section" id="ai" aria-labelledby="ai-title">
-      <div class="ai-visual">
-        <img src="assets/images/applied/indoor-spatial-ai.jpg" alt="포인트클라우드 밀도와 의미론적 분할 결과를 비교하는 공간 AI 분석 화면">
-      </div>
-      <div class="ai-copy">
-        <p class="kicker">Spatial AI Engine</p>
-        <h2 id="ai-title">포인트클라우드에서 객체와 공간 관계를 읽습니다.</h2>
-        <p>OPTLab의 LNGC 화물창 객체탐지, 조선소 3D 딥러닝 데이터셋, 선박 블록 지지대 설치 정확도 검사 연구를 기반으로 포인트클라우드 데이터를 의미 있는 현장 판단 데이터로 바꿉니다.</p>
-        <div class="ai-list">
-          <span>의미론적 분할</span>
-          <span>3D 객체 탐지</span>
-          <span>공간 관계 추론</span>
-          <span>AI 품질판단</span>
-        </div>
-        <div class="ai-module-grid" aria-label="Spatial AI 분석 모듈">
-          <article>
-            <strong>01</strong>
-            <h3>의미론적 분할</h3>
-            <p>조선소 포인트클라우드에서 선박블록, 작업장, 랙, 서포트, 스캐폴드처럼 현장 객체군을 분리합니다.</p>
-          </article>
-          <article>
-            <strong>02</strong>
-            <h3>3D 객체 탐지</h3>
-            <p>LNGC 화물창 스캐폴딩, 블록 지지대, 작업공간 구조물을 탐지해 검사 대상과 제외 대상을 구분합니다.</p>
-          </article>
-          <article>
-            <strong>03</strong>
-            <h3>공간 데이터 후처리</h3>
-            <p>FPFH, TDA, 밀도 분석 기반으로 대용량 포인트클라우드를 경량화하고 신뢰 가능한 특징을 강화합니다.</p>
-          </article>
-          <article>
-            <strong>04</strong>
-            <h3>품질·실행 판단</h3>
-            <p>편차맵, 설치 정확도, 용접선 후보, 로봇 접근 가능성을 리포트와 피지컬AI 실행 데이터로 연결합니다.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section physical-ai-section" aria-labelledby="physical-ai-title">
-      <div class="physical-ai-copy">
-        <p class="kicker">Physical AI Execution</p>
-        <h2 id="physical-ai-title">포인트클라우드를 로봇이 쓸 수 있는 실행 환경으로 바꿉니다.</h2>
-        <p>Optimize3D는 현장 공간을 단순히 3D로 보여주는 데서 끝내지 않고, 로봇과 3D 비전 센서가 판단할 수 있는 접근 가능성, 충돌 위험, 작업 자세, 용접선 후보 데이터로 변환합니다.</p>
-        <div class="physical-ai-points">
-          <article>
-            <span>01</span>
-            <h3>현장 환경 포인트클라우드화</h3>
-            <p>선박블록 내부처럼 복잡한 공간을 포인트클라우드 환경으로 구성하고 로봇 접근 제약을 정리합니다.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>로봇 작업성 검토</h3>
-            <p>협동로봇 경로, 케이블 간섭, 작업자 접근, 충돌 후보를 시뮬레이션 데이터로 확인합니다.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>3D 비전 조건 검증</h3>
-            <p>RealSense 계열 3D 비전 센서, 조명, 거리 조건을 작업 대상과 함께 검토합니다.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>실행 패키지화</h3>
-            <p>용접선·표면 추출, 로봇 입력 좌표, 시험편, 검증 리포트를 현장 적용 자료로 묶습니다.</p>
-          </article>
-        </div>
-      </div>
-      <figure class="physical-ai-media">
-        <img src="assets/images/applied/robot-weld-line-detection.jpg" alt="협동로봇, 3D 비전 센서, RANSAC·DBSCAN 기반 용접선 검출 흐름">
-        <figcaption>Robot cell / 3D vision / RANSAC-DBSCAN / weld-line extraction</figcaption>
-      </figure>
     </section>
 
     <section class="section platform-section" id="platform" aria-labelledby="platform-title">
@@ -364,108 +291,24 @@
         <h2 id="platform-title">3D 스캔 이후 병목을 줄입니다.</h2>
         <p>단순 3D 스캐닝 결과 확인에서 벗어나, 스캔 데이터를 인공지능으로 지능화해 검사·역설계·품질판정·피지컬AI 실행 데이터까지 확장할 수 있는 기반을 만듭니다.</p>
       </div>
-      <div class="workflow-board" aria-label="Optimize3D 파일럿 프로세스">
-        <article>
-          <strong>01</strong>
-          <h3>Field Capture</h3>
-          <p>포인트클라우드, CAD, 사진, 검사 기준, 현장 제약을 확인합니다.</p>
-        </article>
-        <article>
-          <strong>02</strong>
-          <h3>Reference Model</h3>
-          <p>좌표계, 기준 형상, 허용 오차, 판정 항목을 정합니다.</p>
-        </article>
-        <article>
-          <strong>03</strong>
-          <h3>AI &amp; Metrology</h3>
-          <p>편차맵, 특징 추출, 객체 분할, 공간추론, 리포트 양식을 빠르게 검증합니다.</p>
-        </article>
-        <article>
-          <strong>04</strong>
-          <h3>Execution Package</h3>
-          <p>검사 리포트, CAD 재구성, 지그 설계, 피지컬AI 실행 데이터로 납품합니다.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section product-section" aria-labelledby="product-title">
-      <div class="product-panel">
-        <div>
-          <p class="kicker">Productized Pilot</p>
-          <h2 id="product-title">샘플 데이터에서 실행 패키지까지</h2>
-          <p>Optimize3D는 장비 운용, 포인트클라우드 처리, 기준 정렬, 판정 로직, 리포트, 제작·로봇 입력 데이터까지 한 프로젝트 범위로 묶어 제공합니다.</p>
+      <div class="platform-work">
+        <div class="workflow-board" aria-label="Optimize3D 프로젝트 프로세스">
+          <article><strong>01</strong><h3>Field Capture</h3><p>포인트클라우드, CAD, 사진, 검사 기준과 현장 제약을 확인합니다.</p></article>
+          <article><strong>02</strong><h3>Reference Model</h3><p>좌표계, 기준 형상, 허용 오차와 판정 항목을 정의합니다.</p></article>
+          <article><strong>03</strong><h3>AI &amp; Metrology</h3><p>편차맵, 특징 추출, 객체 분할, 공간추론과 리포트 형식을 검증합니다.</p></article>
+          <article><strong>04</strong><h3>Execution Package</h3><p>검사 리포트, CAD 재구성, 지그 설계와 피지컬AI 실행 데이터로 납품합니다.</p></article>
         </div>
-        <dl>
-          <div>
-            <dt>Deliverable</dt>
-            <dd>Inspection report / Scan-to-CAD / AI finding / Jig concept / Physical AI data</dd>
-          </div>
-          <div>
-            <dt>Target</dt>
-            <dd>선박 블록, 소형선박, FRP 몰드, 배관, 의장품, 작업공간</dd>
-          </div>
-          <div>
-            <dt>Engagement</dt>
-            <dd>샘플 분석 → 파일럿 리포트 → 현장 적용 범위 제안</dd>
-          </div>
+        <dl class="engagement-summary">
+          <div><dt>Input</dt><dd>포인트클라우드 / CAD / 사진 / 도면 / 검사 기준</dd></div>
+          <div><dt>Deliverable</dt><dd>검사 리포트 / Scan-to-CAD / AI 분석 / 지그 / 로봇 데이터</dd></div>
+          <div><dt>Engagement</dt><dd>샘플 검토 → 프로젝트 범위 정의 → 현장 적용 데이터 납품</dd></div>
         </dl>
-      </div>
-    </section>
-
-    <section class="section applications-section" id="applications" aria-labelledby="applications-title">
-      <div class="section-head compact">
-        <p class="kicker">Applications</p>
-        <h2 id="applications-title">조선·제조 적용분야</h2>
-      </div>
-      <div class="application-grid">
-        <article>
-          <img src="assets/images/applied/marine-scan-model.jpg" alt="소형선박 현장 스캐닝과 스캔 모델 개발 사례">
-          <div>
-            <h3>다양한 규모에 대한 3D 스캐닝</h3>
-            <p>스캔 대상, 장비, 정합 방식, 품질 기준을 현장 조건에 맞춰 최적화하여 스캐닝합니다.</p>
-          </div>
-        </article>
-        <article>
-          <img src="assets/images/applied/indoor-spatial-ai.jpg" alt="AI 기반 3D 공간 분석과 의미론적 객체 분류 사례">
-          <div>
-            <h3>AI 객체인식·검사</h3>
-            <p>포인트클라우드에서 구조물과 부품을 분할하고 결함 후보, 편차, 검사 우선순위를 정리합니다.</p>
-          </div>
-        </article>
-        <article>
-          <img src="assets/images/applied/pipe-welding-deformation.jpg" alt="3D 스캐닝 기반 배관 용접 전후 치수 변형 검사 사례">
-          <div>
-            <h3>용접·배관 변형 검사</h3>
-            <p>용접 전후 치수 변화, 플랜지 정렬, 각도·길이 편차를 스캔 데이터로 비교합니다.</p>
-          </div>
-        </article>
-        <article>
-          <img src="assets/images/applied/virtual-assembly-metrology.jpg" alt="선박블록 가상 조립, 3D 형상 분석, 시뮬레이션 검증 사례">
-          <div>
-            <h3>역설계·가상조립</h3>
-            <p>스캔 기반 형상 분석과 CAD 재구성을 통해 조립부 간섭, 갭, 연결 기준을 검토합니다.</p>
-          </div>
-        </article>
-        <article>
-          <img src="assets/images/applied/pointcloud-modeling-workflow.jpg" alt="다중 센서 기반 포인트클라우드 획득과 고정밀 디지털 모델링 흐름">
-          <div>
-            <h3>고정밀 모델링·정합</h3>
-            <p>레이저 스캐닝, 사진측량, 이미지 매핑을 결합해 현실적인 3D 모델과 정합 데이터를 만듭니다.</p>
-          </div>
-        </article>
-        <article>
-          <img src="assets/images/applied/robot-weld-line-detection.jpg" alt="로봇 셀, 고급 센서, 용접선 검출 알고리즘을 연결한 피지컬AI 적용 사례">
-          <div>
-            <h3>로봇·피지컬AI 데이터</h3>
-            <p>포인트클라우드 기반 작업공간을 로봇 경로, 충돌 검토, 3D 비전 센서 조건, 현장 실행 데이터로 전환합니다.</p>
-          </div>
-        </article>
       </div>
     </section>
 
     <section class="section proof-section" id="proof" aria-labelledby="proof-title">
       <div class="proof-copy">
-        <p class="kicker">Technical Backbone</p>
+        <p class="kicker">Research Backbone by OPTLab</p>
         <h2 id="proof-title">산학공동 연구 기반</h2>
         <p>국립목포해양대학교 최적선박생산기술연구실의 조선소·제조 현장 공동 연구를 바탕으로 3D 스캐닝, 품질관리, 역설계, 기계학습, 적층가공, 협동로봇 실적을 Optimize3D의 기술 기반으로 사용합니다.</p>
         <div class="proof-actions">
@@ -474,18 +317,9 @@
       </div>
       <div class="proof-evidence">
         <div class="proof-stats" aria-label="OPTLab 연구실적 요약">
-          <article>
-            <strong>7</strong>
-            <span>학술상</span>
-          </article>
-          <article>
-            <strong>50+</strong>
-            <span>국내외 학술논문</span>
-          </article>
-          <article>
-            <strong>300+</strong>
-            <span>연구발표</span>
-          </article>
+          <article><strong>7</strong><span>학술상</span></article>
+          <article><strong>50+</strong><span>국내외 학술논문</span></article>
+          <article><strong>300+</strong><span>연구발표</span></article>
         </div>
         <div class="proof-list">
           <span>소형선박·FRP 몰드 형상 편차분석</span>
@@ -501,26 +335,34 @@
     <section class="cta-section" id="contact" aria-labelledby="contact-title">
       <div class="cta-inner">
         <p class="kicker">Contact</p>
-        <h2 id="contact-title">스캔 데이터 하나로 시작할 수 있습니다.</h2>
-        <p>포인트클라우드, CAD, 사진, 검사 기준, 현장 문제 중 하나만 있어도 파일럿 범위를 잡을 수 있습니다.</p>
+        <h2 id="contact-title">보유한 데이터와 해결할 문제를 알려주세요.</h2>
+        <p>포인트클라우드, CAD, 사진, 검사 기준, 현장 문제 중 하나만 있어도 적용 범위를 함께 정리할 수 있습니다.</p>
+        <div class="contact-field">
+          <label for="inquiry-category">문의 분야</label>
+          <select id="inquiry-category" data-email-category-select>
+            <option value="일반 기술상담">일반 기술상담</option>
+            <option value="3D 스캐닝·역설계">3D 스캐닝·역설계</option>
+            <option value="공간 AI·품질검사">공간 AI·품질검사</option>
+            <option value="피지컬AI·로봇 데이터">피지컬AI·로봇 데이터</option>
+            <option value="산학공동 연구">산학공동 연구</option>
+          </select>
+        </div>
         <div class="cta-actions">
           <button class="button primary" type="button" data-email-button>이메일 문의</button>
-          <a class="button secondary" href="#business">사업영역 다시 보기</a>
+          <a class="button secondary" href="#data-flow">데이터 흐름 다시 보기</a>
         </div>
-        <noscript>
-          <p class="contact-fallback">이메일 문의 버튼은 JavaScript 활성화 후 사용할 수 있습니다.</p>
-        </noscript>
+        <noscript><p class="contact-fallback">이메일 문의 버튼은 JavaScript 활성화 후 사용할 수 있습니다.</p></noscript>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div>
-      <img src="assets/brand/optlab-optimize3d-logo-white.png?v=20260708a" alt="OPTLab | Optimize3D">
-      <span>Industrial spatial AI venture concept based on OPTLab research.</span>
+      <img src="assets/brand/optlab-optimize3d-logo-white.png?v=20260708a" alt="OPTLab | Optimize3D" loading="lazy" decoding="async">
+      <span>Point cloud intelligence backed by OPTLab research.</span>
     </div>
   </footer>
 
-  <script src="assets/js/main.js?v=20260708i"></script>
+  <script src="assets/js/main.js?v=20260710a"></script>
 </body>
 </html>
