@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://optimize3d.github.io/Hompage/sitemap.xml
+Sitemap: https://optimize3d.github.io/homepage/sitemap.xml
