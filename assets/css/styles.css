@@ -1,23 +1,43 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap");
+
 :root {
-  --ink: #ffffff;
-  --ink-2: rgba(255, 255, 255, .86);
-  --muted: rgba(255, 255, 255, .65);
-  --paper: #101014;
-  --surface: #18181c;
-  --soft: #202024;
-  --line: rgba(255, 255, 255, .15);
-  --teal: #26bbff;
-  --teal-2: #69d0ff;
-  --aqua: #868afd;
-  --copper: #f1b8dd;
-  --panel: #101014;
-  --panel-2: #18181c;
-  --white: #ffffff;
-  --shadow: 0 18px 52px rgba(0, 0, 0, .34);
-  --shadow-soft: 0 10px 28px rgba(0, 0, 0, .22);
+  --font-sans: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-bg-dark: #090D1A;
+  --color-bg-light: #F8FAFC;
+  --color-text-primary: #0F172A;
+  --color-text-secondary: #475569;
+  --color-text-muted: #94A3B8;
+  --color-accent-lime: #A3E635;
+  --color-accent-blue: #38BDF8;
+  --color-border: #E2E8F0;
+
+  --transition-smooth: all .3s cubic-bezier(.4, 0, .2, 1);
+
+  /* Compatibility aliases used by the existing component layer. */
+  --ink: var(--color-bg-light);
+  --ink-2: #cbd5e1;
+  --muted: var(--color-text-muted);
+  --paper: var(--color-bg-dark);
+  --surface: #111827;
+  --soft: #172033;
+  --line: rgba(226, 232, 240, .16);
+  --teal: var(--color-accent-blue);
+  --teal-2: #7dd3fc;
+  --aqua: var(--color-accent-lime);
+  --copper: var(--color-accent-lime);
+  --panel: var(--color-bg-dark);
+  --panel-2: #111827;
+  --white: var(--color-bg-light);
+  --shadow: 0 18px 52px rgba(2, 6, 23, .42);
+  --shadow-soft: 0 10px 28px rgba(2, 6, 23, .28);
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -25,14 +45,46 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
   margin: 0;
+  padding: 0;
+}
+
+body {
   background: var(--paper);
-  color: var(--ink);
-  font-family: Inter, Pretendard, "Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;
-  line-height: 1.65;
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0;
   overflow-x: hidden;
   word-break: keep-all;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+main,
+.site-header,
+.site-footer {
+  color: var(--ink);
+}
+
+button,
+input,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
 }
 
 a {
@@ -47,15 +99,6 @@ img {
 
 [hidden] {
   display: none !important;
-}
-
-p,
-h1,
-h2,
-h3,
-figure,
-dl {
-  margin: 0;
 }
 
 p,
@@ -90,7 +133,7 @@ h3,
   padding: 10px 14px;
   border-radius: 8px;
   background: var(--teal);
-  color: #101014;
+  color: var(--color-bg-dark);
 }
 
 .skip-link:focus {
@@ -101,7 +144,7 @@ h3,
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(16, 16, 20, .84);
+  background: rgba(9, 13, 26, .84);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(18px);
 }
@@ -151,7 +194,7 @@ h3,
 
 .brand-type strong {
   color: var(--ink);
-  font-family: "Inter Tight", Inter, Pretendard, "Noto Sans KR", sans-serif;
+  font-family: var(--font-sans);
   font-size: 20px;
   line-height: 1;
   font-weight: 750;
@@ -159,10 +202,12 @@ h3,
 
 .brand-type small {
   color: var(--muted);
+  font-family: var(--font-mono);
   font-size: 8px;
   line-height: 1;
   font-weight: 700;
-  letter-spacing: .08em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
 }
 
 .nav-links {
@@ -178,7 +223,7 @@ h3,
 .nav-links a {
   padding: 8px 0;
   border-bottom: 2px solid transparent;
-  transition: border-color .18s ease, color .18s ease;
+  transition: var(--transition-smooth);
 }
 
 .nav-links a:hover {
@@ -217,7 +262,7 @@ h3,
   position: relative;
   min-height: 640px;
   background:
-    linear-gradient(90deg, rgba(16, 16, 20, .98) 0%, rgba(16, 16, 20, .86) 44%, rgba(16, 16, 20, .24) 78%, rgba(16, 16, 20, .08) 100%),
+    linear-gradient(90deg, rgba(9, 13, 26, .98) 0%, rgba(9, 13, 26, .86) 44%, rgba(9, 13, 26, .24) 78%, rgba(9, 13, 26, .08) 100%),
     url("../images/generated/hero-shipyard-pointcloud-v2.png") center right / cover no-repeat;
   color: var(--ink);
   overflow: hidden;
@@ -255,11 +300,15 @@ h3,
 }
 
 .eyebrow,
-.kicker {
+.kicker,
+.pipeline-steps span,
+.film-frame figcaption span,
+.data-stage-step > span:first-child {
   color: var(--teal);
+  font-family: var(--font-mono);
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: .03em;
+  letter-spacing: .1em;
   text-transform: uppercase;
 }
 
@@ -271,11 +320,11 @@ h1 {
   max-width: 760px;
   margin-top: 14px;
   color: inherit;
-  font-family: "Inter Tight", Inter, Pretendard, "Noto Sans KR", sans-serif;
-  font-size: 64px;
-  line-height: 1.04;
+  font-family: var(--font-sans);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.15;
   letter-spacing: 0;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .hero-lead {
@@ -308,7 +357,7 @@ h1 {
   letter-spacing: .02em;
   white-space: nowrap;
   cursor: pointer;
-  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease;
+  transition: var(--transition-smooth);
 }
 
 .button:hover {
@@ -318,7 +367,7 @@ h1 {
 
 .button.primary {
   background: var(--teal);
-  color: #101014;
+  color: var(--color-bg-dark);
 }
 
 .button.secondary {
@@ -336,7 +385,7 @@ h1 {
 
 .hero .button.primary {
   background: var(--teal);
-  color: #101014;
+  color: var(--color-bg-dark);
 }
 
 .hero .button.secondary {
@@ -455,8 +504,8 @@ h1 {
 .pipeline-steps article:hover,
 .pipeline-steps article.is-active {
   transform: translateY(-1px);
-  border-color: rgba(38, 187, 255, .72);
-  background: #202024;
+  border-color: rgba(56, 189, 248, .72);
+  background: var(--soft);
   box-shadow: var(--shadow-soft);
 }
 
@@ -523,8 +572,8 @@ h1 {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(16, 16, 20, .06), rgba(16, 16, 20, .72)),
-    linear-gradient(90deg, rgba(16, 16, 20, .72), transparent 60%);
+    linear-gradient(180deg, rgba(9, 13, 26, .06), rgba(9, 13, 26, .72)),
+    linear-gradient(90deg, rgba(9, 13, 26, .72), transparent 60%);
 }
 
 .pipeline-film:hover .film-frame img,
@@ -551,7 +600,7 @@ h1 {
   width: fit-content;
   padding: 7px 10px;
   border-radius: 999px;
-  background: rgba(38, 187, 255, .18);
+  background: rgba(56, 189, 248, .18);
   color: var(--teal);
   font-size: 12px;
   font-weight: 700;
@@ -674,8 +723,8 @@ h1 {
 h2 {
   margin-top: 10px;
   color: var(--ink);
-  font-family: "Inter Tight", Inter, Pretendard, "Noto Sans KR", sans-serif;
-  font-size: 40px;
+  font-family: var(--font-sans);
+  font-size: clamp(1.8rem, 4vw, 2.75rem);
   line-height: 1.2;
   letter-spacing: 0;
   font-weight: 700;
@@ -683,11 +732,11 @@ h2 {
 
 h3 {
   color: var(--ink-2);
-  font-family: "Inter Tight", Inter, Pretendard, "Noto Sans KR", sans-serif;
-  font-size: 20px;
-  line-height: 1.2;
+  font-family: var(--font-sans);
+  font-size: clamp(1.35rem, 3vw, 1.8rem);
+  line-height: 1.3;
   letter-spacing: 0;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .lead {
@@ -776,7 +825,7 @@ h3 {
 .case-tabs button[aria-selected="true"] {
   border-color: var(--teal);
   background: var(--teal);
-  color: #101014;
+  color: var(--color-bg-dark);
 }
 
 .compare-stage {
@@ -905,7 +954,7 @@ h3 {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 45%, rgba(16, 16, 20, .68));
+  background: linear-gradient(180deg, transparent 45%, rgba(9, 13, 26, .68));
   pointer-events: none;
 }
 
@@ -918,7 +967,7 @@ h3 {
   padding: 10px 12px;
   border: 1px solid rgba(255, 255, 255, .16);
   border-radius: 8px;
-  background: rgba(16, 16, 20, .72);
+  background: rgba(9, 13, 26, .72);
   color: var(--ink-2);
   font-size: 11px;
   font-weight: 700;
@@ -1070,7 +1119,7 @@ h3 {
   position: relative;
   margin: 0;
   overflow: hidden;
-  border: 1px solid rgba(38, 187, 255, .34);
+  border: 1px solid rgba(56, 189, 248, .34);
   border-radius: 12px;
   background: var(--ink);
 }
@@ -1092,7 +1141,7 @@ h3 {
   padding: 12px 14px;
   border: 1px solid rgba(255, 255, 255, .16);
   border-radius: 8px;
-  background: rgba(16, 16, 20, .72);
+  background: rgba(9, 13, 26, .72);
   color: var(--ink-2);
   font-size: 12px;
   font-weight: 600;
@@ -1156,7 +1205,7 @@ h3 {
   display: grid;
   grid-template-columns: minmax(0, .88fr) minmax(320px, 1.12fr);
   gap: 38px;
-  background: #202024;
+  background: var(--soft);
   border-color: var(--line);
   box-shadow: none;
 }
@@ -1215,8 +1264,8 @@ h3 {
 
 .application-grid article:hover {
   transform: translateY(-2px);
-  border-color: rgba(38, 187, 255, .44);
-  background: #202024;
+  border-color: rgba(56, 189, 248, .44);
+  background: var(--soft);
 }
 
 .application-grid img {
@@ -1281,8 +1330,10 @@ h3 {
 .proof-stats strong {
   display: block;
   color: var(--copper);
+  font-family: var(--font-mono);
   font-size: 32px;
   line-height: 1;
+  letter-spacing: .1em;
 }
 
 .proof-stats span {
@@ -1349,7 +1400,7 @@ h3 {
   justify-content: space-between;
   gap: 24px;
   padding: 24px 28px;
-  background: #101014;
+  background: var(--paper);
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 13px;
@@ -1421,8 +1472,10 @@ h3 {
 .research-summary strong {
   display: block;
   color: var(--copper);
+  font-family: var(--font-mono);
   font-size: 34px;
   line-height: 1;
+  letter-spacing: .1em;
 }
 
 .research-summary span {
@@ -1597,7 +1650,7 @@ h3 {
   color: var(--ink);
   font-weight: 600;
   text-decoration: underline;
-  text-decoration-color: rgba(38, 187, 255, .42);
+  text-decoration-color: rgba(56, 189, 248, .42);
   text-underline-offset: 4px;
   transition: color .18s ease, text-decoration-color .18s ease;
 }
@@ -1646,20 +1699,23 @@ h3 {
 }
 
 .data-stage-step:hover {
-  border-color: rgba(38, 187, 255, .46);
+  border-color: rgba(56, 189, 248, .46);
   transform: translateX(2px);
 }
 
 .data-stage-step.is-active,
 .data-stage-step[aria-selected="true"] {
   border-color: var(--teal);
-  background: #202024;
+  background: var(--soft);
 }
 
 .data-stage-step > span:first-child {
   color: var(--teal);
+  font-family: var(--font-mono);
   font-size: 12px;
   font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
 }
 
 .data-stage-step > span:last-child {
@@ -1669,7 +1725,7 @@ h3 {
 
 .data-stage-step strong {
   color: var(--ink);
-  font-family: "Inter Tight", Inter, Pretendard, "Noto Sans KR", sans-serif;
+  font-family: var(--font-sans);
   font-size: 18px;
   line-height: 1.1;
 }
@@ -1697,7 +1753,7 @@ h3 {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 58%, rgba(16, 16, 20, .82));
+  background: linear-gradient(180deg, transparent 58%, rgba(9, 13, 26, .82));
   pointer-events: none;
 }
 
@@ -1974,7 +2030,7 @@ h3 {
   .hero {
     min-height: 520px;
     background:
-      linear-gradient(90deg, rgba(16, 16, 20, .98), rgba(16, 16, 20, .84)),
+      linear-gradient(90deg, rgba(9, 13, 26, .98), rgba(9, 13, 26, .84)),
       url("../images/generated/hero-shipyard-pointcloud-v2.png") center right 35% / cover no-repeat;
   }
 
