@@ -260,10 +260,20 @@ h3,
 
 .hero {
   position: relative;
+  width: 100%;
+  max-width: 1280px;
   min-height: 640px;
-  background:
+  margin: 0 auto;
+  padding: 80px 24px;
+  background-color: var(--color-bg-dark);
+  background-image:
+    linear-gradient(rgba(56, 189, 248, .035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, .035) 1px, transparent 1px),
     linear-gradient(90deg, rgba(9, 13, 26, .98) 0%, rgba(9, 13, 26, .86) 44%, rgba(9, 13, 26, .24) 78%, rgba(9, 13, 26, .08) 100%),
-    url("../images/generated/hero-shipyard-pointcloud-v2.png") center right / cover no-repeat;
+    url("../images/generated/hero-shipyard-pointcloud-v2.png");
+  background-position: 0 0, 0 0, center, center right;
+  background-repeat: repeat, repeat, no-repeat, no-repeat;
+  background-size: 32px 32px, 32px 32px, auto, cover;
   color: var(--ink);
   overflow: hidden;
 }
@@ -287,16 +297,16 @@ h3,
 .hero-inner {
   position: relative;
   z-index: 1;
-  width: min(1440px, 100%);
-  min-height: 640px;
+  width: 100%;
+  min-height: 480px;
   margin: 0 auto;
-  padding: 80px 64px;
+  padding: 0;
   display: flex;
   align-items: center;
 }
 
 .hero-copy {
-  max-width: 640px;
+  max-width: 720px;
 }
 
 .eyebrow,
@@ -313,7 +323,13 @@ h3,
 }
 
 .hero .eyebrow {
-  color: var(--teal);
+  color: var(--color-accent-blue);
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 h1 {
@@ -330,9 +346,9 @@ h1 {
 .hero-lead {
   max-width: 680px;
   margin-top: 20px;
-  color: var(--muted);
+  color: var(--color-text-muted);
   font-size: 18px;
-  line-height: 1.65;
+  line-height: 1.6;
 }
 
 .hero-actions,
@@ -384,35 +400,56 @@ h1 {
 }
 
 .hero .button.primary {
-  background: var(--teal);
-  color: var(--color-bg-dark);
+  background: var(--color-accent-lime);
+  color: #000;
+  box-shadow: 0 8px 24px rgba(163, 230, 53, .14);
 }
 
 .hero .button.secondary {
-  background: rgba(255, 255, 255, .15);
-  border-color: var(--line);
-  color: var(--ink);
+  background: transparent;
+  border-color: var(--color-text-muted);
+  color: #fff;
+  backdrop-filter: none;
+}
+
+.hero .button {
+  min-height: auto;
+  padding: 14px 28px;
+  border-radius: 9999px;
+}
+
+.hero .button.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(163, 230, 53, .24);
+}
+
+.hero .button.secondary:hover {
+  background: #fff;
+  border-color: #fff;
+  color: var(--color-text-primary);
 }
 
 .hero-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 14px;
+  gap: 8px;
   margin-top: 26px;
 }
 
 .hero-tags span {
-  color: var(--muted);
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: .02em;
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, .06);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0;
 }
 
 .hero-tags span + span::before {
-  content: "/";
-  display: inline-block;
-  margin-right: 14px;
-  color: var(--teal);
+  content: none;
 }
 
 .solution-stack {
@@ -2016,7 +2053,7 @@ h3 {
     padding: 14px;
     border: 1px solid var(--line);
     border-radius: 8px;
-    background: rgba(24, 24, 28, .98);
+    background: rgba(9, 13, 26, .98);
     box-shadow: var(--shadow);
     max-height: calc(100vh - 82px);
     overflow: auto;
@@ -2028,15 +2065,32 @@ h3 {
   }
 
   .hero {
-    min-height: 520px;
-    background:
-      linear-gradient(90deg, rgba(9, 13, 26, .98), rgba(9, 13, 26, .84)),
-      url("../images/generated/hero-shipyard-pointcloud-v2.png") center right 35% / cover no-repeat;
+    min-height: auto;
+    padding: 64px 20px;
+    background-position: 0 0, 0 0, center, center right 35%;
   }
 
   .hero-inner {
-    min-height: 520px;
-    padding: 48px 16px 56px;
+    min-height: auto;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .hero-copy {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero .eyebrow,
+  .hero-lead {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero-actions,
+  .hero-tags {
+    justify-content: center;
   }
 
   h1 {
@@ -2075,12 +2129,7 @@ h3 {
   }
 
   .hero-tags {
-    gap: 8px 14px;
-  }
-
-  .hero-tags span + span::before {
-    content: "";
-    margin-right: 0;
+    gap: 8px;
   }
 
   .pipeline-film {
