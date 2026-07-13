@@ -18,7 +18,7 @@
   <meta property="og:image" content="https://optimize3d.github.io/homepage/assets/images/generated/hero-shipyard-pointcloud-v2.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/styles.css?v=20260713c">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260713d">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -212,71 +212,79 @@
         <p class="lead">선박·제조 현장의 스캔 데이터가 실제 검사, 인식, 자동화 데이터로 이어진 사례입니다.</p>
       </div>
       <div class="case-tabs" role="tablist" aria-label="대표 적용사례">
-        <button type="button" role="tab" aria-selected="true" data-tab-target="case-cargo">카고홀드 공간인식</button>
-        <button type="button" role="tab" aria-selected="false" data-tab-target="case-lngc">LNGC 객체탐지</button>
-        <button type="button" role="tab" aria-selected="false" data-tab-target="case-mold">FRP 몰드 검사</button>
-        <button type="button" role="tab" aria-selected="false" data-tab-target="case-robot">로봇 작업성</button>
+        <button id="case-tab-cargo" type="button" role="tab" aria-selected="true" aria-controls="case-cargo" data-tab-target="case-cargo">카고홀드 공간인식</button>
+        <button id="case-tab-lngc" type="button" role="tab" aria-selected="false" aria-controls="case-lngc" data-tab-target="case-lngc">LNGC 객체탐지</button>
+        <button id="case-tab-mold" type="button" role="tab" aria-selected="false" aria-controls="case-mold" data-tab-target="case-mold">FRP 몰드 검사</button>
+        <button id="case-tab-robot" type="button" role="tab" aria-selected="false" aria-controls="case-robot" data-tab-target="case-robot">로봇 작업성</button>
       </div>
       <div class="case-panels">
-        <article class="case-panel tab-panel is-active" id="case-cargo" role="tabpanel">
-          <div>
-            <time>2025</time>
-            <h3>딥러닝 기반 컨테이너선 카고홀드 공간인식 자동화 모듈</h3>
-            <p>조선소 컨테이너선 카고홀드 포인트클라우드에서 구조물과 작업공간을 인식하고, 객체 분할·공간 관계·검사 기준 데이터를 자동화 모듈로 정리합니다.</p>
+        <article class="case-panel tab-panel is-active" id="case-cargo" role="tabpanel" aria-labelledby="case-tab-cargo">
+          <div class="case-copy">
+            <div class="case-summary">
+              <time>2025</time>
+              <h3>딥러닝 기반 컨테이너선 카고홀드 공간인식 자동화 모듈</h3>
+              <p>조선소 컨테이너선 카고홀드 포인트클라우드에서 구조물과 작업공간을 인식하고, 객체 분할·공간 관계·검사 기준 데이터를 자동화 모듈로 정리합니다.</p>
+            </div>
+            <ul class="case-specs">
+              <li><strong>입력</strong><span>카고홀드 3D 포인트클라우드</span></li>
+              <li><strong>분석</strong><span>AI 객체인식, 공간추론, 접근성 판단</span></li>
+              <li><strong>결과</strong><span>검사/작업 기준 데이터 패키지</span></li>
+            </ul>
           </div>
-          <ul>
-            <li>입력: 카고홀드 3D 포인트클라우드</li>
-            <li>분석: AI 객체인식, 공간추론, 접근성 판단</li>
-            <li>결과: 검사/작업 기준 데이터 패키지</li>
-          </ul>
           <figure class="case-visual">
             <img src="assets/images/applied/indoor-spatial-ai.jpg" alt="포인트클라우드를 의미론적 공간과 객체 단위로 분할하는 AI 분석 사례" loading="lazy" decoding="async">
             <figcaption>Semantic parsing / object classification / density reasoning</figcaption>
           </figure>
         </article>
-        <article class="case-panel tab-panel" id="case-lngc" role="tabpanel" hidden>
-          <div>
-            <time>2020-2021</time>
-            <h3>LNGC 화물창 3D 포인트클라우드 객체 탐지</h3>
-            <p>조선소 LNGC 화물창 편평도 계측 과정에서 스캐폴딩 시스템을 탐지·분할하기 위한 딥러닝 기반 포인트클라우드 처리와 후처리 연구를 수행했습니다.</p>
+        <article class="case-panel tab-panel" id="case-lngc" role="tabpanel" aria-labelledby="case-tab-lngc" hidden>
+          <div class="case-copy">
+            <div class="case-summary">
+              <time>2020-2021</time>
+              <h3>LNGC 화물창 3D 포인트클라우드 객체 탐지</h3>
+              <p>조선소 LNGC 화물창 편평도 계측 과정에서 스캐폴딩 시스템을 탐지·분할하기 위한 딥러닝 기반 포인트클라우드 처리와 후처리 연구를 수행했습니다.</p>
+            </div>
+            <ul class="case-specs">
+              <li><strong>입력</strong><span>LNGC 화물창 스캔 데이터</span></li>
+              <li><strong>분석</strong><span>객체 탐지, 의미론적 분할, 후처리</span></li>
+              <li><strong>결과</strong><span>계측 대상 정리 및 검사 효율화</span></li>
+            </ul>
           </div>
-          <ul>
-            <li>입력: LNGC 화물창 스캔 데이터</li>
-            <li>분석: 객체 탐지, 의미론적 분할, 후처리</li>
-            <li>결과: 계측 대상 정리 및 검사 효율화</li>
-          </ul>
           <figure class="case-visual">
             <img src="assets/images/generated/spatial-ai-shipyard-segmentation-v2.png" alt="조선소 포인트클라우드 객체 탐지와 의미론적 분할 시각화" loading="lazy" decoding="async">
             <figcaption>3D object detection / semantic segmentation / post-processing</figcaption>
           </figure>
         </article>
-        <article class="case-panel tab-panel" id="case-mold" role="tabpanel" hidden>
-          <div>
-            <time>2016-2021</time>
-            <h3>소형선박·FRP 몰드 3D 스캐닝 및 형상 편차분석</h3>
-            <p>소형선박과 양산몰드의 스캔 데이터를 기준 형상과 비교해 정도관리 및 공정개선 가능성을 검증했습니다.</p>
+        <article class="case-panel tab-panel" id="case-mold" role="tabpanel" aria-labelledby="case-tab-mold" hidden>
+          <div class="case-copy">
+            <div class="case-summary">
+              <time>2016-2021</time>
+              <h3>소형선박·FRP 몰드 3D 스캐닝 및 형상 편차분석</h3>
+              <p>소형선박과 양산몰드의 스캔 데이터를 기준 형상과 비교해 정도관리 및 공정개선 가능성을 검증했습니다.</p>
+            </div>
+            <ul class="case-specs">
+              <li><strong>입력</strong><span>소형선박, FRP 몰드 스캔 데이터</span></li>
+              <li><strong>분석</strong><span>정합, 편차맵, 품질 기준 검토</span></li>
+              <li><strong>결과</strong><span>몰드 품질관리 및 개선 근거</span></li>
+            </ul>
           </div>
-          <ul>
-            <li>입력: 소형선박, FRP 몰드 스캔 데이터</li>
-            <li>분석: 정합, 편차맵, 품질 기준 검토</li>
-            <li>결과: 몰드 품질관리 및 개선 근거</li>
-          </ul>
           <figure class="case-visual">
             <img src="assets/images/applied/marine-scan-model.jpg" alt="소형선박 스캔 모델과 형상 편차분석 적용 사례" loading="lazy" decoding="async">
             <figcaption>Scan model / CAD alignment / deviation map</figcaption>
           </figure>
         </article>
-        <article class="case-panel tab-panel" id="case-robot" role="tabpanel" hidden>
-          <div>
-            <time>2025-2026</time>
-            <h3>포인트클라우드 기반 피지컬AI·협동로봇 작업성 검토</h3>
-            <p>선박블록 포인트클라우드 환경, 3D 비전 센서, 3D 프린팅 시험편을 연결해 로봇 경로·충돌·접근성·용접선 추출 가능성을 검토합니다.</p>
+        <article class="case-panel tab-panel" id="case-robot" role="tabpanel" aria-labelledby="case-tab-robot" hidden>
+          <div class="case-copy">
+            <div class="case-summary">
+              <time>2025-2026</time>
+              <h3>포인트클라우드 기반 피지컬AI·협동로봇 작업성 검토</h3>
+              <p>선박블록 포인트클라우드 환경, 3D 비전 센서, 3D 프린팅 시험편을 연결해 로봇 경로·충돌·접근성·용접선 추출 가능성을 검토합니다.</p>
+            </div>
+            <ul class="case-specs">
+              <li><strong>입력</strong><span>선박블록 포인트클라우드, 로봇 셀, 3D 비전 센서 조건</span></li>
+              <li><strong>분석</strong><span>공간추론, 충돌 감지, 용접선·표면 추출</span></li>
+              <li><strong>결과</strong><span>피지컬AI 실험 셋업 및 로봇 실행 데이터</span></li>
+            </ul>
           </div>
-          <ul>
-            <li>입력: 선박블록 포인트클라우드, 로봇 셀, 3D 비전 센서 조건</li>
-            <li>분석: 공간추론, 충돌 감지, 용접선·표면 추출</li>
-            <li>결과: 피지컬AI 실험 셋업 및 로봇 실행 데이터</li>
-          </ul>
           <figure class="case-visual">
             <img src="assets/images/applied/robot-weld-line-detection.jpg" alt="로봇 셀과 3D 비전 센서를 연결한 용접선 검출 및 피지컬AI 검증 사례" loading="lazy" decoding="async">
             <figcaption>Robot cell / 3D vision / weld-line extraction</figcaption>

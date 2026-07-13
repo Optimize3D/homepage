@@ -18,7 +18,7 @@
   <meta property="og:image" content="https://optimize3d.github.io/homepage/assets/images/generated/hero-shipyard-pointcloud-v2.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="../assets/brand/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../assets/css/styles.css?v=20260713c">
+  <link rel="stylesheet" href="../assets/css/styles.css?v=20260713d">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -188,30 +188,26 @@
         <p class="lead">Examples of shipbuilding and manufacturing scan data connected to inspection, recognition, and automation data.</p>
       </div>
       <div class="case-tabs" role="tablist" aria-label="Representative applications">
-        <button type="button" role="tab" aria-selected="true" data-tab-target="case-cargo">Cargo-hold spatial AI</button>
-        <button type="button" role="tab" aria-selected="false" data-tab-target="case-lngc">LNGC object detection</button>
-        <button type="button" role="tab" aria-selected="false" data-tab-target="case-mold">FRP mold inspection</button>
-        <button type="button" role="tab" aria-selected="false" data-tab-target="case-robot">Robot workability</button>
+        <button id="case-tab-cargo" type="button" role="tab" aria-selected="true" aria-controls="case-cargo" data-tab-target="case-cargo">Cargo-hold spatial AI</button>
+        <button id="case-tab-lngc" type="button" role="tab" aria-selected="false" aria-controls="case-lngc" data-tab-target="case-lngc">LNGC object detection</button>
+        <button id="case-tab-mold" type="button" role="tab" aria-selected="false" aria-controls="case-mold" data-tab-target="case-mold">FRP mold inspection</button>
+        <button id="case-tab-robot" type="button" role="tab" aria-selected="false" aria-controls="case-robot" data-tab-target="case-robot">Robot workability</button>
       </div>
       <div class="case-panels">
-        <article class="case-panel tab-panel is-active" id="case-cargo" role="tabpanel">
-          <div><time>2025</time><h3>Deep-learning spatial recognition module for a container-ship cargo hold</h3><p>Structures and workspaces are recognized from a shipyard cargo-hold point cloud, with object segmentation, spatial relationships, and inspection-reference data organized into an automation module.</p></div>
-          <ul><li>Input: cargo-hold 3D point cloud</li><li>Analysis: object recognition, spatial reasoning, accessibility</li><li>Output: inspection and work-reference data package</li></ul>
+        <article class="case-panel tab-panel is-active" id="case-cargo" role="tabpanel" aria-labelledby="case-tab-cargo">
+          <div class="case-copy"><div class="case-summary"><time>2025</time><h3>Deep-learning spatial recognition module for a container-ship cargo hold</h3><p>Structures and workspaces are recognized from a shipyard cargo-hold point cloud, with object segmentation, spatial relationships, and inspection-reference data organized into an automation module.</p></div><ul class="case-specs"><li><strong>Input</strong><span>Cargo-hold 3D point cloud</span></li><li><strong>Analysis</strong><span>Object recognition, spatial reasoning, accessibility</span></li><li><strong>Output</strong><span>Inspection and work-reference data package</span></li></ul></div>
           <figure class="case-visual"><img src="../assets/images/applied/indoor-spatial-ai.jpg" alt="AI analysis segmenting point clouds into semantic spaces and object classes" loading="lazy" decoding="async"><figcaption>Semantic parsing / object classification / density reasoning</figcaption></figure>
         </article>
-        <article class="case-panel tab-panel" id="case-lngc" role="tabpanel" hidden>
-          <div><time>2020-2021</time><h3>3D point-cloud object detection in an LNGC cargo hold</h3><p>Deep-learning point-cloud processing and post-processing were studied to detect and segment scaffolding systems during cargo-hold flatness measurement.</p></div>
-          <ul><li>Input: LNGC cargo-hold scan data</li><li>Analysis: object detection, semantic segmentation, post-processing</li><li>Output: measurement-target organization and inspection support</li></ul>
+        <article class="case-panel tab-panel" id="case-lngc" role="tabpanel" aria-labelledby="case-tab-lngc" hidden>
+          <div class="case-copy"><div class="case-summary"><time>2020-2021</time><h3>3D point-cloud object detection in an LNGC cargo hold</h3><p>Deep-learning point-cloud processing and post-processing were studied to detect and segment scaffolding systems during cargo-hold flatness measurement.</p></div><ul class="case-specs"><li><strong>Input</strong><span>LNGC cargo-hold scan data</span></li><li><strong>Analysis</strong><span>Object detection, semantic segmentation, post-processing</span></li><li><strong>Output</strong><span>Measurement-target organization and inspection support</span></li></ul></div>
           <figure class="case-visual"><img src="../assets/images/generated/spatial-ai-shipyard-segmentation-v2.png" alt="Shipyard point-cloud object detection and semantic segmentation" loading="lazy" decoding="async"><figcaption>3D object detection / semantic segmentation / post-processing</figcaption></figure>
         </article>
-        <article class="case-panel tab-panel" id="case-mold" role="tabpanel" hidden>
-          <div><time>2016-2021</time><h3>3D scanning and shape-deviation analysis for small craft and FRP molds</h3><p>Scan data from small craft and production molds were compared against reference shapes to verify dimensional control and process-improvement potential.</p></div>
-          <ul><li>Input: small-craft and FRP mold scan data</li><li>Analysis: registration, deviation map, quality criteria</li><li>Output: mold quality-control and improvement evidence</li></ul>
+        <article class="case-panel tab-panel" id="case-mold" role="tabpanel" aria-labelledby="case-tab-mold" hidden>
+          <div class="case-copy"><div class="case-summary"><time>2016-2021</time><h3>3D scanning and shape-deviation analysis for small craft and FRP molds</h3><p>Scan data from small craft and production molds were compared against reference shapes to verify dimensional control and process-improvement potential.</p></div><ul class="case-specs"><li><strong>Input</strong><span>Small-craft and FRP mold scan data</span></li><li><strong>Analysis</strong><span>Registration, deviation map, quality criteria</span></li><li><strong>Output</strong><span>Mold quality-control and improvement evidence</span></li></ul></div>
           <figure class="case-visual"><img src="../assets/images/applied/marine-scan-model.jpg" alt="Small-craft scan model and geometric deviation analysis" loading="lazy" decoding="async"><figcaption>Scan model / CAD alignment / deviation map</figcaption></figure>
         </article>
-        <article class="case-panel tab-panel" id="case-robot" role="tabpanel" hidden>
-          <div><time>2025-2026</time><h3>Point-cloud Physical AI and collaborative-robot workability study</h3><p>Ship-block point-cloud environments, 3D vision sensors, and 3D-printed specimens are connected to assess robot paths, collision, accessibility, and weld-line extraction.</p></div>
-          <ul><li>Input: ship-block point cloud, robot cell, 3D vision conditions</li><li>Analysis: spatial reasoning, collision, weld-line and surface extraction</li><li>Output: Physical AI setup and robot execution data</li></ul>
+        <article class="case-panel tab-panel" id="case-robot" role="tabpanel" aria-labelledby="case-tab-robot" hidden>
+          <div class="case-copy"><div class="case-summary"><time>2025-2026</time><h3>Point-cloud Physical AI and collaborative-robot workability study</h3><p>Ship-block point-cloud environments, 3D vision sensors, and 3D-printed specimens are connected to assess robot paths, collision, accessibility, and weld-line extraction.</p></div><ul class="case-specs"><li><strong>Input</strong><span>Ship-block point cloud, robot cell, 3D vision conditions</span></li><li><strong>Analysis</strong><span>Spatial reasoning, collision, weld-line and surface extraction</span></li><li><strong>Output</strong><span>Physical AI setup and robot execution data</span></li></ul></div>
           <figure class="case-visual"><img src="../assets/images/applied/robot-weld-line-detection.jpg" alt="Robot cell and 3D vision validation for weld-line detection and Physical AI" loading="lazy" decoding="async"><figcaption>Robot cell / 3D vision / weld-line extraction</figcaption></figure>
         </article>
       </div>
