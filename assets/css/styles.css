@@ -784,9 +784,12 @@ h3 {
 }
 
 .business-grid {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
+  gap: 32px;
 }
 
 .business-grid article,
@@ -1819,18 +1822,49 @@ h3 {
 
 .business-pillars article {
   min-height: 390px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  background: var(--color-bg-light);
+  color: var(--color-text-primary);
+  transition: var(--transition-smooth);
+}
+
+.business-pillars article:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 20px 25px -5px rgb(0 0 0 / .1),
+    0 8px 10px -6px rgb(0 0 0 / .1);
+}
+
+.solution-pillar > span {
+  color: var(--color-accent-blue);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .06em;
 }
 
 .business-pillars h3 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  color: var(--color-text-primary);
   font-size: 24px;
-  line-height: 1.18;
+  line-height: 1.3;
+}
+
+.business-pillars p {
+  margin-top: 0;
+  color: var(--color-text-secondary);
+  font-size: 15px;
+  line-height: 1.65;
 }
 
 .solution-pillar ul {
   display: grid;
-  gap: 8px;
+  gap: 10px;
   margin: 22px 0 0;
   padding: 0;
   list-style: none;
@@ -1838,9 +1872,9 @@ h3 {
 
 .solution-pillar li {
   position: relative;
-  padding-left: 15px;
-  color: var(--ink-2);
-  font-size: 13px;
+  padding-left: 18px;
+  color: var(--color-text-secondary);
+  font-size: 15px;
   line-height: 1.5;
 }
 
@@ -1848,23 +1882,39 @@ h3 {
   content: "";
   position: absolute;
   left: 0;
-  top: .62em;
+  top: .65em;
   width: 5px;
   height: 5px;
-  border-radius: 50%;
-  background: var(--teal);
+  border-radius: 1px;
+  background: var(--color-accent-blue);
 }
 
 .pillar-link {
   margin-top: auto;
   padding-top: 26px;
-  color: var(--teal);
-  font-size: 13px;
-  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  color: var(--color-accent-blue);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color .3s cubic-bezier(.4, 0, .2, 1);
 }
 
 .pillar-link::after {
-  content: " →";
+  content: "→";
+  display: inline-block;
+  transition: transform .3s cubic-bezier(.4, 0, .2, 1);
+}
+
+.pillar-link:hover {
+  color: var(--color-text-primary);
+}
+
+.pillar-link:hover::after {
+  transform: translateX(4px);
 }
 
 .application-rail {
