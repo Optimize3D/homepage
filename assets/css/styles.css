@@ -1077,6 +1077,11 @@ h3 {
   transition: transform .72s ease;
 }
 
+.case-visual img.is-diagram {
+  object-fit: contain;
+  background: #fff;
+}
+
 .case-visual::after {
   content: none;
 }
