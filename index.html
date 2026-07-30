@@ -18,7 +18,7 @@
   <meta property="og:image" content="https://optimize3d.github.io/homepage/assets/images/generated/hero-shipyard-pointcloud-v2.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/styles.css?v=20260716a">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260730a">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -33,6 +33,8 @@
       "knowsAbout": [
         "3D scanning",
         "Point cloud artificial intelligence",
+        "Optree Framework",
+        "Large-scale point cloud streaming",
         "3D metrology",
         "Reverse engineering",
         "Physical AI"
@@ -60,7 +62,7 @@
         <span></span>
       </button>
       <div class="nav-links" id="nav-links">
-        <a href="#data-flow">데이터 흐름</a>
+        <a href="#solutions">소프트웨어</a>
         <a href="#business">사업영역</a>
         <a href="#cases">적용사례</a>
         <a href="#platform">운영모델</a>
@@ -154,6 +156,138 @@
             <p data-pipeline-visual-body>선박블록, 카고홀드, 몰드, 배관과 작업공간을 포인트클라우드·사진·CAD 기준으로 묶습니다.</p>
             <strong data-pipeline-visual-output>Point cloud / Photo / CAD reference</strong>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section suite-section" id="solutions" aria-labelledby="suite-title" data-tab-group>
+      <div class="section-head compact suite-head">
+        <p class="kicker">Optimize3D Point Cloud Suite</p>
+        <h2 id="suite-title">하나의 포인트클라우드를 여러 현장 업무로 연결합니다.</h2>
+        <p class="lead">Optree Framework가 대규모 데이터를 공통 구조로 관리하고, Labeler·MultiViewer·Compare가 AI 학습 데이터 구축부터 통합 검토와 정량 비교까지 이어갑니다.</p>
+      </div>
+
+      <div class="suite-tabs" role="tablist" aria-label="Optimize3D 포인트클라우드 소프트웨어">
+        <button id="suite-tab-labeler" type="button" role="tab" aria-selected="true" aria-controls="suite-labeler" data-tab-target="suite-labeler">Labeler</button>
+        <button id="suite-tab-multiviewer" type="button" role="tab" aria-selected="false" aria-controls="suite-multiviewer" data-tab-target="suite-multiviewer">MultiViewer</button>
+        <button id="suite-tab-compare" type="button" role="tab" aria-selected="false" aria-controls="suite-compare" data-tab-target="suite-compare">Compare</button>
+      </div>
+
+      <div class="suite-panels">
+        <article class="suite-panel tab-panel is-active" id="suite-labeler" role="tabpanel" aria-labelledby="suite-tab-labeler">
+          <div class="suite-copy">
+            <p class="screen-kicker">AI DATASET OPERATIONS</p>
+            <h3>Optimize3D Labeler</h3>
+            <p>대용량 포인트클라우드에서 필요한 영역을 선택·클리핑하고 의미론적·객체 단위 라벨을 원본 포인트와 연결해 관리합니다.</p>
+            <ul class="suite-feature-list">
+              <li>대규모 데이터 영역 선택·클리핑</li>
+              <li>Semantic·Instance 라벨링</li>
+              <li>라벨 클래스·변경 이력 관리</li>
+            </ul>
+            <a class="suite-link" href="#contact" data-contact-category="Point Cloud Suite·Optree">솔루션 상담</a>
+          </div>
+          <div class="solution-surface labeler-surface" role="img" aria-label="대규모 포인트클라우드 영역 선택과 의미론적 라벨링 작업 화면">
+            <div class="surface-topbar" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <strong>BLOCK-A21 / LABEL SESSION</strong>
+              <small>OPTREE STREAM</small>
+            </div>
+            <div class="surface-workspace" aria-hidden="true">
+              <div class="surface-sidebar">
+                <small>CLASS SET</small>
+                <b><i class="class-swatch swatch-cyan"></i>Support</b>
+                <b><i class="class-swatch swatch-lime"></i>Plate</b>
+                <b><i class="class-swatch swatch-violet"></i>Scaffold</b>
+                <b><i class="class-swatch swatch-orange"></i>Outlier</b>
+                <div class="surface-meter"><span></span></div>
+                <small>43.8M / 428M PTS</small>
+              </div>
+              <div class="point-viewport">
+                <span class="cloud-mass cloud-mass-wide"></span>
+                <span class="cloud-mass cloud-mass-supports"></span>
+                <span class="selection-volume"></span>
+                <span class="axis-marker axis-x">X</span>
+                <span class="axis-marker axis-y">Y</span>
+                <span class="axis-marker axis-z">Z</span>
+                <small class="viewport-status">REGION 04 · SEMANTIC LABEL</small>
+                <strong class="viewport-count">12,408 selected</strong>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="suite-panel tab-panel" id="suite-multiviewer" role="tabpanel" aria-labelledby="suite-tab-multiviewer" hidden>
+          <div class="suite-copy">
+            <p class="screen-kicker">SYNCHRONIZED REVIEW</p>
+            <h3>Optimize3D MultiViewer</h3>
+            <p>여러 스캔, 시점, 편집본과 AI 결과를 같은 장면에서 열고 동기화된 시점으로 정합 상태와 공간 차이를 검토합니다.</p>
+            <ul class="suite-feature-list">
+              <li>다중 데이터 동시 로딩</li>
+              <li>동기화 회전·확대·단면 검토</li>
+              <li>정합·중첩 상태 비교</li>
+            </ul>
+            <a class="suite-link" href="#contact" data-contact-category="Point Cloud Suite·Optree">솔루션 상담</a>
+          </div>
+          <div class="solution-surface multiviewer-surface" role="img" aria-label="네 개의 포인트클라우드 데이터를 동기화된 시점으로 검토하는 멀티뷰 화면">
+            <div class="surface-topbar" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <strong>YARD-SCAN / 4 DATASETS</strong>
+              <small>VIEW SYNC ON</small>
+            </div>
+            <div class="multiview-grid" aria-hidden="true">
+              <div class="mini-viewport"><small>RAW SCAN</small><i class="mini-cloud mini-cloud-a"></i><b>428M pts</b></div>
+              <div class="mini-viewport"><small>REGISTERED</small><i class="mini-cloud mini-cloud-b"></i><b>RMS 3.2 mm</b></div>
+              <div class="mini-viewport"><small>SEMANTIC</small><i class="mini-cloud mini-cloud-c"></i><b>12 classes</b></div>
+              <div class="mini-viewport"><small>REFERENCE</small><i class="mini-cloud mini-cloud-d"></i><b>CAD overlay</b></div>
+              <span class="sync-crosshair"></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="suite-panel tab-panel" id="suite-compare" role="tabpanel" aria-labelledby="suite-tab-compare" hidden>
+          <div class="suite-copy">
+            <p class="screen-kicker">QUANTITATIVE COMPARISON</p>
+            <h3>Optimize3D Compare</h3>
+            <p>Scan-to-Scan, Scan-to-CAD와 AI 추론 결과를 비교해 편차, 누락, 오탐과 품질 판단 근거를 정량화합니다.</p>
+            <ul class="suite-feature-list">
+              <li>Scan·CAD·AI 결과 비교</li>
+              <li>거리·편차·이상치 분석</li>
+              <li>디지털 품질 리포트 연결</li>
+            </ul>
+            <a class="suite-link" href="#contact" data-contact-category="Point Cloud Suite·Optree">솔루션 상담</a>
+          </div>
+          <div class="solution-surface compare-surface" role="img" aria-label="스캔과 CAD를 중첩해 편차맵과 통계값을 비교하는 화면">
+            <div class="surface-topbar" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <strong>SCAN / CAD DEVIATION</strong>
+              <small>TOLERANCE ±4.0 MM</small>
+            </div>
+            <div class="compare-workspace" aria-hidden="true">
+              <div class="compare-view compare-reference"><small>REFERENCE CAD</small><i></i></div>
+              <div class="compare-view compare-deviation"><small>DEVIATION MAP</small><i></i></div>
+              <span class="compare-divider"></span>
+              <div class="deviation-legend"><span></span><small>-8</small><small>0</small><small>+8 mm</small></div>
+              <div class="compare-stats">
+                <span><small>MEAN</small><b>+0.84 mm</b></span>
+                <span><small>RMS</small><b>2.31 mm</b></span>
+                <span><small>PASS</small><b>96.8%</b></span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="optree-foundation">
+        <div class="optree-copy">
+          <p class="screen-kicker">COMMON DATA FOUNDATION</p>
+          <h3>Optree Framework</h3>
+          <p><strong>Optree Framework는 Optimize3D가 독자적으로 개발한 Octree 기반 산업용 포인트클라우드 구조입니다.</strong> 필요한 공간과 상세도부터 점진적으로 불러오고, 화면에 표시되는 경량 데이터와 원본 포인트의 연결을 유지해 여러 도구가 하나의 프로젝트 데이터를 공유하도록 설계했습니다.</p>
+        </div>
+        <div class="optree-capabilities" aria-label="Optree Framework 핵심 구조">
+          <span><b>01</b>Progressive LOD</span>
+          <span><b>02</b>Source-index Mapping</span>
+          <span><b>03</b>Shared Project Data</span>
+          <span><b>04</b>Resource-aware Streaming</span>
         </div>
       </div>
     </section>
@@ -407,6 +541,7 @@
               <option value="3D 스캐닝·역설계">3D 스캐닝·역설계</option>
               <option value="공간 AI·품질검사">공간 AI·품질검사</option>
               <option value="피지컬AI·로봇 데이터">피지컬AI·로봇 데이터</option>
+              <option value="Point Cloud Suite·Optree">Point Cloud Suite·Optree</option>
               <option value="산학공동 연구">산학공동 연구</option>
             </select>
           </div>

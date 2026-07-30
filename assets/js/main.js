@@ -80,7 +80,11 @@ tabGroups.forEach((group) => {
     const target = document.getElementById(button.dataset.tabTarget);
     if (!target) return;
 
-    buttons.forEach((item) => item.setAttribute("aria-selected", String(item === button)));
+    buttons.forEach((item) => {
+      const isSelected = item === button;
+      item.setAttribute("aria-selected", String(isSelected));
+      item.tabIndex = isSelected ? 0 : -1;
+    });
     panels.forEach((panel) => {
       const isActive = panel === target;
       panel.hidden = !isActive;
