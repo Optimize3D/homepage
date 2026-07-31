@@ -18,7 +18,7 @@
   <meta property="og:image" content="https://optimize3d.github.io/homepage/assets/images/generated/hero-shipyard-pointcloud-v2.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="../assets/brand/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../assets/css/styles.css?v=20260730a">
+  <link rel="stylesheet" href="../assets/css/styles.css?v=20260731a">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -34,6 +34,9 @@
         "3D scanning",
         "Point cloud artificial intelligence",
         "Optree Framework",
+        "Optree Recognition Engine",
+        "FPFH geometric feature recognition",
+        "TDA topological feature analysis",
         "Large-scale point cloud streaming",
         "3D metrology",
         "Reverse engineering",
@@ -153,7 +156,7 @@
       <div class="section-head compact suite-head">
         <p class="kicker">Optimize3D Point Cloud Suite</p>
         <h2 id="suite-title">One point cloud, connected across multiple field workflows.</h2>
-        <p class="lead">Optree Framework manages large datasets through a shared structure, while Labeler, MultiViewer, and Compare connect AI dataset preparation, integrated review, and quantitative comparison.</p>
+        <p class="lead">Optree Framework manages ultra-scale data through a shared structure, while Recognition Engine, Labeler, MultiViewer, and Compare connect object recognition, integrated review, and quantitative comparison.</p>
       </div>
 
       <div class="suite-tabs" role="tablist" aria-label="Optimize3D point-cloud software">
@@ -173,7 +176,7 @@
               <li>Semantic and instance labeling</li>
               <li>Label classes and revision management</li>
             </ul>
-            <a class="suite-link" href="#contact" data-contact-category="Point Cloud Suite &amp; Optree">Discuss the solution</a>
+            <a class="suite-link" href="#contact" data-contact-category="Optree Recognition Engine &amp; Point Cloud Suite">Discuss the solution</a>
           </div>
           <div class="solution-surface labeler-surface" role="img" aria-label="Large point-cloud region selection and semantic labeling workspace">
             <div class="surface-topbar" aria-hidden="true">
@@ -215,7 +218,7 @@
               <li>Synchronized orbit, zoom, and section review</li>
               <li>Registration and overlay inspection</li>
             </ul>
-            <a class="suite-link" href="#contact" data-contact-category="Point Cloud Suite &amp; Optree">Discuss the solution</a>
+            <a class="suite-link" href="#contact" data-contact-category="Optree Recognition Engine &amp; Point Cloud Suite">Discuss the solution</a>
           </div>
           <div class="solution-surface multiviewer-surface" role="img" aria-label="Multi-view workspace reviewing four point-cloud datasets from synchronized viewpoints">
             <div class="surface-topbar" aria-hidden="true">
@@ -243,7 +246,7 @@
               <li>Distance, deviation, and outlier analysis</li>
               <li>Digital quality report connection</li>
             </ul>
-            <a class="suite-link" href="#contact" data-contact-category="Point Cloud Suite &amp; Optree">Discuss the solution</a>
+            <a class="suite-link" href="#contact" data-contact-category="Optree Recognition Engine &amp; Point Cloud Suite">Discuss the solution</a>
           </div>
           <div class="solution-surface compare-surface" role="img" aria-label="Scan-to-CAD comparison workspace with deviation map and statistics">
             <div class="surface-topbar" aria-hidden="true">
@@ -268,15 +271,77 @@
 
       <div class="optree-foundation">
         <div class="optree-copy">
-          <p class="screen-kicker">COMMON DATA FOUNDATION</p>
+          <p class="screen-kicker">OPTREE CORE</p>
           <h3>Optree Framework</h3>
-          <p><strong>Optree Framework is an Octree-based structure independently developed by Optimize3D for industrial point-cloud data.</strong> It progressively loads the required spatial regions and levels of detail, preserves the link between lightweight display data and source points, and lets multiple tools share one project dataset.</p>
+          <p><strong>Optree Framework is an Octree-based structure independently developed by Optimize3D for industrial point-cloud data.</strong> It progressively loads the required spatial regions and levels of detail, preserves links between lightweight data and source points, and lets ultra-scale field data and multiple tools share one project structure.</p>
         </div>
         <div class="optree-capabilities" aria-label="Optree Framework core architecture">
           <span><b>01</b>Progressive LOD</span>
           <span><b>02</b>Source-index Mapping</span>
           <span><b>03</b>Shared Project Data</span>
           <span><b>04</b>Resource-aware Streaming</span>
+        </div>
+      </div>
+
+      <div class="recognition-engine" aria-labelledby="recognition-engine-title">
+        <div class="recognition-engine-intro">
+          <div>
+            <p class="screen-kicker">GEO-TOPOLOGY INTELLIGENCE</p>
+            <h3 id="recognition-engine-title">Optree Recognition Engine</h3>
+          </div>
+          <p><strong>An industrial engine that operationalizes ultra-scale point-cloud recognition for shipyards, engineering firms, and large manufacturing and construction sites.</strong> It computes and manages FPFH local geometric features and TDA topological features at the Optree-node level, then fuses them with deep-learning features to distinguish complex industrial objects.</p>
+        </div>
+
+        <div class="recognition-pipeline" aria-label="Optree Recognition Engine technology flow">
+          <div class="recognition-node recognition-node-input">
+            <small>OPTREE NODES</small>
+            <strong>Ultra-scale Point Cloud</strong>
+            <span>LOD · source index · feature cache</span>
+          </div>
+          <span class="recognition-arrow" aria-hidden="true">→</span>
+          <div class="recognition-feature-stack">
+            <div class="recognition-node">
+              <small>LOCAL GEOMETRY</small>
+              <strong>FPFH</strong>
+              <span>Normals · curvature · local relationships</span>
+            </div>
+            <div class="recognition-node">
+              <small>GLOBAL TOPOLOGY</small>
+              <strong>TDA / PH</strong>
+              <span>Connectivity · loops · persistence</span>
+            </div>
+          </div>
+          <span class="recognition-arrow" aria-hidden="true">→</span>
+          <div class="recognition-node recognition-node-output">
+            <small>GEO-TOPOLOGY FUSION</small>
+            <strong>Industrial Recognition</strong>
+            <span>Classification · segmentation · similarity · outliers</span>
+          </div>
+        </div>
+
+        <div class="recognition-outcomes">
+          <div>
+            <p class="screen-kicker">PRACTICAL AT SCALE</p>
+            <h4>Built for ultra-scale data</h4>
+            <p>Only the required Optree nodes and levels of detail are processed, avoiding a full in-memory load. Feature caching and source-index mapping make training, review, and inference outputs practical to reuse.</p>
+          </div>
+          <div>
+            <p class="screen-kicker">OPEN INTEROPERABILITY</p>
+            <h4>Connects with every major platform</h4>
+            <p>The engine is not tied to a single viewer or training environment. Standard files, APIs, and project interfaces connect it with point-cloud, CAD and BIM, AI, digital-twin, and engineering platforms.</p>
+          </div>
+        </div>
+
+        <div class="recognition-connections" aria-label="Platforms connected to Optree Recognition Engine">
+          <div>
+            <small>OPTIMIZE3D NATIVE</small>
+            <span>Labeler</span><span>MultiViewer</span><span>Compare</span>
+          </div>
+          <div>
+            <small>OPEN PLATFORM</small>
+            <span>Point Cloud</span><span>CAD·BIM</span><span>AI Pipeline</span><span>Digital Twin</span><span>Engineering</span>
+          </div>
+          <a class="suite-link" href="#contact" data-contact-category="Optree Recognition Engine &amp; Point Cloud Suite">Discuss Recognition Engine</a>
         </div>
       </div>
     </section>
@@ -408,7 +473,7 @@
               <option value="3D Scanning &amp; Reverse Engineering">3D scanning &amp; reverse engineering</option>
               <option value="Spatial AI &amp; Quality Inspection">Spatial AI &amp; quality inspection</option>
               <option value="Physical AI &amp; Robot Data">Physical AI &amp; robot data</option>
-              <option value="Point Cloud Suite &amp; Optree">Point Cloud Suite &amp; Optree</option>
+              <option value="Optree Recognition Engine &amp; Point Cloud Suite">Optree Recognition Engine &amp; Point Cloud Suite</option>
               <option value="Industry-Academic Research">Industry-academic research</option>
             </select>
           </div>

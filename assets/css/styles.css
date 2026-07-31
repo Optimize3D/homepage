@@ -2610,6 +2610,185 @@ h3 {
   font-size: 10px;
 }
 
+.recognition-engine {
+  margin-top: 52px;
+  padding: 56px 0 12px;
+  border-top: 1px solid rgba(163, 230, 53, .38);
+}
+
+.recognition-engine-intro {
+  display: grid;
+  grid-template-columns: minmax(280px, .72fr) minmax(0, 1.28fr);
+  gap: 64px;
+  align-items: start;
+}
+
+.recognition-engine-intro h3 {
+  max-width: 520px;
+  margin: 8px 0 0;
+  color: var(--white);
+  font-size: clamp(30px, 4vw, 48px);
+}
+
+.recognition-engine-intro > p {
+  max-width: 760px;
+  margin: 2px 0 0;
+  color: #aeb9c9;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.recognition-engine-intro > p strong {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--white);
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.recognition-pipeline {
+  margin-top: 42px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1.15fr) 28px minmax(0, 1.12fr);
+  gap: 14px;
+  align-items: stretch;
+}
+
+.recognition-node {
+  min-width: 0;
+  min-height: 124px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgba(148, 163, 184, .26);
+  background: rgba(15, 23, 42, .58);
+}
+
+.recognition-node small,
+.recognition-connections small {
+  color: var(--color-accent-blue);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .1em;
+}
+
+.recognition-node strong {
+  margin-top: 7px;
+  color: var(--white);
+  font-family: var(--font-mono);
+  font-size: 17px;
+  letter-spacing: 0;
+}
+
+.recognition-node span {
+  margin-top: 9px;
+  color: #8f9caf;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.recognition-node-input {
+  border-left: 2px solid var(--color-accent-blue);
+  background:
+    linear-gradient(135deg, rgba(56, 189, 248, .12), transparent 65%),
+    rgba(15, 23, 42, .58);
+}
+
+.recognition-node-output {
+  border-left: 2px solid var(--color-accent-lime);
+  background:
+    linear-gradient(135deg, rgba(163, 230, 53, .11), transparent 65%),
+    rgba(15, 23, 42, .58);
+}
+
+.recognition-feature-stack {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.recognition-feature-stack .recognition-node:first-child {
+  border-top: 2px solid var(--color-accent-blue);
+}
+
+.recognition-feature-stack .recognition-node:last-child {
+  border-top: 2px solid var(--color-accent-lime);
+}
+
+.recognition-arrow {
+  display: grid;
+  place-items: center;
+  color: var(--color-accent-blue);
+  font-family: var(--font-mono);
+  font-size: 22px;
+}
+
+.recognition-outcomes {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.recognition-outcomes > div {
+  padding: 30px 32px 32px 0;
+}
+
+.recognition-outcomes > div + div {
+  padding-left: 32px;
+  border-left: 1px solid var(--line);
+}
+
+.recognition-outcomes h4 {
+  margin: 9px 0 10px;
+  color: var(--white);
+  font-size: 21px;
+}
+
+.recognition-outcomes p:last-child {
+  margin: 0;
+  color: #98a5b7;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.recognition-connections {
+  padding-top: 28px;
+  display: grid;
+  grid-template-columns: minmax(250px, .75fr) minmax(0, 1.45fr) auto;
+  gap: 26px;
+  align-items: end;
+}
+
+.recognition-connections > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.recognition-connections small {
+  flex-basis: 100%;
+  margin-bottom: 3px;
+}
+
+.recognition-connections span {
+  padding: 6px 9px;
+  border: 1px solid rgba(148, 163, 184, .22);
+  color: #cbd5e1;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.recognition-connections .suite-link {
+  margin: 0 0 2px;
+  white-space: nowrap;
+}
+
 .business-pillars article {
   min-height: 390px;
   padding: 40px;
@@ -2946,6 +3125,7 @@ h3 {
   .data-system-layout,
   .suite-panel,
   .optree-foundation,
+  .recognition-engine-intro,
   .ai-section,
   .physical-ai-section,
   .platform-section,
@@ -2972,6 +3152,25 @@ h3 {
 
   .optree-foundation {
     align-items: start;
+  }
+
+  .recognition-pipeline {
+    grid-template-columns: 1fr;
+  }
+
+  .recognition-arrow {
+    min-height: 22px;
+    transform: rotate(90deg);
+  }
+
+  .recognition-connections {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+
+  .recognition-connections .suite-link {
+    grid-column: 1 / -1;
+    justify-self: start;
   }
 
   .pipeline-visual {
@@ -3216,6 +3415,51 @@ h3 {
   .optree-capabilities span:nth-child(2n) {
     min-height: 56px;
     border-right: 0;
+  }
+
+  .recognition-engine {
+    margin-top: 38px;
+    padding-top: 40px;
+  }
+
+  .recognition-engine-intro {
+    gap: 20px;
+  }
+
+  .recognition-engine-intro h3 {
+    font-size: 30px;
+  }
+
+  .recognition-engine-intro > p strong {
+    font-size: 16px;
+  }
+
+  .recognition-pipeline {
+    margin-top: 30px;
+  }
+
+  .recognition-feature-stack,
+  .recognition-outcomes,
+  .recognition-connections {
+    grid-template-columns: 1fr;
+  }
+
+  .recognition-outcomes > div,
+  .recognition-outcomes > div + div {
+    padding: 24px 0;
+    border-left: 0;
+  }
+
+  .recognition-outcomes > div + div {
+    border-top: 1px solid var(--line);
+  }
+
+  .recognition-connections {
+    gap: 22px;
+  }
+
+  .recognition-connections .suite-link {
+    grid-column: auto;
   }
 
   .business-pillars article {
