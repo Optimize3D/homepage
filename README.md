@@ -1,37 +1,19 @@
-# Optimize3D Landing v3
+# Optimize3D Website
 
-정적 사이트입니다. 브라우저에서 `index.html`을 바로 열 수 있고, 영문판은 `en/index.html`에서 확인할 수 있습니다.
+GitHub Pages에서 제공하는 국문·영문 정적 홈페이지입니다. 실제 화면은 `index.html`, `en/index.html`을 수정합니다.
 
-## Structure
+## 구조
 
-- `index.html`: 실제 렌더링되는 정적 페이지
-- `research.html`: OPTLab 연구실적 요약과 대표 연구 사례 페이지
-- `en/index.html`, `en/research.html`: 영문 홈과 연구실적 페이지
-- `assets/brand/`: 단순화한 Optimize3D SVG 워드마크, 심볼, favicon
-- `assets/images/`: 렌더링에 쓰는 새 생성 이미지 4개와 이전 참조 이미지 보관본
-- `assets/css/styles.css`: 전체 스타일
-- `assets/js/main.js`: 모바일 메뉴
-- `assets/js/research-publications.js`: 연구실 논문 목록 렌더링 데이터
-- `assets/visuals/lod-streaming.svg`: 자체 Optree LOD 엔진의 점진적 점군 스트리밍을 설명하는 웹용 개념도
-- `content/home.json`, `content/research.json`: 향후 CMS/빌드 연동용 국문 콘텐츠 원본 초안
-- `content/home.en.json`, `content/research.en.json`: 향후 CMS/빌드 연동용 영문 콘텐츠 원본 초안
+- `assets/css/home.css`, `assets/js/home.js`: 홈페이지 전용 디자인, 모바일 메뉴와 문의 양식 열기
+- `assets/css/styles.css`: 연구실적 페이지 스타일
+- `assets/js/main.js`: 기존 연구 페이지 메뉴와 이메일 초안 작성
+- `research.html`, `en/research.html`, `assets/js/research-publications.js`: 연구실적과 논문 목록
+- `content/home*.json`: 향후 CMS 연동용 초안. 현재 HTML에서 자동으로 읽지 않음
 
-## Design Direction
+## 디자인과 콘텐츠
 
-- 대표 적용사례의 첫 번째 기본 탭은 2026년 `대용량 포인트 클라우드 경량 스트리밍`입니다. 수십억 포인트의 경량 가시화, MultiViewer·Optree 소개, 스트리밍 문의 항목을 국문·영문에 함께 반영했습니다.
-- `content/home.json`과 `content/home.en.json`의 `featuredCase`는 새 대표 사례의 콘텐츠 초안입니다. 현재 페이지는 정적 HTML이며 JSON을 자동으로 읽지 않으므로 화면 문구는 각 HTML에서도 수정해야 합니다.
-- 첫 화면은 낮고 간결한 B2B 기술기업형 히어로로 구성했습니다.
-- 로고는 복잡한 큐브/점군 마크를 제거하고 `O3 + Optimize3D` 워드마크로 단순화했습니다.
-- 본문은 연구실 소개가 아니라 사업영역, AI 기술, 파일럿 프로세스, 적용분야 순서로 구성했습니다.
-- 포인트클라우드 3차원 객체인식, 공간추론, AI 품질판단을 핵심 기술 문구로 포함했습니다.
-- 연구실 배경은 하단 기술근거 섹션에 신뢰 요소로만 배치했습니다.
-- 문의 이메일은 HTML에 원문 주소를 노출하지 않고, 클릭 시 JavaScript에서 조합해 메일 앱을 여는 방식으로 처리했습니다.
-- Technical Backbone에서 별도 연구실적 페이지로 이동할 수 있게 구성했습니다.
-- 연구실적 페이지에는 OPTLab 연구실 소개를 추가했고, 주요 연구실적 표는 연구실 학술논문 48편으로 확장했습니다.
-- 논문 링크는 제목 기반 Google Scholar 검색 링크로 연결했습니다.
+대형 이미지, 어두운 배경, 간결한 적용사례 카드로 구성합니다. 홈페이지의 수치형 성능·실적 홍보는 제외하고, 사례 연도와 논문 출처는 유지합니다. 첫 사례는 2026년 대용량 포인트 클라우드 경량 스트리밍입니다.
 
-## GitHub Pages
+`assets/visuals/lod-streaming-v2*.svg`는 LOD 점군 스트리밍 개념도입니다. `assets/images/generated/home-support-inspection-paper.webp`는 논문 DOI `10.3744/SNAK.2026.63.3.191`의 원통형 지지대 분리·단면 중심·높이 분석을 바탕으로 생성한 개념 이미지이며 실측 화면으로 표시하지 않습니다. 관련 논문은 합성 기준 배치를 사용해 위치 비교 방법을 검증했습니다. 나머지 생성 이미지에도 개념 이미지 표시를 유지합니다.
 
-- GitHub Pages에서 Jekyll 변환 없이 그대로 서빙되도록 `.nojekyll`을 포함했습니다.
-- 사이트 루트는 이 폴더 자체입니다. 저장소 루트에 `index.html`, `assets/`, `content/`, `en/`, `research.html`이 오도록 올리면 됩니다.
-- 문의 메일 주소는 `assets/js/main.js`에서 문자 코드로 조합됩니다. 공개 HTML에는 원문 이메일을 노출하지 않습니다.
+문의 양식은 서버 접수 대신 입력 내용을 정리한 이메일 초안을 엽니다. 메일 앱이 없는 사용자를 위해 직접 이메일 주소를 제공합니다. 사이트 루트의 `.nojekyll`을 유지해 저장소 파일을 그대로 배포합니다.

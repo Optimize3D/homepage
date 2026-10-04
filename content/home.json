@@ -6,11 +6,11 @@
   },
   "hero": {
     "eyebrow": "3D 스캔 데이터를 현장 판단과 실행 데이터로 연결한다",
-    "title": "Optimize3D",
-    "body": "조선·해양·제조·건설 현장의 공간을 AI 분석, 품질판정, 역설계, 로봇으로 연결하는 현장형 3D 포인트클라우드 데이터 회사입니다.",
+    "title": "대용량 스캔을 가볍게. 현장 판단을 명확하게.",
+    "body": "자체 LOD 엔진과 공간 AI로 탐색부터 검사, 자동화 검토까지 현장 데이터의 활용을 넓힙니다.",
     "primaryAction": "파일럿 문의",
     "secondaryAction": "사업영역 보기",
-    "visual": "assets/images/generated/hero-shipyard-pointcloud-v2.png",
+    "visual": "assets/images/generated/home-hero.webp",
     "tags": [
       "포인트클라우드",
       "대용량 경량 스트리밍",
@@ -82,9 +82,9 @@
     "id": "case-streaming",
     "year": 2026,
     "title": "대용량 포인트 클라우드 경량 스트리밍",
-    "body": "Optimize3D가 자체 개발한 Optree LOD 엔진으로 수십억 개의 포인트로 구성된 대용량 포인트 클라우드를 경량 가시화합니다. 전체 형상은 낮은 상세도로 먼저 표시하고, 화면에 보이는 영역과 확대 수준에 맞춰 필요한 점군 데이터만 점진적으로 스트리밍합니다. 원본 포인트와의 연결을 유지해 조선소·산업 설비의 대규모 스캔 데이터를 전체 공간부터 관심 영역의 세부 형상까지 탐색·검토할 수 있습니다.",
+    "body": "초대용량 점군을 필요한 곳부터 가볍게 탐색합니다. 자체 Optree LOD 엔진이 전체 형상을 먼저 보여주고, 화면과 확대 수준에 맞는 데이터를 점진적으로 불러옵니다.",
     "highlight": {
-      "title": "수십억 포인트",
+      "title": "대용량 경량 탐색",
       "body": "자체 Optree LOD 엔진 기반 경량 가시화"
     },
     "specs": [
@@ -101,7 +101,7 @@
         "text": "대규모 공간 경량 가시화 · 관심 영역 상세 검토 · 원본 포인트 연결"
       }
     ],
-    "image": "assets/visuals/lod-streaming.svg",
+    "image": "assets/visuals/lod-streaming-v2.svg",
     "imageAlt": "대용량 산업 점군을 자체 Optree LOD 엔진으로 계층화하고 현재 화면에 필요한 영역을 스트리밍해 직접 3D 가시화하는 개념도",
     "caption": "개념도 · 전체 형상 → 화면 기준 LOD 스트리밍 → 관심 영역 상세 가시화",
     "contactCategory": "대용량 포인트 클라우드·LOD 스트리밍"
@@ -135,9 +135,6 @@
   "proof": {
     "title": "산학공동 연구 기반",
     "summary": {
-      "awards": 7,
-      "papers": "50+",
-      "presentations": "300+",
       "detailPage": "research.html",
       "data": "content/research.json"
     },
