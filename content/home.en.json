@@ -13,6 +13,7 @@
     "visual": "assets/images/generated/hero-shipyard-pointcloud-v2.png",
     "tags": [
       "Point cloud",
+      "Lightweight point-cloud streaming",
       "AI object recognition",
       "AI spatial reasoning",
       "Quality inspection",
@@ -42,6 +43,34 @@
     "3D Printed Jigs",
     "Physical AI Data Package"
   ],
+  "featuredCase": {
+    "id": "case-streaming",
+    "year": 2026,
+    "title": "Lightweight Streaming of Large-Scale Point Clouds",
+    "body": "Optimize3D’s proprietary Optree LOD engine enables lightweight visualization of large-scale point clouds containing billions of points. A coarse overview appears first, followed by progressive streaming of the point-cloud data needed for the visible area and zoom level. Links to the original points are retained, allowing large shipyard and industrial-facility scans to be explored from the overall site down to detailed regions of interest.",
+    "highlight": {
+      "title": "Billions of points",
+      "body": "Lightweight visualization with our proprietary Optree LOD engine"
+    },
+    "specs": [
+      {
+        "label": "Input",
+        "text": "Large-scale E57 and PLY scans of shipyards and industrial facilities"
+      },
+      {
+        "label": "Process",
+        "text": "Proprietary hierarchical LOD engine · view-dependent progressive streaming"
+      },
+      {
+        "label": "Output",
+        "text": "Lightweight site visualization · detailed regional review · original-point links"
+      }
+    ],
+    "image": "assets/visuals/lod-streaming.svg",
+    "imageAlt": "Concept diagram showing industrial point clouds organized by the proprietary Optree LOD engine and streamed by visible region for direct 3D visualization",
+    "caption": "Concept diagram · coarse overview → view-dependent LOD streaming → detailed regional visualization",
+    "contactCategory": "Large-Scale Point Clouds & LOD Streaming"
+  },
   "applications": [
     {
       "title": "3D scanning across different scales",

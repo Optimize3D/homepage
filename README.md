@@ -12,11 +12,14 @@
 - `assets/css/styles.css`: 전체 스타일
 - `assets/js/main.js`: 모바일 메뉴
 - `assets/js/research-publications.js`: 연구실 논문 목록 렌더링 데이터
+- `assets/visuals/lod-streaming.svg`: 자체 Optree LOD 엔진의 점진적 점군 스트리밍을 설명하는 웹용 개념도
 - `content/home.json`, `content/research.json`: 향후 CMS/빌드 연동용 국문 콘텐츠 원본 초안
 - `content/home.en.json`, `content/research.en.json`: 향후 CMS/빌드 연동용 영문 콘텐츠 원본 초안
 
 ## Design Direction
 
+- 대표 적용사례의 첫 번째 기본 탭은 2026년 `대용량 포인트 클라우드 경량 스트리밍`입니다. 수십억 포인트의 경량 가시화, MultiViewer·Optree 소개, 스트리밍 문의 항목을 국문·영문에 함께 반영했습니다.
+- `content/home.json`과 `content/home.en.json`의 `featuredCase`는 새 대표 사례의 콘텐츠 초안입니다. 현재 페이지는 정적 HTML이며 JSON을 자동으로 읽지 않으므로 화면 문구는 각 HTML에서도 수정해야 합니다.
 - 첫 화면은 낮고 간결한 B2B 기술기업형 히어로로 구성했습니다.
 - 로고는 복잡한 큐브/점군 마크를 제거하고 `O3 + Optimize3D` 워드마크로 단순화했습니다.
 - 본문은 연구실 소개가 아니라 사업영역, AI 기술, 파일럿 프로세스, 적용분야 순서로 구성했습니다.

@@ -1024,6 +1024,36 @@ h3 {
   line-height: 1.65;
 }
 
+.case-scale {
+  display: grid;
+  gap: 6px;
+  padding: 18px 20px;
+  border-left: 3px solid var(--color-accent-blue);
+  background: rgba(56, 189, 248, .08);
+}
+
+.case-scale strong {
+  color: var(--color-text-primary);
+  font-size: clamp(24px, 2.3vw, 32px);
+  line-height: 1.2;
+}
+
+.case-scale span {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.case-visual img.lod-streaming-diagram {
+  height: auto;
+  aspect-ratio: 8 / 5;
+  background: #091526;
+}
+
+.case-panel .suite-link {
+  color: #0369a1;
+}
+
 .case-specs {
   display: grid;
   gap: 0;

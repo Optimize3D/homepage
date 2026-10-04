@@ -13,6 +13,7 @@
     "visual": "assets/images/generated/hero-shipyard-pointcloud-v2.png",
     "tags": [
       "포인트클라우드",
+      "대용량 경량 스트리밍",
       "AI 객체인식",
       "AI 공간추론",
       "품질검사",
@@ -77,6 +78,34 @@
     "AI & Metrology",
     "Execution Package"
   ],
+  "featuredCase": {
+    "id": "case-streaming",
+    "year": 2026,
+    "title": "대용량 포인트 클라우드 경량 스트리밍",
+    "body": "Optimize3D가 자체 개발한 Optree LOD 엔진으로 수십억 개의 포인트로 구성된 대용량 포인트 클라우드를 경량 가시화합니다. 전체 형상은 낮은 상세도로 먼저 표시하고, 화면에 보이는 영역과 확대 수준에 맞춰 필요한 점군 데이터만 점진적으로 스트리밍합니다. 원본 포인트와의 연결을 유지해 조선소·산업 설비의 대규모 스캔 데이터를 전체 공간부터 관심 영역의 세부 형상까지 탐색·검토할 수 있습니다.",
+    "highlight": {
+      "title": "수십억 포인트",
+      "body": "자체 Optree LOD 엔진 기반 경량 가시화"
+    },
+    "specs": [
+      {
+        "label": "입력",
+        "text": "조선소·산업 설비의 대용량 E57·PLY 포인트 클라우드"
+      },
+      {
+        "label": "처리",
+        "text": "자체 계층형 LOD 엔진 · 화면 기준 점진적 스트리밍"
+      },
+      {
+        "label": "결과",
+        "text": "대규모 공간 경량 가시화 · 관심 영역 상세 검토 · 원본 포인트 연결"
+      }
+    ],
+    "image": "assets/visuals/lod-streaming.svg",
+    "imageAlt": "대용량 산업 점군을 자체 Optree LOD 엔진으로 계층화하고 현재 화면에 필요한 영역을 스트리밍해 직접 3D 가시화하는 개념도",
+    "caption": "개념도 · 전체 형상 → 화면 기준 LOD 스트리밍 → 관심 영역 상세 가시화",
+    "contactCategory": "대용량 포인트 클라우드·LOD 스트리밍"
+  },
   "applications": [
     {
       "title": "다양한 규모에 대한 3D 스캐닝",

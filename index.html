@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Optimize3D | 현장을 위한 3D Point Cloud AI</title>
-  <meta name="description" content="Optimize3D는 조선·해양·제조·건설 현장의 공간을 포인트클라우드 AI 분석, 품질판정, 역설계, 로봇 실행 데이터로 연결하는 현장형 3D 데이터 회사입니다.">
+  <meta name="description" content="Optimize3D는 조선·해양·제조·건설 현장의 공간을 대용량 포인트 클라우드 경량 스트리밍, AI 분석, 품질판정, 역설계, 로봇 실행 데이터로 연결하는 현장형 3D 데이터 회사입니다.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://optimize3d.github.io/homepage/">
   <link rel="alternate" hreflang="ko" href="https://optimize3d.github.io/homepage/">
@@ -13,12 +13,12 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ko_KR">
   <meta property="og:title" content="Optimize3D | 현장을 위한 3D Point Cloud AI">
-  <meta property="og:description" content="조선·해양·제조·건설 현장의 공간을 AI 분석, 품질판정, 역설계, 로봇으로 연결하는 현장형 3D 포인트클라우드 데이터 회사입니다.">
+  <meta property="og:description" content="자체 Optree LOD 엔진 기반 대용량 포인트 클라우드 경량 스트리밍부터 AI 분석, 품질검사, 역설계, 로봇 데이터까지 연결합니다.">
   <meta property="og:url" content="https://optimize3d.github.io/homepage/">
   <meta property="og:image" content="https://optimize3d.github.io/homepage/assets/images/generated/hero-shipyard-pointcloud-v2.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/styles.css?v=20260731a">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20261004a">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -89,6 +89,7 @@
           </div>
           <div class="hero-tags" aria-label="핵심 역량">
             <span>포인트클라우드</span>
+            <span>대용량 경량 스트리밍</span>
             <span>AI 객체인식</span>
             <span>AI 공간추론</span>
             <span>품질검사</span>
@@ -223,10 +224,10 @@
           <div class="suite-copy">
             <p class="screen-kicker">SYNCHRONIZED REVIEW</p>
             <h3>Optimize3D MultiViewer</h3>
-            <p>Optree 기반 계층형 LOD의 주요 기능을 MultiViewer에 구현·적용해 여러 초대용량 스캔, 시점, 편집본과 AI 결과를 단계적으로 불러오고 동기화된 장면에서 검토합니다.</p>
+            <p>자체 Optree LOD 엔진을 적용해 수십억 포인트 규모의 대용량 데이터를 경량 가시화합니다. 화면에 필요한 영역과 상세도를 단계적으로 불러오며, 여러 스캔·시점·편집본·AI 결과를 동기화된 장면에서 검토합니다.</p>
             <ul class="suite-feature-list">
-              <li>Optree 기반 계층형 LOD 표시</li>
-              <li>초대용량 다중 데이터 단계별 로딩</li>
+              <li>자체 LOD 엔진 기반 수십억 포인트 경량 가시화</li>
+              <li>화면·상세도 기준 점진적 스트리밍 및 다중 데이터 로딩</li>
               <li>동기화 회전·확대·단면 검토</li>
               <li>원본 포인트 인덱스 유지 및 정합·중첩 비교</li>
             </ul>
@@ -285,7 +286,7 @@
         <div class="optree-copy">
           <p class="screen-kicker">OPTREE CORE</p>
           <h3>Optree Framework</h3>
-          <p><strong>Optree Framework는 Optimize3D가 독자적으로 개발한 Octree 기반 산업용 포인트클라우드 구조입니다.</strong> 초대용량 데이터를 공간 영역과 LOD 단계로 계층화하고 필요한 영역과 상세도만 점진적으로 불러옵니다. 주요 LOD 구조는 MultiViewer에 구현·적용되어 여러 대규모 스캔을 효율적으로 검토하며, 경량 표시 데이터와 원본 포인트의 연결도 유지합니다.</p>
+          <p><strong>Optree Framework는 자체 LOD 엔진으로 수십억 포인트 규모의 산업용 포인트 클라우드를 경량 가시화하는 Optimize3D의 독자 기술입니다.</strong> Octree 기반 공간 계층과 LOD(상세도 단계)를 활용해 전체 형상을 먼저 표시하고, 화면에 필요한 영역의 상세 데이터를 점진적으로 스트리밍합니다. 주요 LOD 구조는 MultiViewer에 구현·적용되어 있으며, 경량 표시 데이터와 원본 포인트의 연결을 유지해 후속 검토·분석으로 이어집니다.</p>
         </div>
         <div class="optree-capabilities" aria-label="Optree Framework 핵심 구조">
           <span><b>01</b>Hierarchical LOD</span>
@@ -368,7 +369,7 @@
         <article class="solution-pillar">
           <span>01 / CAPTURE</span>
           <h3>3D Capture &amp; Reconstruction</h3>
-          <p>대상과 현장 조건에 맞는 3D 스캐닝부터 정합, 기준 좌표, 역설계와 제작 보조 데이터까지 연결합니다.</p>
+          <p>대상과 현장 조건에 맞는 3D 스캐닝부터 정합, 대용량 데이터 경량 가시화, 역설계와 제작 보조 데이터까지 연결합니다.</p>
           <ul>
             <li>다양한 규모의 3D 스캐닝</li>
             <li>Scan-to-CAD·역설계</li>
@@ -409,10 +410,11 @@
       <div class="section-head compact">
         <p class="kicker">Applied Cases</p>
         <h2 id="case-title">대표 적용사례</h2>
-        <p class="lead">선박·제조 현장의 스캔 데이터가 실제 검사, 인식, 자동화 데이터로 이어진 사례입니다.</p>
+        <p class="lead">선박·제조 현장의 스캔 데이터가 대용량 가시화, 검사, 인식, 자동화 데이터로 이어진 사례입니다.</p>
       </div>
       <div class="case-tabs" role="tablist" aria-label="대표 적용사례">
-        <button id="case-tab-cargo" type="button" role="tab" aria-selected="true" aria-controls="case-cargo" data-tab-target="case-cargo">카고홀드 공간인식</button>
+        <button id="case-tab-streaming" type="button" role="tab" aria-selected="true" aria-controls="case-streaming" data-tab-target="case-streaming">대용량 포인트 클라우드 경량 스트리밍</button>
+        <button id="case-tab-cargo" type="button" role="tab" aria-selected="false" aria-controls="case-cargo" data-tab-target="case-cargo">카고홀드 공간인식</button>
         <button id="case-tab-lngc" type="button" role="tab" aria-selected="false" aria-controls="case-lngc" data-tab-target="case-lngc">LNGC 객체탐지</button>
         <button id="case-tab-support" type="button" role="tab" aria-selected="false" aria-controls="case-support" data-tab-target="case-support">선박 블록 지지대 검사</button>
         <button id="case-tab-lightweight" type="button" role="tab" aria-selected="false" aria-controls="case-lightweight" data-tab-target="case-lightweight">조선소 데이터셋 경량화</button>
@@ -420,7 +422,27 @@
         <button id="case-tab-robot" type="button" role="tab" aria-selected="false" aria-controls="case-robot" data-tab-target="case-robot">로봇 작업성</button>
       </div>
       <div class="case-panels">
-        <article class="case-panel tab-panel is-active" id="case-cargo" role="tabpanel" aria-labelledby="case-tab-cargo">
+        <article class="case-panel tab-panel is-active" id="case-streaming" role="tabpanel" aria-labelledby="case-tab-streaming">
+          <div class="case-copy">
+            <div class="case-summary">
+              <time datetime="2026">2026</time>
+              <h3>대용량 포인트 클라우드 경량 스트리밍</h3>
+              <p>Optimize3D가 자체 개발한 Optree LOD 엔진으로 수십억 개의 포인트로 구성된 대용량 포인트 클라우드를 경량 가시화합니다. 전체 형상은 낮은 상세도로 먼저 표시하고, 화면에 보이는 영역과 확대 수준에 맞춰 필요한 점군 데이터만 점진적으로 스트리밍합니다. 원본 포인트와의 연결을 유지해 조선소·산업 설비의 대규모 스캔 데이터를 전체 공간부터 관심 영역의 세부 형상까지 탐색·검토할 수 있습니다.</p>
+            </div>
+            <div class="case-scale"><strong>수십억 포인트</strong><span>자체 Optree LOD 엔진 기반 경량 가시화</span></div>
+            <ul class="case-specs">
+              <li><strong>입력</strong><span>조선소·산업 설비의 대용량 E57·PLY 포인트 클라우드</span></li>
+              <li><strong>처리</strong><span>자체 계층형 LOD 엔진 · 화면 기준 점진적 스트리밍</span></li>
+              <li><strong>결과</strong><span>대규모 공간 경량 가시화 · 관심 영역 상세 검토 · 원본 포인트 연결</span></li>
+            </ul>
+            <a class="suite-link" href="#contact" data-contact-category="대용량 포인트 클라우드·LOD 스트리밍">경량 스트리밍 상담</a>
+          </div>
+          <figure class="case-visual">
+            <img class="lod-streaming-diagram" src="assets/visuals/lod-streaming.svg" alt="대용량 산업 점군을 자체 Optree LOD 엔진으로 계층화하고 현재 화면에 필요한 영역을 스트리밍해 직접 3D 가시화하는 개념도" loading="lazy" decoding="async" width="800" height="500">
+            <figcaption>개념도 · 전체 형상 → 화면 기준 LOD 스트리밍 → 관심 영역 상세 가시화</figcaption>
+          </figure>
+        </article>
+        <article class="case-panel tab-panel" id="case-cargo" role="tabpanel" aria-labelledby="case-tab-cargo" hidden>
           <div class="case-copy">
             <div class="case-summary">
               <time>2025</time>
@@ -607,6 +629,7 @@
               <option value="3D 스캐닝·역설계">3D 스캐닝·역설계</option>
               <option value="공간 AI·품질검사">공간 AI·품질검사</option>
               <option value="피지컬AI·로봇 데이터">피지컬AI·로봇 데이터</option>
+              <option value="대용량 포인트 클라우드·LOD 스트리밍">대용량 포인트 클라우드·LOD 스트리밍</option>
               <option value="Optree Recognition Engine·Point Cloud Suite">Optree Recognition Engine·Point Cloud Suite</option>
               <option value="산학공동 연구">산학공동 연구</option>
             </select>
@@ -626,6 +649,7 @@
             <legend>해결 과제</legend>
             <div class="contact-chips">
               <label><input type="checkbox" name="challenge" value="3D 스캐닝·정합"><span>3D 스캐닝·정합</span></label>
+              <label><input type="checkbox" name="challenge" value="대용량 점군 경량 가시화·스트리밍"><span>대용량 점군 경량 가시화·스트리밍</span></label>
               <label><input type="checkbox" name="challenge" value="편차분석·품질검사"><span>편차분석·품질검사</span></label>
               <label><input type="checkbox" name="challenge" value="역설계·CAD 재구성"><span>역설계·CAD 재구성</span></label>
               <label><input type="checkbox" name="challenge" value="AI 객체인식·공간추론"><span>AI 객체인식·공간추론</span></label>
