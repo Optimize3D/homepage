@@ -1,38 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://optimize3d.github.io/</loc>
+    <loc>https://optimize3d.github.io/homepage/</loc>
     <lastmod>2026-10-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://optimize3d.github.io/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://optimize3d.github.io/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://optimize3d.github.io/"/>
   </url>
   <url>
-    <loc>https://optimize3d.github.io/en/</loc>
+    <loc>https://optimize3d.github.io/homepage/en/</loc>
     <lastmod>2026-10-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://optimize3d.github.io/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://optimize3d.github.io/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://optimize3d.github.io/"/>
   </url>
   <url>
-    <loc>https://optimize3d.github.io/research.html</loc>
+    <loc>https://optimize3d.github.io/homepage/research.html</loc>
     <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://optimize3d.github.io/research.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://optimize3d.github.io/en/research.html"/>
   </url>
   <url>
-    <loc>https://optimize3d.github.io/en/research.html</loc>
+    <loc>https://optimize3d.github.io/homepage/en/research.html</loc>
     <lastmod>2026-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://optimize3d.github.io/research.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://optimize3d.github.io/en/research.html"/>
   </url>
 </urlset>

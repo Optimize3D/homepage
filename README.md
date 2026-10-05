@@ -25,6 +25,6 @@ GitHub Pages에서 제공하는 국문·영문 정적 홈페이지입니다. 실
 
 네 페이지의 canonical, hreflang, Open Graph, 구조화 데이터와 사이트맵은 새 주소를 사용합니다. `/robots.txt`에서 크롤링을 허용하고 루트 사이트맵을 안내합니다. Google 소유권 확인 HTML 파일은 유지합니다.
 
-기존 `/homepage/`, `/homepage/en/`, `/homepage/research.html`, `/homepage/en/research.html`에는 즉시 meta refresh 이동 페이지를 유지합니다. JavaScript로 쿼리 문자열과 섹션 링크도 보존합니다. GitHub Pages에서는 서버의 HTTP 301을 지정할 수 없으므로 HTML 방식이며, Google은 0초 meta refresh를 영구 이동 신호로 해석합니다. 기존 Google 확인 파일과 사이트맵 경로도 유지합니다. 이전 주소는 크롤링을 막거나 noindex 처리하지 않습니다.
+기존 `/homepage/`, `/homepage/en/`, `/homepage/research.html`, `/homepage/en/research.html`에는 즉시 meta refresh 이동 페이지를 유지합니다. JavaScript로 쿼리 문자열과 섹션 링크도 보존합니다. GitHub Pages에서는 서버의 HTTP 301을 지정할 수 없으므로 HTML 방식이며, Google은 0초 meta refresh를 영구 이동 신호로 해석합니다. 기존 Google 확인 파일과 사이트맵 경로도 유지합니다. 이전 `/homepage/sitemap.xml`에는 해당 경로 아래의 기존 네 주소를 담아 이동 페이지의 재수집을 돕고, 루트 사이트맵에는 새 주소만 담습니다. 이전 주소는 크롤링을 막거나 noindex 처리하지 않습니다.
 
 전환 후 Search Console에서 `https://optimize3d.github.io/` URL 접두어 속성을 확인하고 `https://optimize3d.github.io/sitemap.xml`을 제출합니다. 새 주소의 URL 검사를 통해 색인 생성을 요청합니다. 같은 호스트 안에서 경로만 바꾸는 이전이므로 Search Console의 주소 변경 도구는 사용하지 않습니다. 검색 결과의 이전 주소가 교체되는 시점과 순위는 Google의 재수집·색인 처리에 따릅니다.
