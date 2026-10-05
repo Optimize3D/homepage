@@ -15,48 +15,37 @@
   <meta property="og:url" content="https://optimize3d.github.io/en/research.html">
   <meta property="og:image" content="https://optimize3d.github.io/assets/images/research/ai-shipyard-segmentation.jpg">
   <link rel="icon" href="../assets/brand/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../assets/css/styles.css?v=20260716a">
+  <link rel="stylesheet" href="../assets/css/home.css?v=20261005a">
+  <link rel="stylesheet" href="../assets/css/research.css?v=20261005b">
 </head>
 <body class="research-page">
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <header class="site-header" id="top">
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="index.html" aria-label="Optimize3D home">
-        <span class="brand-mark-window" aria-hidden="true">
-          <img src="../assets/brand/optlab-optimize3d-logo-white.png?v=20260708a" alt="">
-        </span>
-        <span class="brand-type">
-          <strong>Optimize3D</strong>
-          <small>POINT CLOUD INTELLIGENCE</small>
-        </span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <div class="nav-links" id="nav-links">
-        <a href="index.html#solutions">Software</a>
-        <a href="index.html#about">Company &amp; Research</a>
-        <a href="index.html#cases">Cases</a>
-        <a href="research.html" aria-current="page">Research</a>
-        <a href="index.html#contact">Contact</a>
-        <a class="language-link" href="../research.html" lang="ko">KO</a>
-      </div>
-    </nav>
-  </header>
+  <header id="top"><nav class="nav wrap" aria-label="Primary navigation">
+    <a class="brand" href="index.html">Optimize<span>3D</span></a>
+    <button class="menu" aria-expanded="false" aria-controls="nav-links" type="button">Menu</button>
+    <div class="links" id="nav-links">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#cases">Cases</a>
+      <a href="index.html#solutions">Software</a>
+      <a href="index.html#about">Company &amp; Research</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="../research.html" lang="ko">KO</a>
+      <a class="btn nav-cta" href="index.html#contact">Project inquiry</a>
+    </div>
+  </nav></header>
 
   <main id="main">
-    <section class="research-hero" aria-labelledby="research-title">
+    <section class="research-hero wrap" aria-labelledby="research-title">
       <div>
         <p class="eyebrow">OPTLab Research Evidence</p>
-        <h1 id="research-title">Validated 3D data research foundation</h1>
-        <p>The Optimized Ship Production Technology Laboratory at Mokpo National Maritime University has conducted long-running research in 3D scanning, point-cloud processing, deep-learning object recognition, quality inspection, reverse engineering, Physical AI, and collaborative robot execution data for shipbuilding and offshore manufacturing sites.</p>
+        <h1 id="research-title">Validated 3D data<br>research foundation.</h1>
+        <p>The Optimized Ship Production Technology Laboratory at Mokpo National Maritime University in South Korea has conducted long-running research in 3D scanning, point-cloud processing, deep-learning object recognition, quality inspection, reverse engineering, Physical AI, and collaborative robot execution data for shipbuilding and offshore manufacturing sites.</p>
+        <div class="actions"><a class="btn" href="#cases">Explore applied cases <span aria-hidden="true">↗</span></a><a class="btn secondary" href="#publications">View academic papers</a></div>
       </div>
     </section>
 
-    <section class="research-summary" aria-label="Research evidence summary">
+    <section class="research-summary wrap" aria-label="Research evidence summary">
       <article>
         <strong>7</strong>
         <span>Academic awards</span>
@@ -71,11 +60,11 @@
       </article>
     </section>
 
-    <section class="section professor-section" aria-labelledby="lab-title">
+    <section class="section wrap professor-section" aria-labelledby="lab-title">
       <div class="professor-card">
         <div>
-          <p class="kicker">Research Lab</p>
-          <h2 id="lab-title">Mokpo National Maritime University OPTLab</h2>
+          <p class="eyebrow">Research Lab</p>
+          <h2 id="lab-title">OPTLab at Mokpo National Maritime University in South Korea</h2>
           <p>The Optimized Ship Production Technology Laboratory combines naval architecture, ocean engineering, and production management to pursue practical research in 3D scanning, point-cloud-based digital quality control, deep-learning-driven smart-yard production automation, eco-friendly small vessels, and electric propulsion platform design.</p>
         </div>
         <ul class="professor-list" aria-label="OPTLab research lab overview">
@@ -85,11 +74,13 @@
       </div>
     </section>
 
-    <section class="section research-section" aria-labelledby="tracks-title">
+    <section class="section wrap research-section" aria-labelledby="tracks-title">
       <div class="section-head compact">
-        <p class="kicker">Research Tracks</p>
+        <div>
+        <p class="eyebrow">Research Tracks</p>
         <h2 id="tracks-title">Technical foundation</h2>
         <p class="lead">OPTLab research connects field scanning, point-cloud AI, quality inspection, reverse engineering, and Physical AI execution data.</p>
+        </div>
       </div>
       <div class="research-track-grid">
         <article>
@@ -115,12 +106,20 @@
       </div>
     </section>
 
-    <section class="section achievement-section" aria-labelledby="cases-title">
+    <section id="cases" class="section wrap achievement-section" aria-labelledby="cases-title">
       <div class="section-head compact">
-        <p class="kicker">Representative Cases</p>
+        <div>
+        <p class="eyebrow">Representative Cases</p>
         <h2 id="cases-title">Applied research cases</h2>
+        </div>
       </div>
       <div class="case-list">
+        <article class="case-verification" id="ship-block-verification">
+          <time datetime="2026">2026</time>
+          <h3>Applicability verification of object detection and segmentation for large ship blocks</h3>
+          <p>Research commissioned by Samsung Heavy Industries to verify the field applicability of object detection and segmentation in large ship-block point clouds, connecting dataset preparation, AI model application, and result visualization.</p>
+          <span>Samsung Heavy Industries / ship block / object detection / semantic segmentation</span>
+        </article>
         <article>
           <time>2016-2021</time>
           <h3>3D scanning and deviation analysis for small vessels and FRP molds</h3>
@@ -160,24 +159,21 @@
       </div>
     </section>
 
-    <section class="section publication-section" aria-labelledby="publications-title">
+    <section id="publications" class="section wrap publication-section" aria-labelledby="publications-title">
       <div class="section-head compact">
-        <p class="kicker">Academic Papers</p>
+        <div>
+        <p class="eyebrow">Academic Papers</p>
         <h2 id="publications-title">Research Output</h2>
+        </div>
       </div>
       <div class="publication-table" role="table" aria-label="All academic papers" data-publication-table data-locale="en"></div>
     </section>
 
   </main>
 
-  <footer class="site-footer">
-    <div>
-      <img src="../assets/brand/optlab-optimize3d-logo-white.png?v=20260708a" alt="OPTLab | Optimize3D">
-      <span>Research evidence summarized from OPTLab presentation and public paper search links.</span>
-    </div>
-  </footer>
+  <footer><div class="footer-inner wrap"><div><a class="brand" href="index.html">Optimize<span>3D</span></a><p>Industrial Point Cloud Intelligence</p></div><div><p>Researching field challenges and connecting them to industrial applications.</p><a class="text-link" href="index.html#contact">Project inquiry <span aria-hidden="true">↗</span></a></div></div></footer>
 
   <script src="../assets/js/research-publications.js?v=20260709a"></script>
-  <script src="../assets/js/main.js?v=20260710a"></script>
+  <script src="../assets/js/home.js?v=20261004b" defer></script>
 </body>
 </html>

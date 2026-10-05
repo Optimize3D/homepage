@@ -4,9 +4,10 @@ GitHub Pages에서 제공하는 국문·영문 정적 홈페이지입니다. 실
 
 ## 구조
 
-- `assets/css/home.css`, `assets/js/home.js`: 홈페이지 전용 디자인, 모바일 메뉴와 문의 양식 열기
-- `assets/css/styles.css`: 연구실적 페이지 스타일
-- `assets/js/main.js`: 기존 연구 페이지 메뉴와 이메일 초안 작성
+- `assets/css/home.css`: 메인·연구실적 공통 색상, 글꼴, 내비게이션과 버튼
+- `assets/css/research.css`: 연구실적 페이지 카드와 논문 목록 레이아웃
+- `assets/js/home.js`: 메인·연구실적 공통 모바일 메뉴
+- `assets/js/main.js`: 메인 문의 이메일 초안 작성
 - `research.html`, `en/research.html`, `assets/js/research-publications.js`: 연구실적과 논문 목록
 - `content/home*.json`: 향후 CMS 연동용 초안. 현재 HTML에서 자동으로 읽지 않음
 
@@ -30,3 +31,5 @@ GitHub Pages에서 제공하는 국문·영문 정적 홈페이지입니다. 실
 전환 후 Search Console에서 `https://optimize3d.github.io/` URL 접두어 속성을 확인하고 `https://optimize3d.github.io/sitemap.xml`을 제출합니다. 새 주소의 URL 검사를 통해 색인 생성을 요청합니다. 같은 호스트 안에서 경로만 바꾸는 이전이므로 Search Console의 주소 변경 도구는 사용하지 않습니다. 검색 결과의 이전 주소가 교체되는 시점과 순위는 Google의 재수집·색인 처리에 따릅니다.
 
 네이버 URL 검사에 맞춰 국문·영문 페이지의 검색 설명과 Open Graph 설명을 80자 이내로 유지합니다. 자세한 서비스와 산업별 적용 내용은 본문에 남깁니다. 네이버 소유확인 HTML 파일은 저장소 루트에 유지합니다.
+
+연구실적 페이지의 대표 적용 사례 첫 항목은 2026년 대형 선박 블록 객체 탐지·세그멘테이션 기술 적용성 검증입니다. 삼성중공업 위탁연구임을 소개합니다. 첨부 킥오프 연구개발계획서의 데이터셋 구축, AI 모델 적용과 시각화 범위를 요약하며, 완료 성과나 정량 성능으로 표현하지 않습니다. 원본 계획서와 내부 화면은 홈페이지에 공개하지 않습니다.

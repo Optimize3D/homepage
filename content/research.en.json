@@ -10,11 +10,18 @@
     "presentations": "300+"
   },
   "lab": {
-    "name": "Mokpo National Maritime University OPTLab",
+    "name": "OPTLab at Mokpo National Maritime University in South Korea",
     "role": "Optimized Ship Production Technology Laboratory",
     "summary": "OPTLab combines naval architecture, ocean engineering, and production management to pursue practical research in 3D scanning, point-cloud-based digital quality control, deep-learning smart-yard production automation, eco-friendly small vessels, and electric propulsion platform design."
   },
   "representativeCases": [
+    {
+      "date": "2026",
+      "title": "Applicability verification of object detection and segmentation for large ship blocks",
+      "description": "Research commissioned by Samsung Heavy Industries to verify the field applicability of object detection and segmentation in large ship-block point clouds, connecting dataset preparation, AI model application, and result visualization.",
+      "focus": "Samsung Heavy Industries / ship block / object detection / semantic segmentation",
+      "status": "Applicability verification"
+    },
     {
       "date": "2025",
       "title": "Deep-learning spatial recognition automation module for container ship cargo holds",
