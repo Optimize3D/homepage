@@ -7,7 +7,7 @@
   "hero": {
     "eyebrow": "Connecting 3D scan data to field decisions and execution data",
     "title": "Explore large scans. Make clearer decisions.",
-    "body": "Our proprietary LOD engine and spatial AI connect exploration, inspection, and automation reviews.",
+    "body": "3D scanning, point cloud analysis and lightweight streaming for shipyards, construction and manufacturing. Our proprietary Optree LOD engine and spatial AI connect field data to inspection, shape comparison and reverse engineering.",
     "primaryAction": "Discuss a Pilot",
     "secondaryAction": "View Services",
     "visual": "assets/images/generated/home-hero.webp",
@@ -95,6 +95,41 @@
     {
       "title": "Robot and Physical AI Data",
       "image": "assets/images/applied/robot-weld-line-detection.jpg"
+    }
+  ],
+  "seo": {
+    "title": "Optimize3D | 3D Scanning, Point Cloud Analysis & Streaming",
+    "description": "Optimize3D connects 3D scanning, point cloud analysis and proprietary Optree LOD streaming to inspection, reverse engineering and AI dataset preparation for shipyards, construction and manufacturing."
+  },
+  "services": [
+    {
+      "title": "3D scanning & registration",
+      "body": "Review field conditions for ship blocks, building structures and industrial facilities, then define scan coverage and coordinate references. Register captured point clouds to prepare data for subsequent analysis.",
+      "contactCategory": "3D Scanning & Reverse Engineering"
+    },
+    {
+      "title": "Shape comparison & inspection",
+      "body": "Compare 3D scans with CAD or reference shapes. Review deviation analysis and reporting scope around the inspection target and evaluation criteria.",
+      "contactCategory": "Spatial AI & Quality Inspection"
+    },
+    {
+      "title": "Reverse engineering & AI datasets",
+      "body": "Extract relevant geometry and regions from scans for Scan-to-CAD reverse engineering and labeled datasets. Define deliverables around drawings, reference models and training objectives.",
+      "contactCategory": "3D Scanning & Reverse Engineering"
+    }
+  ],
+  "industryApplications": [
+    {
+      "title": "Shipyards & marine engineering",
+      "body": "Explore ship-block, cargo-hold and support point clouds for object separation, geometry review and installation-state analysis."
+    },
+    {
+      "title": "Construction & infrastructure",
+      "body": "Review potential workflows such as lightweight navigation of building and facility point clouds and comparison with CAD references. Define a pilot around available data and site conditions."
+    },
+    {
+      "title": "Manufacturing & plants",
+      "body": "Register scan data from parts, molds, piping and industrial facilities for shape comparison, reverse engineering and workspace review."
     }
   ]
 }
