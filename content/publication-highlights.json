@@ -1,0 +1,200 @@
+[
+  {
+    "id": "paper-support-2026",
+    "doi": "10.3744/SNAK.2026.63.3.191",
+    "image": "support-2026.svg",
+    "figure": "Fig. 6",
+    "headline": {
+      "ko": "AI 객체 분할에서 지지대 검사까지",
+      "en": "From AI segmentation to support inspection"
+    },
+    "summary": {
+      "ko": "선박 블록 하부 점군에서 지지대와 지면을 AI로 구분한 뒤, 개별 지지대를 분리하고 중심 위치와 설치 높이를 산출하는 방법을 연구했습니다. 위치 비교 방법은 합성 기준 배치로 검증했습니다.",
+      "en": "The study combines AI segmentation with spatial post-processing to isolate supports and estimate their centers and installation heights. Position comparison was validated against a synthetic reference layout."
+    },
+    "caption": {
+      "ko": "위: 원본 점군 · 아래: AI 객체 분할 결과",
+      "en": "Top: input point cloud · Bottom: AI segmentation"
+    }
+  },
+  {
+    "id": "paper-tda-2025",
+    "doi": "10.3744/SNAK.2025.62.6.373",
+    "image": "tda-2025.svg",
+    "figure": "Figs. 5(a), 6(e)",
+    "headline": {
+      "ko": "형상 구조를 살리는 점군 경량화",
+      "en": "Point-cloud reduction guided by shape structure"
+    },
+    "summary": {
+      "ko": "위상 데이터 분석(TDA)을 활용해 선박 블록 점군을 경량화하고, 표면·기하학적 특징·공간 분포가 얼마나 유지되는지 여러 관점에서 분석했습니다.",
+      "en": "Topological data analysis (TDA) guides ship-block point-cloud reduction. The study examines preservation of surface geometry, local features and spatial distribution."
+    },
+    "caption": {
+      "ko": "왼쪽: 원본 점군 · 오른쪽: TDA 경량화 결과",
+      "en": "Left: original point cloud · Right: TDA reduction"
+    }
+  },
+  {
+    "id": "paper-weld-2025",
+    "doi": "10.7837/kosomes.2025.31.6.1071",
+    "image": "weld-2025.svg",
+    "figure": "Fig. 7(b), (d)",
+    "headline": {
+      "ko": "점군에서 찾아낸 V-개선 용접선",
+      "en": "Finding V-groove weld lines in point clouds"
+    },
+    "summary": {
+      "ko": "V-개선 시편의 점군에서 평면을 분리하고 교차선을 계산해 용접선을 검출하는 기법을 검토했습니다. 실내 실험에서 비전 센서별 계측 특성도 비교했습니다.",
+      "en": "The study investigates V-groove weld-line detection through plane extraction and intersection-line calculation, comparing vision-sensor measurement characteristics in controlled indoor tests."
+    },
+    "caption": {
+      "ko": "왼쪽: 평면 추출 · 오른쪽: 교차선 계산 (일부)",
+      "en": "Left: plane extraction · Right: intersection line (detail)"
+    }
+  },
+  {
+    "id": "paper-fpfh-2025",
+    "doi": "10.3744/SNAK.2025.62.5.280",
+    "image": "fpfh-2025.svg",
+    "figure": "Fig. 7, ship-block row",
+    "headline": {
+      "ko": "기하학적 특징을 활용한 AI 학습 데이터 경량화",
+      "en": "Geometry-aware data reduction for AI training"
+    },
+    "summary": {
+      "ko": "점 주변의 기하학적 특징을 표현하는 FPFH를 다운샘플링 데이터에 결합하고, 조선소 객체 탐지 성능에 미치는 영향을 분석했습니다. 그림의 오른쪽은 추출된 특징점이며 최종 학습 데이터 전체가 아닙니다.",
+      "en": "The study combines Fast Point Feature Histograms (FPFH) with downsampled data and examines their effect on shipyard object detection. The right panel shows extracted feature points, not the complete training dataset."
+    },
+    "caption": {
+      "ko": "왼쪽: 무작위 샘플링 · 오른쪽: FPFH 특징점",
+      "en": "Left: random sampling · Right: FPFH feature points"
+    }
+  },
+  {
+    "id": "paper-tonnage-2025",
+    "doi": "10.1016/j.ijnaoe.2025.100677",
+    "image": "tonnage-2025.svg",
+    "figure": "Fig. 6, excerpts",
+    "headline": {
+      "ko": "선박 스캔에서 체적과 총톤수 계측으로",
+      "en": "From vessel scans to volume and gross tonnage"
+    },
+    "summary": {
+      "ko": "실제 선박의 스캔 점군을 정리하고 폐위 공간의 체적을 산출해, 기존 총톤수 계측 방법과 비교했습니다. 디지털 선박 검사 방법의 적용 가능성을 사례 중심으로 검토한 연구입니다.",
+      "en": "Vessel scans are processed to estimate enclosed volume and compared with conventional gross-tonnage calculations, exploring the feasibility of a digital ship-inspection workflow."
+    },
+    "caption": {
+      "ko": "분리된 선체 점군",
+      "en": "Separated hull point cloud"
+    }
+  },
+  {
+    "id": "paper-reverse-2025",
+    "doi": "10.7837/kosomes.2025.31.4.520",
+    "image": "reverse-2025.svg",
+    "figure": "Fig. 3(a), (b)",
+    "headline": {
+      "ko": "역설계 모델을 지속가능설계에 연결",
+      "en": "Connecting reverse engineering with sustainable design"
+    },
+    "summary": {
+      "ko": "복합재료 소형선박을 스캔해 역설계 모델을 구축하고, 재료와 생산 방식의 대안을 전과정평가로 검토했습니다. 형상 데이터와 환경영향평가를 연결한 연구입니다.",
+      "en": "A scanned composite small craft is reverse-engineered and used to evaluate material and production alternatives through life cycle assessment, connecting geometry with environmental impact."
+    },
+    "caption": {
+      "ko": "왼쪽: 선체 · 오른쪽: 갑판 역설계 모델",
+      "en": "Left: hull · Right: deck reverse-engineering model"
+    }
+  },
+  {
+    "id": "paper-density-2025",
+    "doi": "10.1016/j.ijnaoe.2025.100648",
+    "image": "density-2025.svg",
+    "figure": "Fig. 14(b), (c), excerpts",
+    "headline": {
+      "ko": "경량 점군으로 조선소 객체 이해하기",
+      "en": "Understanding shipyards with lightweight point clouds"
+    },
+    "summary": {
+      "ko": "점군 밀도를 조절하며 딥러닝 객체 탐지 성능의 변화를 분석하고, 실제 조선소 점군에 적용했습니다. 데이터 처리 부담과 탐지 성능의 균형을 검토하며 유사 형상 객체의 오분류 한계도 확인했습니다.",
+      "en": "The study varies point-cloud density and evaluates deep-learning object detection on experimental and shipyard datasets, examining the balance between data size and detection while identifying confusion between similar objects."
+    },
+    "caption": {
+      "ko": "왼쪽: 입력 점군 · 오른쪽: AI 예측 결과",
+      "en": "Left: input point cloud · Right: AI prediction"
+    }
+  },
+  {
+    "id": "paper-postprocess-2025",
+    "doi": "10.3744/SNAK.2025.62.1.57",
+    "image": "postprocess-2025.svg",
+    "figure": "Figs. 15(f), 16(b)",
+    "headline": {
+      "ko": "스캔 정합과 평면 인식으로 검사 준비",
+      "en": "Preparing scans for inspection through registration and plane recognition"
+    },
+    "summary": {
+      "ko": "오픈 소스 알고리즘으로 선박 블록 점군의 정리·정합·분할·평면 인식을 검토했습니다. 복잡한 블록에서 객체 분할의 한계와 추가 학습 기반 방법의 필요성도 분석했습니다.",
+      "en": "Open-source algorithms are examined for ship-block scan cleaning, registration, segmentation and plane recognition, including limitations of clustering in complex geometry and the need for learning-based segmentation."
+    },
+    "caption": {
+      "ko": "왼쪽: 점군 정합 · 오른쪽: 평면 인식",
+      "en": "Left: scan registration · Right: plane recognition"
+    }
+  },
+  {
+    "id": "paper-lca-2023",
+    "doi": "10.3744/SNAK.2023.60.5.358",
+    "image": "lca-2023.svg",
+    "figure": "Fig. 4(a), (b)",
+    "headline": {
+      "ko": "연료와 배치를 함께 고려한 지속가능설계",
+      "en": "Sustainable design considering fuel and arrangement"
+    },
+    "summary": {
+      "ko": "중형선박의 연료와 LNG 탱크 배치 대안을 전과정평가(LCA)로 비교했습니다. 기본설계 단계에서 환경영향을 함께 검토하기 위한 연구입니다.",
+      "en": "Life cycle assessment compares fuel and LNG tank-arrangement alternatives for a medium-sized vessel, bringing environmental impact into the basic-design stage."
+    },
+    "caption": {
+      "ko": "위: MGO 추진선 · 아래: LNG-DF 추진선 배치",
+      "en": "Top: MGO arrangement · Bottom: LNG dual-fuel arrangement"
+    }
+  },
+  {
+    "id": "paper-quality-2023",
+    "doi": "10.1016/j.ijnaoe.2023.100534",
+    "image": "quality-2023.svg",
+    "figure": "Fig. 10, deviation-map excerpts",
+    "headline": {
+      "ko": "목형부터 완성 선체까지 형상 편차 확인",
+      "en": "Tracking shape deviation from mock-up to hull"
+    },
+    "summary": {
+      "ko": "복합재료 소형선박의 목형·제조 몰드·성형 선체를 스캔해 설계 형상과 비교했습니다. 생산 단계별 형상 편차를 색상으로 확인하는 디지털 품질관리 방법을 제안했습니다.",
+      "en": "Scans of the mock-up, manufacturing mold and formed hull are compared with design geometry, proposing digital quality control through color-mapped deviations at successive production stages."
+    },
+    "caption": {
+      "ko": "위부터: 목형 · 제조 몰드 · 성형 선체의 편차 맵 (수치 판독은 원문 참고)",
+      "en": "Top to bottom: mock-up, mold and hull deviation maps; consult the paper for quantitative interpretation"
+    }
+  },
+  {
+    "id": "paper-pointnet-2022",
+    "doi": "10.3744/SNAK.2022.59.5.330",
+    "image": "",
+    "figure": "",
+    "headline": {
+      "ko": "점군을 직접 학습하는 객체 탐지의 기초",
+      "en": "Foundations of learning directly from point clouds"
+    },
+    "summary": {
+      "ko": "PointNet과 RandLA-Net의 점군 학습 원리를 정리한 리뷰 논문입니다. 순서가 없는 점군의 특징 추출과 대규모 데이터 분할을 이해하기 위한 기술적 배경을 제공합니다.",
+      "en": "This review explains PointNet and RandLA-Net, providing technical foundations for feature extraction from unordered point sets and large-scale point-cloud segmentation."
+    },
+    "caption": {
+      "ko": "알고리즘 리뷰 논문",
+      "en": "Algorithm review paper"
+    }
+  }
+]

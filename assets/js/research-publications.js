@@ -22,7 +22,7 @@ const optimize3dPapers = [
   {
     year: "2025.08",
     journal: "International Journal of Naval Architecture and Ocean Engineering",
-    title: "A Case Study on the Introduction of an Advanced Ship Inspection Method: Gross Tonnage Measurement using 3D Point Clouds"
+    title: "A case study on the introduction of an advanced ship inspection method: Gross tonnage measurement 3D point clouds"
   },
   {
     year: "2025.08",
@@ -37,17 +37,17 @@ const optimize3dPapers = [
   {
     year: "2025.02",
     journal: "대한조선학회 논문집",
-    title: "선박블록 3차원 스캐닝 데이터 처리를 위한 포인트 클라우드 후처리 방법 및 적용"
+    title: "선박블록 3차원 스캐닝 데이터 처리를 위한 오픈 소스 알고리즘 기반 포인트 클라우드 후처리 방법 및 적용"
   },
   {
     year: "2023.10",
     journal: "대한조선학회 논문집",
-    title: "LNG-DF연료추진 중형선박의 지속가능한 기본설계 대안을 위한 전과정평가(LCA) 분석"
+    title: "LNG-DF추진 중형선박의 지속가능한 기본설계 대안을 위한 전과정평가(LCA) 분석"
   },
   {
     year: "2023.06",
     journal: "International Journal of Naval Architecture and Ocean Engineering",
-    title: "A Case Study for 3D Scanning-based Quantitative Quality Control during Key Stages of Composite Small Boat Production"
+    title: "A case study for 3D scanning-based quantitative quality control during key stages of composite small craft production"
   },
   {
     year: "2022.10",
@@ -260,8 +260,8 @@ const optimize3dTitleEn = {
   "3차원 포인트 클라우드 기반 V-개선 용접선 검출 기법 및 비전 센서 성능 분석": "V-groove weld line detection using 3D point clouds and vision sensor performance analysis",
   "FPFH 기반 기하학적 특징 증강을 이용한 조선소 3D 딥러닝 데이터셋 경량화 및 객체 탐지 성능 분석": "Shipyard 3D deep-learning dataset simplification and object detection performance analysis using FPFH-based geometric feature augmentation",
   "복합재료 소형선박의 3D 스캐닝 기반 역설계 모델을 활용한 환경영향평가 및 지속가능설계 적용": "Environmental impact assessment and sustainable design application using a 3D scanning-based reverse engineering model for composite small vessels",
-  "선박블록 3차원 스캐닝 데이터 처리를 위한 포인트 클라우드 후처리 방법 및 적용": "Point-cloud post-processing method and application for ship block 3D scanning data",
-  "LNG-DF연료추진 중형선박의 지속가능한 기본설계 대안을 위한 전과정평가(LCA) 분석": "Life cycle assessment analysis for sustainable basic design alternatives of LNG dual-fuel medium-sized vessels",
+  "선박블록 3차원 스캐닝 데이터 처리를 위한 오픈 소스 알고리즘 기반 포인트 클라우드 후처리 방법 및 적용": "Point-cloud post-processing methods and applications using open-source algorithms for ship-block 3D scan data",
+  "LNG-DF추진 중형선박의 지속가능한 기본설계 대안을 위한 전과정평가(LCA) 분석": "Life cycle assessment analysis for sustainable basic design alternatives of LNG dual-fuel medium-sized vessels",
   "3차원 포인트 클라우드 데이터를 활용한 객체 탐지 기법인 PointNet과 RandLA-Net": "PointNet and RandLA-Net object detection methods using 3D point-cloud data",
   "딥러닝 기반 LNGC 화물창 3D 포인트 클라우드의 스캐폴딩 시스템 객체 탐지 및 후처리": "Deep-learning-based scaffolding system object detection and post-processing for LNGC cargo hold 3D point clouds",
   "FFF 3D 프린터를 이용한 DfAM 기반 소형선박용 스탠션 지속가능 개발 사례 연구": "Sustainable development case study of a DfAM-based small-vessel stanchion using an FFF 3D printer",
@@ -359,7 +359,8 @@ function renderOptimize3DPapers() {
     });
     table.appendChild(header);
 
-    optimize3dPapers.forEach((paper) => appendPublicationRow(table, paper, locale));
+    optimize3dPapers.filter((paper) => Number(paper.year.slice(0, 4)) < 2022)
+      .forEach((paper) => appendPublicationRow(table, paper, locale));
   });
 }
 
